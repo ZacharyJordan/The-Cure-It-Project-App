@@ -22109,6 +22109,20 @@ sub {
   }
 }
 
+.link {
+  color: #85C1E9 !important;
+  text-decoration: underline;
+}
+
+.main-back-button {
+  position: absolute;
+  display: block;
+  margin-bottom: 25px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+}
+
 .blue-slide {
   background-color: #2980B9;
 }
@@ -22246,14 +22260,21 @@ p {
   transform: translate(-50%, 0);
 }
 
-.top-element {
-  position: absolute;
-  top: 20px;
-  display: inline-block;
-  font-style: italic;
-  border-bottom: 1px solid white;
-  padding-bottom: 3px;
+.heading-wrapper {
+  position: relative;
+  width: 100vw;
+  height: 40px;
   text-align: center;
+}
+
+.heading {
+  text-align: center;
+  position: relative;
+  width: auto;
+  top: 20px;
+  font-style: italic;
+  padding-bottom: 3px;
+  font-size: 25px;
 }
 
 .push-icon-right {
