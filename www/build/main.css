@@ -22114,6 +22114,20 @@ sub {
   text-decoration: underline;
 }
 
+.responsive-chart-wrapper {
+  position: relative;
+  width: 100vw;
+  text-align: center;
+}
+
+.responsive-chart {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 60vw;
+  width: 60vw;
+}
+
 .main-back-button {
   position: absolute;
   display: block;
@@ -22127,16 +22141,32 @@ sub {
   background-color: #2980B9;
 }
 
+.alt-blue-slide {
+  background-color: #3498DB;
+}
+
 .purple-slide {
   background-color: #A569BD;
+}
+
+.alt-purple-slide {
+  background-color: #9B59B6;
 }
 
 .green-slide {
   background-color: #45B39D;
 }
 
+.alt-green-slide {
+  background-color: #16A085;
+}
+
 .red-slide {
   background-color: #CD6155;
+}
+
+.alt-red-slide {
+  background-color: #C0392B;
 }
 
 .slide-header-main {

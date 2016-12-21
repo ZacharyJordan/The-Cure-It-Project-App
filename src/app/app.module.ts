@@ -8,6 +8,7 @@ import { TabsPage } from '../pages/tabs/tabs';
 import {BladderPage} from '../pages/bladder/bladder';
 import {AccountCreationPage} from '../pages/account-creation/account-creation';
 import {BladderAboutPage} from '../pages/bladder-about/bladder-about';
+import {ChartModule} from 'ng2-chartjs2';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import {BladderAboutPage} from '../pages/bladder-about/bladder-about';
     BladderAboutPage
   ],
   imports: [
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    ChartModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [

@@ -16,9 +16,9 @@ export class BladderAboutPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {}
 
-  goBack()
+  donateBladder()
   {
-    this.navCtrl.pop(BladderAboutPage);
+    //this.navCtrl.pop(BladderAboutPage);
   }
 
   ionViewDidLoad() {
