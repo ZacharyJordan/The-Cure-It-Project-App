@@ -9,6 +9,8 @@ import {BladderPage} from '../pages/bladder/bladder';
 import {AccountCreationPage} from '../pages/account-creation/account-creation';
 import {BladderAboutPage} from '../pages/bladder-about/bladder-about';
 import {ChartModule} from 'ng2-chartjs2';
+import {BladderPhotodynamicPage} from '../pages/bladder-photodynamic/bladder-photodynamic';
+import {BladderIntravesicalPage} from '../pages/bladder-intravesical/bladder-intravesical';
 
 @NgModule({
   declarations: [
@@ -19,6 +21,8 @@ import {ChartModule} from 'ng2-chartjs2';
     TabsPage,
     BladderPage,
     AccountCreationPage,
+    BladderPhotodynamicPage,
+    BladderIntravesicalPage,
     BladderAboutPage
   ],
   imports: [
@@ -34,6 +38,8 @@ import {ChartModule} from 'ng2-chartjs2';
     TabsPage,
     BladderPage,
     AccountCreationPage,
+    BladderPhotodynamicPage,
+    BladderIntravesicalPage,
     BladderAboutPage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]

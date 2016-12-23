@@ -4,15 +4,15 @@
 1 verbose cli   'run',
 1 verbose cli   'ionic:serve',
 1 verbose cli   '--' ]
-2 info using npm@3.10.8
-3 info using node@v6.9.1
+2 info using npm@3.10.9
+3 info using node@v6.9.2
 4 verbose run-script [ 'preionic:serve', 'ionic:serve', 'postionic:serve' ]
 5 info lifecycle ionic-hello-world@~preionic:serve: ionic-hello-world@
 6 silly lifecycle ionic-hello-world@~preionic:serve: no script for preionic:serve, continuing
 7 info lifecycle ionic-hello-world@~ionic:serve: ionic-hello-world@
 8 verbose lifecycle ionic-hello-world@~ionic:serve: unsafe-perm in lifecycle true
-9 verbose lifecycle ionic-hello-world@~ionic:serve: PATH: /usr/local/lib/node_modules/npm/bin/node-gyp-bin:/Users/IshanTaparia/The-Cure-It-Project-App/node_modules/.bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/Users/IshanTaparia/.rvm/gems/ruby-2.2.1/bin:/Users/IshanTaparia/.rvm/gems/ruby-2.2.1@global/bin:/Users/IshanTaparia/.rvm/rubies/ruby-2.2.1/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin:/Users/IshanTaparia/.rvm/bin
-10 verbose lifecycle ionic-hello-world@~ionic:serve: CWD: /Users/IshanTaparia/The-Cure-It-Project-App
+9 verbose lifecycle ionic-hello-world@~ionic:serve: PATH: /usr/local/lib/node_modules/npm/bin/node-gyp-bin:/Users/zacharyjordan/Desktop/Content/Programming/cureItProjectApp/cureItProject/node_modules/.bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin
+10 verbose lifecycle ionic-hello-world@~ionic:serve: CWD: /Users/zacharyjordan/Desktop/Content/Programming/cureItProjectApp/cureItProject
 11 silly lifecycle ionic-hello-world@~ionic:serve: Args: [ '-c', 'ionic-app-scripts serve' ]
 12 silly lifecycle ionic-hello-world@~ionic:serve: Returned: code: 1  signal: null
 13 info lifecycle ionic-hello-world@~ionic:serve: Failed to exec ionic:serve script
@@ -27,11 +27,11 @@
 14 verbose stack     at maybeClose (internal/child_process.js:877:16)
 14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:226:5)
 15 verbose pkgid ionic-hello-world@
-16 verbose cwd /Users/IshanTaparia/The-Cure-It-Project-App
-17 error Darwin 16.0.0
+16 verbose cwd /Users/zacharyjordan/Desktop/Content/Programming/cureItProjectApp/cureItProject
+17 error Darwin 15.5.0
 18 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "run" "ionic:serve" "--"
-19 error node v6.9.1
-20 error npm  v3.10.8
+19 error node v6.9.2
+20 error npm  v3.10.9
 21 error code ELIFECYCLE
 22 error ionic-hello-world@ ionic:serve: `ionic-app-scripts serve`
 22 error Exit status 1

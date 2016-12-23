@@ -4,6 +4,9 @@ import {Slides} from 'ionic-angular';
 import { ViewChild } from '@angular/core';
 import {BladderAboutPage} from '../bladder-about/bladder-about';
 import {Chart} from 'ng2-chartjs2';
+import {BladderPhotodynamicPage} from '../bladder-photodynamic/bladder-photodynamic';
+import {BladderIntravesicalPage} from '../bladder-intravesical/bladder-intravesical';
+
 /*
   Generated class for the Bladder page.
 
@@ -48,6 +51,16 @@ export class BladderPage {
   expandAbout()
   {
     this.navCtrl.push(BladderAboutPage);
+  }
+
+  expandFirstTreatment()
+  {
+    this.navCtrl.push(BladderPhotodynamicPage)
+  }
+
+  expandSecondTreatment()
+  {
+    this.navCtrl.push(BladderIntravesicalPage);
   }
 
    mySlideOptions = {
