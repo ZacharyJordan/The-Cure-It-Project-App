@@ -23,8 +23,7 @@
       <div class = "whiten slide-header">Over 28 people are diagnosed with Bladder Cancer every day in the UK alone</div>
     </div>
     
-
-      <button ng-click="aboutDisease()" ion-button color = "default" class = "limit-button">About Bladder Cancer</button>
+      <button ng-click="aboutDisease()" ion-button color = "default" class = "limit-button">Types of Bladder Cancer</button>
       <br />
       <button ion-button color = "default" class = "limit-button">Treatment Advancements</button> 
       <br />
@@ -78,9 +77,48 @@
     <chart id = "bladderChart" class = "responsive-chart" [labels]="labels" [data]="data" type="pie"></chart>
 </div>
     <div class = "red-slide special-card-header whiten">
-      <div class = "special-card-internal">Treatment (1/2)</div>
+      <div class = "special-card-internal">Types (1/2)</div>
    </div>
 
+  </ion-slide>
+
+  <ion-slide class = "red-slide">
+    <h2 class = "anchor-other">
+      <span class = "whiten center-title-lower">Transitional Cell</span>
+      <br />
+      <p class = "whiten">
+        This is by far the majority of all diagnosed Bladder Cancers, amounting to nearly 90% of all cases. Cells in the lining of the bladder often come into contact with toxic chemicals in urine waste. Since some of these chemicals are carcinogens, these cells can get damaged and form into tumors. 
+      </p>
+
+      <p class = "whiten">
+        Over time, the cancer can spread into the tissue surrounding the bladder and metastasize from there. Almost all Bladder Cancers begin with transitional cell cancer, as these transitional cells are the most prone to contact with the body's waste. 
+      </p>
+  
+    </h2>
+<button ion-button class = "anchor-button-down" color = "default" large on-tap="expandFirstDisease()">Learn More</button>
+<div class = "blue-slide special-card-header whiten">
+      <div class = "special-card-internal">Types (2/2)</div>
+   </div>
+  </ion-slide>
+
+  <ion-slide class = "blue-slide">
+    <h2 class = "anchor-other">
+      <span class = "whiten center-title-lower">Squamous Cell</span>
+      <br />
+      <p class = "whiten">
+       Squamous cells are specialized cells that line the vital internal organs of the body. Similarly to transitional cells, squamous cells regularly come into contact with the body's waste and are exposed to a whole host of toxins as a result.
+
+      </p>
+
+      <p class = "whiten">
+       When infected, they die quickly, so they are less prone to growing out of control and becoming cancerous than transitional cells. Squamous cells are identified by their spongy nature and flat, rectangular shape.
+      </p>
+  
+    </h2>
+<button ion-button class = "anchor-button-down" color = "default" large on-tap="expandSecondDisease()">Learn More</button>
+<div class = "red-slide special-card-header whiten">
+      <div class = "special-card-internal">Treatment (1/2) </div>
+   </div>
   </ion-slide>
 
   <ion-slide class = "red-slide">

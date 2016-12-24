@@ -11,6 +11,8 @@ import {BladderAboutPage} from '../pages/bladder-about/bladder-about';
 import {ChartModule} from 'ng2-chartjs2';
 import {BladderPhotodynamicPage} from '../pages/bladder-photodynamic/bladder-photodynamic';
 import {BladderIntravesicalPage} from '../pages/bladder-intravesical/bladder-intravesical';
+import {BladderTransitionalPage} from '../pages/bladder-transitional/bladder-transitional';
+import {BladderSquamousPage} from '../pages/bladder-squamous/bladder-squamous';
 
 @NgModule({
   declarations: [
@@ -23,6 +25,8 @@ import {BladderIntravesicalPage} from '../pages/bladder-intravesical/bladder-int
     AccountCreationPage,
     BladderPhotodynamicPage,
     BladderIntravesicalPage,
+    BladderTransitionalPage,
+    BladderSquamousPage,
     BladderAboutPage
   ],
   imports: [
@@ -40,6 +44,8 @@ import {BladderIntravesicalPage} from '../pages/bladder-intravesical/bladder-int
     AccountCreationPage,
     BladderPhotodynamicPage,
     BladderIntravesicalPage,
+    BladderTransitionalPage,
+    BladderSquamousPage,
     BladderAboutPage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
