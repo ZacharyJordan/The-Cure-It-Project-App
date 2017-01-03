@@ -22,6 +22,25 @@
     text-decoration: underline;
 }
 
+.move-left-special
+{
+    position:relative;
+    left:-20px;
+}
+
+.information-button
+{
+    position: relative;
+    left:-10px;
+    float:right;
+    font-size:32px;
+}
+
+.blue-highlight
+{
+    background-color:#387ef5 !important;
+}
+
 .responsive-chart-wrapper
 {
     position: relative;
