@@ -22201,11 +22201,8 @@ sub {
   text-align: center;
 }
 
-.card-change {
-  width: 85%;
-  border-radius: 5px;
-  margin-left: auto;
-  margin-right: auto;
+.first-card {
+  margin-top: 15px;
 }
 
 .head-element {
