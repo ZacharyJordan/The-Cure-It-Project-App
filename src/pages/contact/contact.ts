@@ -12,7 +12,7 @@ export class ContactPage {
 
   facts()
   {
-    window.open('http://google.com','_self'); 
+    window.open('http://google.com','_system', "location=true"); 
   }
 
   informationOpen()
