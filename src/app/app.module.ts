@@ -42,6 +42,14 @@ import {BreastMetastaticPage} from '../pages/breast-metastatic/breast-metastatic
 import {BreastProteinPage} from '../pages/breast-protein/breast-protein';
 import {BreastLifestylePage} from '../pages/breast-lifestyle/breast-lifestyle';
 import {InformationPage} from '../pages/information/information';
+import {ColorectalPage} from '../pages/colorectal/colorectal';
+import {ColorectalAboutPage} from '../pages/colorectal-about/colorectal-about';
+import {ColorectalAdenocarcinomasPage} from '../pages/colorectal-adenocarcinomas/colorectal-adenocarcinomas';
+import {ColorectalSarcomasPage} from '../pages/colorectal-sarcomas/colorectal-sarcomas';
+import {ColorectalCarcinoidsPage} from '../pages/colorectal-carcinoids/colorectal-carcinoids';
+import {ColorectalUnderstandingPage} from '../pages/colorectal-understanding/colorectal-understanding';
+import {ColorectalDrugPage} from '../pages/colorectal-drug/colorectal-drug';
+import {StoryChristinaPage} from '../pages/story-christina/story-christina';
 
 
 @NgModule({
@@ -86,7 +94,15 @@ import {InformationPage} from '../pages/information/information';
     BreastMetastaticPage,
     BreastProteinPage,
     BreastLifestylePage,
-    InformationPage
+    InformationPage,
+    ColorectalPage,
+    ColorectalAboutPage,
+    ColorectalAdenocarcinomasPage,
+    ColorectalSarcomasPage,
+    ColorectalCarcinoidsPage,
+    ColorectalUnderstandingPage,
+    ColorectalDrugPage,
+    StoryChristinaPage
   ],
   imports: [
     IonicModule.forRoot(MyApp),
@@ -134,7 +150,15 @@ import {InformationPage} from '../pages/information/information';
     BreastMetastaticPage,
     BreastProteinPage,
     BreastLifestylePage,
-    InformationPage
+    InformationPage,
+    ColorectalPage,
+    ColorectalAboutPage,
+    ColorectalAdenocarcinomasPage,
+    ColorectalSarcomasPage,
+    ColorectalCarcinoidsPage,
+    ColorectalUnderstandingPage,
+    ColorectalDrugPage,
+    StoryChristinaPage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })

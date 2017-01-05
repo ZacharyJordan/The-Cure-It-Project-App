@@ -7,6 +7,7 @@ import {BonePage} from '../bone/bone';
 import {BrainPage} from '../brain/brain';
 import {BreastPage} from '../breast/breast';
 import {InformationPage} from '../information/information';
+import {ColorectalPage} from '../colorectal/colorectal';
 
 @Component({
   selector: 'page-home',
@@ -41,6 +42,11 @@ export class HomePage {
   breastOpen()
   {
     this.navCtrl.push(BreastPage);
+  }
+
+  colorectalOpen()
+  {
+    this.navCtrl.push(ColorectalPage);
   }
 
   informationOpen()

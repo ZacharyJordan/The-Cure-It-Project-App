@@ -1,0 +1,234 @@
+<!--
+  Generated template for the Bladder page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Colorectal Cancer</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+<ion-slides [options]="mySlideOptions" pager>
+
+  <ion-slide class = "green-slide rel-pos">
+    <div class = "anchor-other pad">
+      <h1 class = "whiten slide-header-main">Colorectal Cancer</h1>
+      <div class = "whiten slide-header">There are over 1.2 million people with a history of colorectal cancer alive today</div>
+    </div>
+    
+      <button ng-click="aboutDisease()" ion-button color = "default" class = "limit-button">Types of Colorectal Cancer</button>
+      <br />
+      <button ion-button color = "default" class = "limit-button">Treatment Advancements</button> 
+      <br />
+      <button ion-button color = "default" class = "limit-button">How to Help</button>
+   
+    
+   <div class = "purple-slide special-card-header whiten">
+      <div class = "special-card-internal">About (1/2)</div>
+   </div>
+  </ion-slide>
+ 
+  <ion-slide class = "purple-slide rel-pos">
+    <h2 class = "anchor-other">
+      <!--<span class = "whiten center-title">Introduction (1/2)</span>-->
+      <span class = "whiten center-title-lower">What is Colorectal Cancer?</span>
+      <br />
+      <p class = "whiten">
+   Colorectal Cancers are cancers that start in either the colon or rectum. They are often grouped together due to the similarities that they share with one another.
+
+      </p>
+
+      <p class = "whiten">
+  There are several different types of Colorectal Cancers, each with their own properties that warrant individualized attention. The three that we will be taking a look at are Adenocarcinomas, Sarcomas, and Carcinoid tumors.	
+
+      </p>
+
+      
+    </h2>
+    <button ion-button class = "anchor-button-down" color = "default" large on-tap="expandAbout()">Learn More</button>
+
+    <div class = "blue-slide special-card-header whiten">
+      <div class = "special-card-internal">About (2/2)</div>
+   </div>
+
+  </ion-slide>
+
+  <ion-slide class = "blue-slide">
+    <h2 class = "anchor-other">
+      <!--<span class = "whiten center-title">Introduction (1/2)</span>-->
+      <span class = "whiten center-title-lower">Colorectal Cancer Data</span>
+      <br />
+      <p class = "whiten">
+      Below is a chart that details the percent occurance of the most common form of Colorectal Cancer, Adenocarcinomas.  
+      </p>
+  
+    </h2>
+    <div class = "responsive-chart-wrapper">
+    <chart id = "bloodChart" class = "responsive-chart" [labels]="labels" [data]="data" type="pie"></chart>
+</div>
+    <div class = "red-slide special-card-header whiten">
+      <div class = "special-card-internal">Types (1/3)</div>
+   </div>
+
+  </ion-slide>
+
+  <ion-slide class = "red-slide">
+    <h2 class = "anchor-other">
+      <span class = "whiten center-title-lower">Adenocarcinomas</span>
+      <br />
+      <p class = "whiten">
+        Adenocarcinomas are by far the most common form of Colorectal Cancer, claiming 95 percent of diagnosal cases. This form of cancer often begins in the inner layer of the bowel before spreading into other, deeper layers.
+      </p>
+
+      <p class = "whiten">
+        Because of this, early detection and treatment is essential in terms of ensuring that the cancer does not become life threatening. 
+      </p>
+  
+    </h2>
+<button ion-button class = "anchor-button-down" color = "default" large on-tap="expandFirstDisease()">Learn More</button>
+<div class = "blue-slide special-card-header whiten">
+      <div class = "special-card-internal">Types (2/3)</div>
+   </div>
+  </ion-slide>
+
+  <ion-slide class = "blue-slide">
+    <h2 class = "anchor-other">
+      <span class = "whiten center-title-lower">Sarcomas</span>
+      <br />
+      <p class = "whiten">
+    Sarcomas are cancers that develop in the bone or muscle. The growth of this cancer causes pressure on the body and organs that can sometimes result in the infected cells being spread around the body.
+      </p>
+
+      <p class = "whiten">
+       Like all forms of Colorectal Cancers, early detection is the key to ensuring a quick and efficient treatment. The earlier the cancer is discovered, the less likely it is to have spread, thus allowing for the removal of the cancerous cells through surgeries. 
+      </p>
+  
+    </h2>
+<button ion-button class = "anchor-button-down" color = "default" large on-tap="expandSecondDisease()">Learn More</button>
+<div class = "green-slide special-card-header whiten">
+      <div class = "special-card-internal">Types (3/3) </div>
+   </div>
+  </ion-slide>
+
+<ion-slide class = "green-slide">
+    <h2 class = "anchor-other">
+      <!--<span class = "whiten center-title">Introduction (1/2)</span>-->
+      <span class = "whiten center-title-lower">Carcinoids</span>
+      <br />
+      <p class = "whiten">
+     Carcinoids are an especially slow growing form of Colorectal Cancer. While this has the advantage of ensuring that the tumor is not especially fast-acting, it can also make early detection a challenge. Carcinoids often fail to produce symptoms until late in the disease, something which can mean that the tumor is advanced at the time of discovery. 
+      </p>
+
+      <p class = "whiten">
+  Early detection of Carcinoids can sometimes make treatment a relatively simple manner, with a targeted surgery removing or preventing the further development of the tumor. 
+      </p>
+
+      
+    </h2>
+    <button ion-button class = "anchor-button-down" color = "default" large on-tap="expandThirdDisease()">Learn More</button>
+    
+    <div class = "red-slide special-card-header whiten">
+      <div class = "special-card-internal">Treatment (1/2)</div>
+   </div>
+  </ion-slide>
+
+
+
+  <ion-slide class = "red-slide">
+    <h2 class = "anchor-other">
+      <!--<span class = "whiten center-title">Introduction (1/2)</span>-->
+      <span class = "whiten center-title-lower">Advancements in Understanding</span>
+      <br />
+      <p class = "whiten">
+     One of the most powerful tools that doctors and researchs have at their disposal to fight Colorectal Cancers is through early detection and prevention. The best way to do this is to grasp a more advanced knowledge of what actually causes the disease in the first place.
+      </p>
+
+      <p class = "whiten">
+  Many of the risk factors that researchers have identified are lifestyle related. These include things such as smoking or the excessive consumption of alchohol.
+      </p>
+
+      
+    </h2>
+    <button ion-button class = "anchor-button-down" color = "default" large on-tap="expandFirstTreatment()">Learn More</button>
+    
+    <div class = "alt-green-slide special-card-header whiten">
+      <div class = "special-card-internal">Treatment (2/2)</div>
+   </div>
+  </ion-slide>
+
+  <ion-slide class = "alt-green-slide">
+    <h2 class = "anchor-other">
+      <!--<span class = "whiten center-title">Introduction (1/2)</span>-->
+      <span class = "whiten center-title-lower">Advancement in Drug Usage</span>
+      <br />
+      <p class = "whiten">
+    Recent discoveries have done much to allow researchers to utilize various drug combinations in their efforts to boost the survival rate of Colorectal Cancer patients. These drugs provide patients everywhere with more options, something that serves to enhance the comfort and health of those suffering from the disease. 
+      </p>
+
+      <p class = "whiten">
+  One of these drugs is Irinotecan, which is a chemotherapy drug that specifically attempts to block the action of an enzyme associated with keeping cancer cells in their proper form.
+      </p>
+
+      
+    </h2>
+    <button ion-button class = "anchor-button-down" color = "default" large on-tap="expandSecondTreatment()">Learn More</button>
+    
+    <div class = "alt-purple-slide special-card-header whiten">
+      <div class = "special-card-internal">How to Help (1/2)</div>
+   </div>
+  </ion-slide>
+
+  <ion-slide class = "alt-purple-slide">
+    <h2 class = "anchor-other">
+      <span class = "whiten center-title-lower">Fight Colorectal Cancer</span>
+      <br />
+      <p class = "whiten">
+       Fight Colorectal Cancer has been on the front lines of the fight against Colorectal Cancers for years now. They have dedicated themselves to promoting the development of new treatments as well as making sure the public is well educated on the causes of Colorectal Cancers, something that has done much to inspire hope in those who suffer from it. 
+
+      </p>
+
+      <p class = "whiten">
+   They fight against Colorectal Cancers in five main ways: advocacy, awareness generation, providing patients with resources, funding research, and philanthropy.
+      </p>
+
+      
+    </h2>
+    <button ion-button class = "anchor-button-down" color = "default" large on-tap="expandFirstDonation()">Learn More</button>
+    
+    <div class = "alt-blue-slide special-card-header whiten">
+      <div class = "special-card-internal">How to Help (2/2)</div>
+   </div>
+  </ion-slide>
+
+  <ion-slide class = "alt-blue-slide">
+    <h2 class = "anchor-other">
+      <span class = "whiten center-title-lower">The NCCRA</span>
+      <br />
+      <p class = "whiten">
+       The NCCRA (National Colorectal Cancer Alliance) has made it their mission to eradicate the threat of Colorectal Cancers for everyone. They attempt to do this by promoting and raising funds for medical screenings, scientific tests, and treatments. 
+      </p>
+
+      <p class = "whiten">
+   They have raised well over 33 million dollars to date, and have provided thousands of patients with advanced technologies that make their lives more comfortable and fulfilling.
+      </p>
+
+      
+    </h2>
+    <button ion-button class = "anchor-button-down" color = "default" large on-tap="expandSecondDonation()">Learn More</button>
+    
+    <div class = "blue-slide special-card-header whiten">
+   </div>
+  </ion-slide>
+</ion-slides>
+</ion-content>
+
+<script>
+
+</script>

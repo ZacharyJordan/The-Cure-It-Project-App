@@ -22114,6 +22114,25 @@ sub {
   text-decoration: underline;
 }
 
+.question {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.answer {
+  position: relative;
+  top: -15px;
+  font-style: italic;
+  font-size: 1.3em;
+}
+
+.push-content-down {
+  position: relative;
+  top: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 .move-left-special {
   position: relative;
   left: -20px;
@@ -22134,6 +22153,10 @@ sub {
   position: relative;
   width: 100vw;
   text-align: center;
+}
+
+.push-down {
+  margin-bottom: 60px !important;
 }
 
 .responsive-chart {
@@ -22201,8 +22224,28 @@ sub {
   text-align: center;
 }
 
+#alter-style {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.push-block {
+  height: 5px;
+}
+
 .first-card {
   margin-top: 15px;
+}
+
+.my-block {
+  position: relative;
+  height: 15px;
+}
+
+.my-bottom-block {
+  position: relative;
+  height: 15px;
 }
 
 .head-element {
@@ -22212,6 +22255,10 @@ sub {
   margin-bottom: 10px;
   color: #fff;
   font-size: 35px;
+}
+
+.card-change {
+  border-radius: 20px;
 }
 
 .card-background-page ion-card {

@@ -2,9 +2,34 @@ page-about {
 
 }
 
+#alter-style
+{
+  width:80%;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.push-block
+{
+  height:5px;
+}
+
+
 .first-card
 {
   margin-top:15px;
+}
+
+.my-block
+{
+  position: relative;
+  height:15px;
+}
+
+.my-bottom-block
+{
+  position: relative;
+  height:15px;
 }
 
 .head-element
@@ -15,6 +40,12 @@ page-about {
     margin-bottom:10px;
     color:#fff;
     font-size:35px;
+}
+
+.card-change
+{
+  
+  border-radius:20px;
 }
 
 .card-background-page {
