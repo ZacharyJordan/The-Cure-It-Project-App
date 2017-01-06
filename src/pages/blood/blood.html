@@ -1,0 +1,232 @@
+<!--
+  Generated template for the Bladder page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Blood Cancer</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+<ion-slides [options]="mySlideOptions" pager>
+
+  <ion-slide class = "green-slide rel-pos">
+    <div class = "anchor-other pad">
+      <h1 class = "whiten slide-header-main">Blood Cancer</h1>
+      <div class = "whiten slide-header">Every four minutes someone new finds out that they have Blood Cancer</div>
+    </div>
+    
+      <button ng-click="aboutDisease()" ion-button color = "default" class = "limit-button">Types of Blood Cancer</button>
+      <br />
+      <button ion-button color = "default" class = "limit-button">Treatment Advancements</button> 
+      <br />
+      <button ion-button color = "default" class = "limit-button">How to Help</button>
+   
+    
+   <div class = "purple-slide special-card-header whiten">
+      <div class = "special-card-internal">About (1/2)</div>
+   </div>
+  </ion-slide>
+ 
+  <ion-slide class = "purple-slide rel-pos">
+    <h2 class = "anchor-other">
+      <!--<span class = "whiten center-title">Introduction (1/2)</span>-->
+      <span class = "whiten center-title-lower">What is Blood Cancer?</span>
+      <br />
+      <p class = "whiten">
+        Blood Cancers are diseases in which normal blood cell development is disturbed by the unchecked growth of a varient on an ordinary blood cell. There are 3 primary forms of Blood Cancer: Leukemia, Lymphoma, and Myeloma.
+
+      </p>
+
+      <p class = "whiten">
+      Blood Cancers are among the more promient types of Cancer, accounting for nearly 10 percent of the deaths associated with Cancer in 2014. 
+      </p>
+
+      
+    </h2>
+    <button ion-button class = "anchor-button-down" color = "default" large on-tap="expandAbout()">Learn More</button>
+
+    <div class = "blue-slide special-card-header whiten">
+      <div class = "special-card-internal">About (2/2)</div>
+   </div>
+
+  </ion-slide>
+
+  <ion-slide class = "blue-slide">
+    <h2 class = "anchor-other">
+      <!--<span class = "whiten center-title">Introduction (1/2)</span>-->
+      <span class = "whiten center-title-lower">Blood Cancer Data</span>
+      <br />
+      <p class = "whiten">
+        Below is a chart that specifies the estimated percentage of occurance between the 3 primary forms of Blood Cancer. 
+      </p>
+  
+    </h2>
+    <div class = "responsive-chart-wrapper">
+    <chart id = "bloodChart" class = "responsive-chart" [labels]="labels" [data]="data" type="pie"></chart>
+</div>
+    <div class = "red-slide special-card-header whiten">
+      <div class = "special-card-internal">Types (1/3)</div>
+   </div>
+
+  </ion-slide>
+
+  <ion-slide class = "red-slide">
+    <h2 class = "anchor-other">
+      <span class = "whiten center-title-lower">Leukemia</span>
+      <br />
+      <p class = "whiten">
+        Leukemia is a form of Cancer that begins in the tissue that generates blood for the body. Leukemia turns a person's bone marrow against them, altering it to produce abnormal white blood cells.
+      </p>
+
+      <p class = "whiten">
+        These cells are called Leukemia cells, and their presence makes it challenging for normal blood cells to function properly. This lack of proper functioning is where many of the health harms of Leukemia come from. 
+      </p>
+  
+    </h2>
+<button ion-button class = "anchor-button-down" color = "default" large on-tap="expandFirstDisease()">Learn More</button>
+<div class = "blue-slide special-card-header whiten">
+      <div class = "special-card-internal">Types (2/3)</div>
+   </div>
+  </ion-slide>
+
+  <ion-slide class = "blue-slide">
+    <h2 class = "anchor-other">
+      <span class = "whiten center-title-lower">Myeloma</span>
+      <br />
+      <p class = "whiten">
+      Myeloma is a cancer of the plasma cells in bone marrow. Individuals with this disease suffer from a disorderly production of unhealthy plasma cells that fill up the bone marrow, thus disrupting the production of normal blood cells. 
+      </p>
+
+      <p class = "whiten">
+       This, in many cases, leads to an overabundance of plasma cells which damages the bone itself, which results in an excess of pain and potential bone fractures.
+      </p>
+  
+    </h2>
+<button ion-button class = "anchor-button-down" color = "default" large on-tap="expandSecondDisease()">Learn More</button>
+<div class = "green-slide special-card-header whiten">
+      <div class = "special-card-internal">Types (3/3) </div>
+   </div>
+  </ion-slide>
+
+<ion-slide class = "green-slide">
+    <h2 class = "anchor-other">
+      <!--<span class = "whiten center-title">Introduction (1/2)</span>-->
+      <span class = "whiten center-title-lower">Lymphoma</span>
+      <br />
+      <p class = "whiten">
+        Lymphoma is a form of Cancer begins in immune calls called lymphocytes. It is a relatively common form of cancer. In fact, an estimated 730,000+ individuals in the United States have, or are in remision from, Lymphoma.
+      </p>
+
+      <p class = "whiten">
+      It specifically targets the immune system, something which often has the effect of making the inflicted person especially vulnerable to viruses and other external conditions. It is sometimes compared to Leukemia in that it also results from issues with white blood cells.
+      </p>
+
+      
+    </h2>
+    <button ion-button class = "anchor-button-down" color = "default" large on-tap="expandThirdDisease()">Learn More</button>
+    
+    <div class = "red-slide special-card-header whiten">
+      <div class = "special-card-internal">Treatment (1/2)</div>
+   </div>
+  </ion-slide>
+
+
+
+  <ion-slide class = "red-slide">
+    <h2 class = "anchor-other">
+      <!--<span class = "whiten center-title">Introduction (1/2)</span>-->
+      <span class = "whiten center-title-lower">Cell Therapy Improvements</span>
+      <br />
+      <p class = "whiten">
+        This is a field that has, even in just the past two years, exploded with activity. These types of improvements allow doctors to "teach" a patient's cells to seek out and destroy cancerous cells.
+      </p>
+
+      <p class = "whiten">
+     This can act as a welcome supplement to more aggressive forms of treatment, as it provides another avenue upon which cancer can be attacked, thus resulting in the long term safety and security of patients that may have struggled in the past. 
+      </p>
+
+      
+    </h2>
+    <button ion-button class = "anchor-button-down" color = "default" large on-tap="expandFirstTreatment()">Learn More</button>
+    
+    <div class = "alt-green-slide special-card-header whiten">
+      <div class = "special-card-internal">Treatment (2/2)</div>
+   </div>
+  </ion-slide>
+
+  <ion-slide class = "alt-green-slide">
+    <h2 class = "anchor-other">
+      <!--<span class = "whiten center-title">Introduction (1/2)</span>-->
+      <span class = "whiten center-title-lower">Chemotherapy Improvements</span>
+      <br />
+      <p class = "whiten">
+       Chemotherapy is, simply put, the use of drugs to eliminate dangerous cancer cells. A negative stigma has been attached to Chemotherapy in years past due to the harmful side effects that this type of treatement has been known to sometimes generate. 
+      </p>
+
+      <p class = "whiten">
+     However, recent years have brought with them innovations that have made these drugs not only more comfortable to experience, but also more effective in targeting the specific cells that must be removed from the body. 
+      </p>
+
+      
+    </h2>
+    <button ion-button class = "anchor-button-down" color = "default" large on-tap="expandSecondTreatment()">Learn More</button>
+    
+    <div class = "alt-purple-slide special-card-header whiten">
+      <div class = "special-card-internal">How to Help (1/2)</div>
+   </div>
+  </ion-slide>
+
+  <ion-slide class = "alt-purple-slide">
+    <h2 class = "anchor-other">
+      <span class = "whiten center-title-lower">Leukemia and Lymphoma Society</span>
+      <br />
+      <p class = "whiten">
+        Founded over 65 years ago, the Leukemia and Lymphoma society has long since established itself as one of the most reputable authorities in terms of Blood Cancer research.
+      </p>
+
+      <p class = "whiten">
+     Their goals are threefold: to cure Blood Cancers, to improve the quality of life for patients and their families, and to promote general knowledge in regards to these terrible diseases. 
+      </p>
+
+      
+    </h2>
+    <button ion-button class = "anchor-button-down" color = "default" large on-tap="expandFirstDonation()">Learn More</button>
+    
+    <div class = "alt-blue-slide special-card-header whiten">
+      <div class = "special-card-internal">How to Help (2/2)</div>
+   </div>
+  </ion-slide>
+
+  <ion-slide class = "alt-blue-slide">
+    <h2 class = "anchor-other">
+      <span class = "whiten center-title-lower">Leukaemia & Lymphoma Research</span>
+      <br />
+      <p class = "whiten">
+       Leukaemia & Lymphoma Research is a UK based organization dedicated to the elimination of Blood Cancers.
+      </p>
+
+      <p class = "whiten">
+      Their mission is simple: to minimize the deaths resulting from these impactful diseases as well as utilizing the precise application of research to prevent people from developing Blood Cancer in the first place. 
+      </p>
+
+      
+    </h2>
+    <button ion-button class = "anchor-button-down" color = "default" large on-tap="expandSecondDonation()">Learn More</button>
+    
+    <div class = "blue-slide special-card-header whiten">
+   </div>
+  </ion-slide>
+</ion-slides>
+</ion-content>
+
+<script>
+
+</script>

@@ -1,0 +1,232 @@
+<!--
+  Generated template for the Bladder page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Brain Cancer</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+<ion-slides [options]="mySlideOptions" pager>
+
+  <ion-slide class = "green-slide rel-pos">
+    <div class = "anchor-other pad">
+      <h1 class = "whiten slide-header-main">Brain Cancer</h1>
+      <div class = "whiten slide-header">Brain Cancer kills more children than any other type of cancer</div>
+    </div>
+    
+      <button ng-click="aboutDisease()" ion-button color = "default" class = "limit-button">Types of Brain Cancer</button>
+      <br />
+      <button ion-button color = "default" class = "limit-button">Treatment Advancements</button> 
+      <br />
+      <button ion-button color = "default" class = "limit-button">How to Help</button>
+   
+    
+   <div class = "purple-slide special-card-header whiten">
+      <div class = "special-card-internal">About (1/2)</div>
+   </div>
+  </ion-slide>
+ 
+  <ion-slide class = "purple-slide rel-pos">
+    <h2 class = "anchor-other">
+      <!--<span class = "whiten center-title">Introduction (1/2)</span>-->
+      <span class = "whiten center-title-lower">What is Brain Cancer?</span>
+      <br />
+      <p class = "whiten">
+    Brain Cancer is a disease in which a group of cancerous cells begin developing in a person's brain tissue. This can have massive implications on the functioning of typical brain operations such as muscle control, sensation, and memory development.
+      </p>
+
+      <p class = "whiten">
+  All Brain Cancers fall into two primary categories: Primary and Secondary. However, there do exist other classifications of this deadly disease, such as Meningiomas and Glioblastomas.
+
+      </p>
+
+      
+    </h2>
+    <button ion-button class = "anchor-button-down" color = "default" large on-tap="expandAbout()">Learn More</button>
+
+    <div class = "blue-slide special-card-header whiten">
+      <div class = "special-card-internal">About (2/2)</div>
+   </div>
+
+  </ion-slide>
+
+  <ion-slide class = "blue-slide">
+    <h2 class = "anchor-other">
+      <!--<span class = "whiten center-title">Introduction (1/2)</span>-->
+      <span class = "whiten center-title-lower">Brain Cancer Data</span>
+      <br />
+      <p class = "whiten">
+       Below is a chart that details the estimated survival rates for those diagnosed with Brain Cancer. As you can see, the issue is quite severe, with just over 40 percent of patients surviving the first five years after diagnosal.
+      </p>
+  
+    </h2>
+    <div class = "responsive-chart-wrapper">
+    <chart id = "bloodChart" class = "responsive-chart" [labels]="labels" [data]="data" type="pie"></chart>
+</div>
+    <div class = "red-slide special-card-header whiten">
+      <div class = "special-card-internal">Types (1/3)</div>
+   </div>
+
+  </ion-slide>
+
+  <ion-slide class = "red-slide">
+    <h2 class = "anchor-other">
+      <span class = "whiten center-title-lower">Primary/Secondary</span>
+      <br />
+      <p class = "whiten">
+        Evaluating whether a Brain Cancer is Primary or Secondary is an essential step in terms of developing an effective treatment plan. A Primary Brain Cancer is one that has started either in the brain or in related structures. A Secondary Brain Cancer is one that began in another part of the body, but spread to the brain after a period of development. 
+      </p>
+
+      <p class = "whiten">
+        Only about 20 percent of Brain Cancers are primary. This means that while primary brain tumors only account for around 2 percent of all cancer cases in adults, the reach of Brain Cancer indirectly harms thousands more through secondary brain tumors. 
+      </p>
+  
+    </h2>
+<button ion-button class = "anchor-button-down" color = "default" large on-tap="expandFirstDisease()">Learn More</button>
+<div class = "blue-slide special-card-header whiten">
+      <div class = "special-card-internal">Types (2/3)</div>
+   </div>
+  </ion-slide>
+
+  <ion-slide class = "blue-slide">
+    <h2 class = "anchor-other">
+      <span class = "whiten center-title-lower">Meningiomas</span>
+      <br />
+      <p class = "whiten">
+      Meningiomas are, simply put, tumors that arise from the coverings of the brain and spinal cord. They typically are found on the outer curve and top of the brain. Meningiomas are fairly common, accounting for nearly a third of all Primary Brain Cancers. 
+      </p>
+
+      <p class = "whiten">
+       In order to truly grasp what it is like to live with a Meningioma, one must first consider the symptoms that those suffering from it sometimes experience. While the symptoms vary in relation to the position and size of the tumor in the brain, some common ones include headaches, weakness, and personality changes. 
+      </p>
+  
+    </h2>
+<button ion-button class = "anchor-button-down" color = "default" large on-tap="expandSecondDisease()">Learn More</button>
+<div class = "green-slide special-card-header whiten">
+      <div class = "special-card-internal">Types (3/3) </div>
+   </div>
+  </ion-slide>
+
+<ion-slide class = "green-slide">
+    <h2 class = "anchor-other">
+      <!--<span class = "whiten center-title">Introduction (1/2)</span>-->
+      <span class = "whiten center-title-lower">Glioblastomas</span>
+      <br />
+      <p class = "whiten">
+       Glioblastomas are cancerous tumors made up from the supportive tissue of the brain. They are highly dangerous due to their rapid rate of reproduction and their tendancy to invade other portions of the brain before action can be taken.
+      </p>
+
+      <p class = "whiten">
+    The symptoms of Glioblastomas may on the surface seem fairly similar to those of Meningiomas. They include: memory loss, nausea, headaches, and alterations in personality. 
+      </p>
+
+      
+    </h2>
+    <button ion-button class = "anchor-button-down" color = "default" large on-tap="expandThirdDisease()">Learn More</button>
+    
+    <div class = "red-slide special-card-header whiten">
+      <div class = "special-card-internal">Treatment (1/2)</div>
+   </div>
+  </ion-slide>
+
+
+
+  <ion-slide class = "red-slide">
+    <h2 class = "anchor-other">
+      <!--<span class = "whiten center-title">Introduction (1/2)</span>-->
+      <span class = "whiten center-title-lower">Treatment by Viruses</span>
+      <br />
+      <p class = "whiten">
+      The use of antiviral drugs has been a treatment method that has bore some success in recent years. For instance, a 2006 clinical trial conducted by Dr. Cecilia Soderberg-Naucler made use of Valcyte - an antiviral drug usually used to treat viruses in AIDS patients - to combat some of the more aggressive forms of Brain Cancer. 
+      </p>
+
+      <p class = "whiten">
+   The results were shocking, with 70 percent more patients surviving past the two year mark.
+      </p>
+
+      
+    </h2>
+    <button ion-button class = "anchor-button-down" color = "default" large on-tap="expandFirstTreatment()">Learn More</button>
+    
+    <div class = "alt-green-slide special-card-header whiten">
+      <div class = "special-card-internal">Treatment (2/2)</div>
+   </div>
+  </ion-slide>
+
+  <ion-slide class = "alt-green-slide">
+    <h2 class = "anchor-other">
+      <!--<span class = "whiten center-title">Introduction (1/2)</span>-->
+      <span class = "whiten center-title-lower">Treatment by Lasers</span>
+      <br />
+      <p class = "whiten">
+       One of the most valuable ways to approach an issue as large as Brain Cancer is to experiement with what may seem like crazy ideas. That's exactly what Dr. Ricardo Komotar, chair of the Florida Neurosurgical Society did with his Visualase Thermal Therapy System, a laser based therapy designed to treat advanced forms of Brain Cancer with minimal side effects. 
+      </p>
+
+      <p class = "whiten">
+     While current applications of the treatment have been limited, the leap in technology is impressive. It utilizes a 3-millimeter laser probe to seek out and essentially cook the cancerous tumor from the inside out without harming healthy brain tissue.
+      </p>
+
+      
+    </h2>
+    <button ion-button class = "anchor-button-down" color = "default" large on-tap="expandSecondTreatment()">Learn More</button>
+    
+    <div class = "alt-purple-slide special-card-header whiten">
+      <div class = "special-card-internal">How to Help (1/2)</div>
+   </div>
+  </ion-slide>
+
+  <ion-slide class = "alt-purple-slide">
+    <h2 class = "anchor-other">
+      <span class = "whiten center-title-lower">American Brain Tumor Association</span>
+      <br />
+      <p class = "whiten">
+        Founded over 40 years ago, The American Brain Tumor Association was the first nonprofit organization in the world to set its sights solely on eliminating the risk of Brain Tumors. Every dollar donated to them is used to not only pursue breakthroughs in Brain Cancer diagnosis, but also to support the needs of both patients and those that look after them. 
+      </p>
+
+      <p class = "whiten">
+     Their intellectual credibility is protected by a scientific advisory council that consists of over 30 top researchers well-versed in the topic of Brain Cancers.
+      </p>
+
+      
+    </h2>
+    <button ion-button class = "anchor-button-down" color = "default" large on-tap="expandFirstDonation()">Learn More</button>
+    
+    <div class = "alt-blue-slide special-card-header whiten">
+      <div class = "special-card-internal">How to Help (2/2)</div>
+   </div>
+  </ion-slide>
+
+  <ion-slide class = "alt-blue-slide">
+    <h2 class = "anchor-other">
+      <span class = "whiten center-title-lower">National Brain Tumor Society</span>
+      <br />
+      <p class = "whiten">
+       The National Brain Tumor Society has been searching tirelessly for potential breakthroughs in Brain Cancer research for well over 30 years now. Their goal is simple: to provide hope for those currently afflicted with a form of Brain Cancer while also funding boundry-pushing research to ensure that this issue becomes one of the past. 
+      </p>
+
+      <p class = "whiten">
+      As it stands, the National Brain Tumor Society has awarded more than 31 million dollars across 244 top research and care grants.
+      </p>
+
+      
+    </h2>
+    <button ion-button class = "anchor-button-down" color = "default" large on-tap="expandSecondDonation()">Learn More</button>
+    
+    <div class = "blue-slide special-card-header whiten">
+   </div>
+  </ion-slide>
+</ion-slides>
+</ion-content>
+
+<script>
+
+</script>

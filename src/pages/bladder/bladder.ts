@@ -6,6 +6,8 @@ import {BladderAboutPage} from '../bladder-about/bladder-about';
 import {Chart} from 'ng2-chartjs2';
 import {BladderPhotodynamicPage} from '../bladder-photodynamic/bladder-photodynamic';
 import {BladderIntravesicalPage} from '../bladder-intravesical/bladder-intravesical';
+import {BladderTransitionalPage} from '../bladder-transitional/bladder-transitional';
+import {BladderSquamousPage} from '../bladder-squamous/bladder-squamous';
 
 /*
   Generated class for the Bladder page.
@@ -61,6 +63,16 @@ export class BladderPage {
   expandSecondTreatment()
   {
     this.navCtrl.push(BladderIntravesicalPage);
+  }
+
+  expandFirstDisease()
+  {
+    this.navCtrl.push(BladderTransitionalPage);
+  }
+
+  expandSecondDisease()
+  {
+    this.navCtrl.push(BladderSquamousPage);
   }
 
    mySlideOptions = {

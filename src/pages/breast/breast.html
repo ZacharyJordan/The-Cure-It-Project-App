@@ -1,0 +1,233 @@
+<!--
+  Generated template for the Bladder page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Breast Cancer</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+<ion-slides [options]="mySlideOptions" pager>
+
+  <ion-slide class = "green-slide rel-pos">
+    <div class = "anchor-other pad">
+      <h1 class = "whiten slide-header-main">Breast Cancer</h1>
+      <div class = "whiten slide-header">Nearly 1 in 8 women will develop Breast Cancer over the course of her life</div>
+    </div>
+    
+      <button ng-click="aboutDisease()" ion-button color = "default" class = "limit-button">Types of Breast Cancer</button>
+      <br />
+      <button ion-button color = "default" class = "limit-button">Treatment Advancements</button> 
+      <br />
+      <button ion-button color = "default" class = "limit-button">How to Help</button>
+   
+    
+   <div class = "purple-slide special-card-header whiten">
+      <div class = "special-card-internal">About (1/2)</div>
+   </div>
+  </ion-slide>
+ 
+  <ion-slide class = "purple-slide rel-pos">
+    <h2 class = "anchor-other">
+      <!--<span class = "whiten center-title">Introduction (1/2)</span>-->
+      <span class = "whiten center-title-lower">What is Breast Cancer?</span>
+      <br />
+      <p class = "whiten">
+    Breast Cancer is a disease in which a group of tumorous cells begins developing in the reigons associated with the breast. All Breast Cancers fall into two categories: Invasive or Non-Invasive. 
+
+      </p>
+
+      <p class = "whiten">
+  There do exist other ways of classifying this deadly disease, such as Recurrent and Metastatic Breast Cancers, and establishing a basic understanding of these is important in terms of fully appreciating the conditions that Breast Cancer patients must deal with everyday.
+      </p>
+
+      
+    </h2>
+    <button ion-button class = "anchor-button-down" color = "default" large on-tap="expandAbout()">Learn More</button>
+
+    <div class = "blue-slide special-card-header whiten">
+      <div class = "special-card-internal">About (2/2)</div>
+   </div>
+
+  </ion-slide>
+
+  <ion-slide class = "blue-slide">
+    <h2 class = "anchor-other">
+      <!--<span class = "whiten center-title">Introduction (1/2)</span>-->
+      <span class = "whiten center-title-lower">Breast Cancer Data</span>
+      <br />
+      <p class = "whiten">
+      Below is a chart that specifies the estimated percentage of occurance between Breast Cancer in various age groups. 
+      </p>
+  
+    </h2>
+    <div class = "responsive-chart-wrapper">
+    <chart id = "bloodChart" class = "responsive-chart" [labels]="labels" [data]="data" type="pie"></chart>
+</div>
+    <div class = "red-slide special-card-header whiten">
+      <div class = "special-card-internal">Types (1/3)</div>
+   </div>
+
+  </ion-slide>
+
+  <ion-slide class = "red-slide">
+    <h2 class = "anchor-other">
+      <span class = "whiten center-title-lower">Non-Invasive/Invasive</span>
+      <br />
+      <p class = "whiten">
+        Determining whether the Breast Cancer is invasive or not is an essential step in terms of establishing a healthy, effective treatement plan on an individual level. The vast majority of Breast Cancers are invasive - about 79 percent, in fact - meaning that the cancer develops into areas that used to be composed of normal, healthy tissue. 
+      </p>
+
+      <p class = "whiten">
+        Invasive Breast cancer is classified by the cancer cells spreading beyond the established membranes to invade surrounding tissues.
+      </p>
+  
+    </h2>
+<button ion-button class = "anchor-button-down" color = "default" large on-tap="expandFirstDisease()">Learn More</button>
+<div class = "blue-slide special-card-header whiten">
+      <div class = "special-card-internal">Types (2/3)</div>
+   </div>
+  </ion-slide>
+
+  <ion-slide class = "blue-slide">
+    <h2 class = "anchor-other">
+      <span class = "whiten center-title-lower">Recurrent Breast Cancer</span>
+      <br />
+      <p class = "whiten">
+     At its most basic level, Recurrent Breast Cancer is Breast Cancer that returns after initial treatement. This is often very difficult to detect and eliminate because initial treatements are designed with the intent of eliminating all cancerous cells, meaning that some patients let their guard down after completion. 
+      </p>
+
+      <p class = "whiten">
+       There are three primary forms of recurrence: local, regional, and distant. Local and regional recurrence both imply that the cancer has resurfaced at a similar location as the original cancer. 
+      </p>
+  
+    </h2>
+<button ion-button class = "anchor-button-down" color = "default" large on-tap="expandSecondDisease()">Learn More</button>
+<div class = "green-slide special-card-header whiten">
+      <div class = "special-card-internal">Types (3/3) </div>
+   </div>
+  </ion-slide>
+
+<ion-slide class = "green-slide">
+    <h2 class = "anchor-other">
+      <!--<span class = "whiten center-title">Introduction (1/2)</span>-->
+      <span class = "whiten center-title-lower">Metastatic Breast Cancer</span>
+      <br />
+      <p class = "whiten">
+      Metastatic Breast Cancer is classified when the cancer has spread to other organs in the body. It is sometimes also referred to as stage IV Breast Cancer. It is generally uncommon for Metastatic Breast Cancer to be declared upon an initial diagnosis, as it typically develops after completing treatment for an earlier stage of Breast Cancer. 
+      </p>
+
+      <p class = "whiten">
+   Deaths resulting from Breast Cancer do not come from cancer that remains in the breast. The transportation of dangerous cancer cells to vital positions in the body such as the bones, liver, or brain is what actually threatens life.
+      </p>
+
+      
+    </h2>
+    <button ion-button class = "anchor-button-down" color = "default" large on-tap="expandThirdDisease()">Learn More</button>
+    
+    <div class = "red-slide special-card-header whiten">
+      <div class = "special-card-internal">Treatment (1/2)</div>
+   </div>
+  </ion-slide>
+
+
+
+  <ion-slide class = "red-slide">
+    <h2 class = "anchor-other">
+      <!--<span class = "whiten center-title">Introduction (1/2)</span>-->
+      <span class = "whiten center-title-lower">Increased Lifestyle Understanding</span>
+      <br />
+      <p class = "whiten">
+     The last decade of research has done much to emphesize the link between healthy lifestyle choices and a decrease in Breast Cancer occurance. For instance, recent discoveries have uncovered that being overweight increases the risk of contracting Breast Cancer after menopause. 
+      </p>
+
+      <p class = "whiten">
+  This discovery is significant for two reasons: most women reach menopause around the age of 50, and the majority of Breast Cancer cases are seen in women above this age. 
+      </p>
+
+      
+    </h2>
+    <button ion-button class = "anchor-button-down" color = "default" large on-tap="expandFirstTreatment()">Learn More</button>
+    
+    <div class = "alt-green-slide special-card-header whiten">
+      <div class = "special-card-internal">Treatment (2/2)</div>
+   </div>
+  </ion-slide>
+
+  <ion-slide class = "alt-green-slide">
+    <h2 class = "anchor-other">
+      <!--<span class = "whiten center-title">Introduction (1/2)</span>-->
+      <span class = "whiten center-title-lower">HER2 Protein Therapies</span>
+      <br />
+      <p class = "whiten">
+     There exists within nearly 20 percent of Breast Cancer patients an abnormal strain of HER2 proteins. This protein essentially drives up the growth of cancerous cells.
+
+      </p>
+
+      <p class = "whiten">
+    While in the past this was something that worsened survival rates, recent research has all but eliminated this additonal risk and in doing so has saved countless lives. As medical oncologist Dr. Wendy Chen puts it, "HER2-directed therapies have revolutionized the treatment of HER2-positive breast cancer." 
+      </p>
+
+      
+    </h2>
+    <button ion-button class = "anchor-button-down" color = "default" large on-tap="expandSecondTreatment()">Learn More</button>
+    
+    <div class = "alt-purple-slide special-card-header whiten">
+      <div class = "special-card-internal">How to Help (1/2)</div>
+   </div>
+  </ion-slide>
+
+  <ion-slide class = "alt-purple-slide">
+    <h2 class = "anchor-other">
+      <span class = "whiten center-title-lower">National Breast Cancer Association</span>
+      <br />
+      <p class = "whiten">
+       Founded over 23 years ago by Breast Cancer survivor Janell Hail, The National Breast Cancer Foundation has cemented itself firmly among the top authorities in Breast Cancer Research. Their mission extends beyond the mechanical application of research, as they additionally hope to promote the widespread awareness, education, and early detection of various Breast Cancers. 
+      </p>
+
+      <p class = "whiten">
+    They have been honored with a 4-star rating from Charity Navigator, something which ensures that all funds are allocated in a responsible manner that is consistant with the goal of eliminating the threat of Breast Cancer. 
+      </p>
+
+      
+    </h2>
+    <button ion-button class = "anchor-button-down" color = "default" large on-tap="expandFirstDonation()">Learn More</button>
+    
+    <div class = "alt-blue-slide special-card-header whiten">
+      <div class = "special-card-internal">How to Help (2/2)</div>
+   </div>
+  </ion-slide>
+
+  <ion-slide class = "alt-blue-slide">
+    <h2 class = "anchor-other">
+      <span class = "whiten center-title-lower">Breast Cancer Research Foundation</span>
+      <br />
+      <p class = "whiten">
+       The Breast Cancer Research Foundation is a nonprofit organization that has raised well over half a billion dollars for Breast Cancer research in their 21 years of operation.
+      </p>
+
+      <p class = "whiten">
+     They allocated over 91 percent of their total funds to the advancement of medical research as well as Breast Cancer awareness in general. In 2014 - 2015 alone they awarded over 58 million dollars to scientists from top medical institutions around the world. 
+      </p>
+
+      
+    </h2>
+    <button ion-button class = "anchor-button-down" color = "default" large on-tap="expandSecondDonation()">Learn More</button>
+    
+    <div class = "blue-slide special-card-header whiten">
+   </div>
+  </ion-slide>
+</ion-slides>
+</ion-content>
+
+<script>
+
+</script>

@@ -1,0 +1,231 @@
+<!--
+  Generated template for the Bladder page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Bone Cancer</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+<ion-slides [options]="mySlideOptions" pager>
+
+  <ion-slide class = "green-slide rel-pos">
+    <div class = "anchor-other pad">
+      <h1 class = "whiten slide-header-main">Bone Cancer</h1>
+      <div class = "whiten slide-header">There is currently no known cause for Bone Cancers</div>
+    </div>
+    
+      <button ng-click="aboutDisease()" ion-button color = "default" class = "limit-button">Types of Bone Cancer</button>
+      <br />
+      <button ion-button color = "default" class = "limit-button">Treatment Advancements</button> 
+      <br />
+      <button ion-button color = "default" class = "limit-button">How to Help</button>
+   
+    
+   <div class = "purple-slide special-card-header whiten">
+      <div class = "special-card-internal">About (1/2)</div>
+   </div>
+  </ion-slide>
+ 
+  <ion-slide class = "purple-slide rel-pos">
+    <h2 class = "anchor-other">
+      <!--<span class = "whiten center-title">Introduction (1/2)</span>-->
+      <span class = "whiten center-title-lower">What is Bone Cancer?</span>
+      <br />
+      <p class = "whiten">
+     Bone Cancer is described as the uncontrollable growth of cells that originates in areas with bones or bone related cells. Bone Cancer is one of the more frightening forms of cancer due to the ease with which it can spread.
+      </p>
+
+      <p class = "whiten">
+      There are 3 primary types of Bone Cancers: Osteosarcomas, Ewing Tumors (ET), and Chondrosarcomas. All of these will be discussed in great detail. 
+      </p>
+
+      
+    </h2>
+    <button ion-button class = "anchor-button-down" color = "default" large on-tap="expandAbout()">Learn More</button>
+
+    <div class = "blue-slide special-card-header whiten">
+      <div class = "special-card-internal">About (2/2)</div>
+   </div>
+
+  </ion-slide>
+
+  <ion-slide class = "blue-slide">
+    <h2 class = "anchor-other">
+      <!--<span class = "whiten center-title">Introduction (1/2)</span>-->
+      <span class = "whiten center-title-lower">Bone Cancer Data</span>
+      <br />
+      <p class = "whiten">
+       As shown through the graph below, Osteosarcomas are easily the most common types of Bone Cancer, accounting for 56% of all Bone Cancer cases. This is followed by Ewing Tumors, and finally, Chondrosarcomas. 
+      </p>
+  
+    </h2>
+    <div class = "responsive-chart-wrapper">
+    <chart id = "bloodChart" class = "responsive-chart" [labels]="labels" [data]="data" type="pie"></chart>
+</div>
+    <div class = "red-slide special-card-header whiten">
+      <div class = "special-card-internal">Types (1/3)</div>
+   </div>
+
+  </ion-slide>
+
+  <ion-slide class = "red-slide">
+    <h2 class = "anchor-other">
+      <span class = "whiten center-title-lower">Osteosarcomas</span>
+      <br />
+      <p class = "whiten">
+        As illustrated by the chart above, Osteosarcoma is the most frequent form of Bone Cancer. Before discussing how this form of cancer impacts patients, it is first essential to understand the implications of the cancer's location in the skeletal system.
+      </p>
+
+      <p class = "whiten">
+        The role of the skeletal system in the body is essential, as it provides for protection and support for a wide variety of bodily functions.
+      </p>
+  
+    </h2>
+<button ion-button class = "anchor-button-down" color = "default" large on-tap="expandFirstDisease()">Learn More</button>
+<div class = "blue-slide special-card-header whiten">
+      <div class = "special-card-internal">Types (2/3)</div>
+   </div>
+  </ion-slide>
+
+  <ion-slide class = "blue-slide">
+    <h2 class = "anchor-other">
+      <span class = "whiten center-title-lower">Ewing Tumors</span>
+      <br />
+      <p class = "whiten">
+      Ewing Tumors are relatively uncommon, accounting for just 34 percent of all Bone Cancer cases. They usually form in the same spots as Osteosarcomas, but there are a few noteable exceptions to this generalization.
+      </p>
+
+      <p class = "whiten">
+       That is, they have been known to form in the cavities of the leg and arm bones, and can also form in soft tissues of the body near bones. 
+      </p>
+  
+    </h2>
+<button ion-button class = "anchor-button-down" color = "default" large on-tap="expandSecondDisease()">Learn More</button>
+<div class = "green-slide special-card-header whiten">
+      <div class = "special-card-internal">Types (3/3) </div>
+   </div>
+  </ion-slide>
+
+<ion-slide class = "green-slide">
+    <h2 class = "anchor-other">
+      <!--<span class = "whiten center-title">Introduction (1/2)</span>-->
+      <span class = "whiten center-title-lower">Chondrosarcomas</span>
+      <br />
+      <p class = "whiten">
+       Chondrosarcomas are different from other forms of Bone Cancer in one very specific way. Instead of infecting hard bones, Chondrosarcomas actually attack the cartilage in the body. They are still capable of forming in the hips, ribs, and arm bones, but the key difference is that they can attack places with cartilage. 
+      </p>
+
+      <p class = "whiten">
+     The symptoms of Chondrosarcomas often make it difficult to detect. In fact, those who contract Chondrosarcoma typically do not feel sick.
+      </p>
+
+      
+    </h2>
+    <button ion-button class = "anchor-button-down" color = "default" large on-tap="expandThirdDisease()">Learn More</button>
+    
+    <div class = "red-slide special-card-header whiten">
+      <div class = "special-card-internal">Treatment (1/2)</div>
+   </div>
+  </ion-slide>
+
+
+
+  <ion-slide class = "red-slide">
+    <h2 class = "anchor-other">
+      <!--<span class = "whiten center-title">Introduction (1/2)</span>-->
+      <span class = "whiten center-title-lower">Proton Therapy</span>
+      <br />
+      <p class = "whiten">
+       One of the most exciting developments in the field of Bone Cancer treatment has presented itself in the form of Proton Therapy. Proton Therapy offers an alternative to complete surgery, and is especially useful in cases where the bone in question cannot be moved or shifted without harming the patient. 
+      </p>
+
+      <p class = "whiten">
+    Proton Therapy works by targeting certain forms of Bone Cancer with a beam of protons. This high degree of precision allows doctors to deliver radiation to tumors without harming nearby healthy tissue.
+      </p>
+
+      
+    </h2>
+    <button ion-button class = "anchor-button-down" color = "default" large on-tap="expandFirstTreatment()">Learn More</button>
+    
+    <div class = "alt-green-slide special-card-header whiten">
+      <div class = "special-card-internal">Treatment (2/2)</div>
+   </div>
+  </ion-slide>
+
+  <ion-slide class = "alt-green-slide">
+    <h2 class = "anchor-other">
+      <!--<span class = "whiten center-title">Introduction (1/2)</span>-->
+      <span class = "whiten center-title-lower">Myeloablative Therapy</span>
+      <br />
+      <p class = "whiten">
+       Myeloablative Therapy is one of the most interesting treatment innovations that has been refined over the past couple of years. It works by using powerful forms of chemotherapy to attack cancerous cells, especially those that have spread throughout the body. 
+      </p>
+
+      <p class = "whiten">
+     While the overbearing nature of the treatment typicaly results in severe side effects, it can prove effective for patients who have exhausted all other options.
+      </p>
+
+      
+    </h2>
+    <button ion-button class = "anchor-button-down" color = "default" large on-tap="expandSecondTreatment()">Learn More</button>
+    
+    <div class = "alt-purple-slide special-card-header whiten">
+      <div class = "special-card-internal">How to Help (1/2)</div>
+   </div>
+  </ion-slide>
+
+  <ion-slide class = "alt-purple-slide">
+    <h2 class = "anchor-other">
+      <span class = "whiten center-title-lower">Bone Cancer Research Trust</span>
+      <br />
+      <p class = "whiten">
+        The Bone Cancer Research Trust has been dedicated to stopping the spread of Bone Cancer since its inception in 2006. Their goals are ambitious, with plans to support the research of advanced Bone Cancers, raise awareness about the disease, enhance general knowledge about its influence, and to provide support for patients that already have it. 
+      </p>
+
+      <p class = "whiten">
+     The Bone Cancer Research Trust has funded 35 peer-reviewed research projects since 2006. The amount of money donated totals £1,392,731, which equates to roughly $2,114,792. 
+      </p>
+
+      
+    </h2>
+    <button ion-button class = "anchor-button-down" color = "default" large on-tap="expandFirstDonation()">Learn More</button>
+    
+    <div class = "alt-blue-slide special-card-header whiten">
+      <div class = "special-card-internal">How to Help (2/2)</div>
+   </div>
+  </ion-slide>
+
+  <ion-slide class = "alt-blue-slide">
+    <h2 class = "anchor-other">
+      <span class = "whiten center-title-lower">The Sunbeam Foundation</span>
+      <br />
+      <p class = "whiten">
+       The Sunbeam Foundation is an organization that works tirelessly to assist in the fight against Bone Cancers that afflict children and young adults. This is because people of this age group are the demographic most commonly affected by this terrible disease. 
+      </p>
+
+      <p class = "whiten">
+      The foundation was created by songwriter Brad Wolfe in an effort his help his friend. They strive to fund cutting-edge research related to the different forms of Bone Cancer, and ultimately serve as the backbone upon which volunteer opportunities are constructed. 
+      </p>
+
+      
+    </h2>
+    <button ion-button class = "anchor-button-down" color = "default" large on-tap="expandSecondDonation()">Learn More</button>
+    
+    <div class = "blue-slide special-card-header whiten">
+   </div>
+  </ion-slide>
+</ion-slides>
+</ion-content>
+
+<script>
+
+</script>

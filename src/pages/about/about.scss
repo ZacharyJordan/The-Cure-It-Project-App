@@ -1,3 +1,77 @@
 page-about {
 
 }
+
+#alter-style
+{
+  width:80%;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.push-block
+{
+  height:5px;
+}
+
+
+.first-card
+{
+  margin-top:15px;
+}
+
+.my-block
+{
+  position: relative;
+  height:15px;
+}
+
+.my-bottom-block
+{
+  position: relative;
+  height:15px;
+}
+
+.head-element
+{
+    width:100vw;
+    text-align:center;
+    margin-top:10px;
+    margin-bottom:10px;
+    color:#fff;
+    font-size:35px;
+}
+
+.card-change
+{
+  
+  border-radius:20px;
+}
+
+.card-background-page {
+
+  ion-card {
+    position: relative;
+    text-align: center;
+  }
+
+  .card-title {
+    position: absolute;
+    top: 36%;
+    font-size: 3.0em;
+    width: 100%;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  .card-subtitle {
+
+    margin-top:5px;
+    font-size: 1.2em;
+    position: absolute;
+    top: 52%;
+    width: 100%;
+    color: #fff;
+  }
+
+}
