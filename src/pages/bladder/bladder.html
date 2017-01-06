@@ -1,0 +1,210 @@
+<!--
+  Generated template for the Bladder page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Bladder Cancer</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+<ion-slides [options]="mySlideOptions" pager>
+
+  <ion-slide class = "green-slide rel-pos">
+    <div class = "anchor-other pad">
+      <h1 class = "whiten slide-header-main">Bladder Cancer</h1>
+      <div class = "whiten slide-header">Over 28 people are diagnosed with Bladder Cancer every day in the UK alone</div>
+    </div>
+    
+
+      <button ng-click="aboutDisease()" ion-button color = "default" class = "limit-button">About Bladder Cancer</button>
+      <br />
+      <button ion-button color = "default" class = "limit-button">Treatment Advancements</button> 
+      <br />
+      <button ion-button color = "default" class = "limit-button">How to Help</button>
+   
+    
+   <div class = "purple-slide special-card-header whiten">
+      <div class = "special-card-internal">About (1/2)</div>
+   </div>
+  </ion-slide>
+ 
+  <ion-slide class = "purple-slide rel-pos">
+    <h2 class = "anchor-other">
+      <!--<span class = "whiten center-title">Introduction (1/2)</span>-->
+      <span class = "whiten center-title-lower">What is Bladder Cancer?</span>
+      <br />
+      <p class = "whiten">
+        Bladder Cancer is one of the most common types of urinary cancers. 
+      In 2014, there were approximately 75,000 diagnoses of Bladder Cancer. 
+      There were 16,000 deaths, amounting to around 3% of all cancer related fatalities in that year.
+      </p>
+
+      <p class = "whiten">
+      Unfortunately, the number of diagnoses has increased by nearly a quarter over the last decade. 
+      This is largely due to the increase in the quality of medical equipment used to perform biopsies and find cancer 
+      in the first place, as well as environmental carcinogens. 
+      </p>
+
+      
+    </h2>
+    <button ion-button class = "anchor-button-down" color = "default" large on-tap="expandAbout()">Learn More</button>
+
+    <div class = "blue-slide special-card-header whiten">
+      <div class = "special-card-internal">About (2/2)</div>
+   </div>
+
+  </ion-slide>
+
+  <ion-slide class = "blue-slide">
+    <h2 class = "anchor-other">
+      <!--<span class = "whiten center-title">Introduction (1/2)</span>-->
+      <span class = "whiten center-title-lower">What is Bladder Cancer?</span>
+      <br />
+      <p class = "whiten">
+        The following chart illustrates the occurance of Bladder Cancer in each respective gender. 
+        As you can see, it is far more common in males. 
+      </p>
+  
+    </h2>
+    <div class = "responsive-chart-wrapper">
+    <chart id = "bladderChart" class = "responsive-chart" [labels]="labels" [data]="data" type="pie"></chart>
+</div>
+    <div class = "red-slide special-card-header whiten">
+      <div class = "special-card-internal">Treatment (1/2)</div>
+   </div>
+
+  </ion-slide>
+
+  <ion-slide class = "red-slide">
+    <h2 class = "anchor-other">
+      <!--<span class = "whiten center-title">Introduction (1/2)</span>-->
+      <span class = "whiten center-title-lower">Photodynamic Therapy</span>
+      <br />
+      <p class = "whiten">
+        Recent years have yielded advances in treatment of Bladder Cancer. One of the most promising is the application of photodynamic therapy. This practice involves injecting small, light-sensitive chemicals into the bloodstream of a patient.
+      </p>
+
+      <p class = "whiten">
+      These chemicals accrue along the lining of the bladder and “stick” to cancerous cells. Then, physicians can fire high-intensity light at the PDT chemicals, causing them to morph into a new chemical that is toxic to cancer cells.
+      </p>
+
+      
+    </h2>
+    <button ion-button class = "anchor-button-down" color = "default" large on-tap="expandFirstTreatment()">Learn More</button>
+    
+    <div class = "alt-green-slide special-card-header whiten">
+      <div class = "special-card-internal">Treatment (2/2)</div>
+   </div>
+  </ion-slide>
+
+  <ion-slide class = "alt-green-slide">
+    <h2 class = "anchor-other">
+      <!--<span class = "whiten center-title">Introduction (1/2)</span>-->
+      <span class = "whiten center-title-lower">Intravesical Immunotherapy </span>
+      <br />
+      <p class = "whiten">
+        Intravesical immunotherapy is a promising new style of Bladder Cancer treatment. Doctors administer drugs to a patient’s bladder by directly introducing them via a catheter instead of giving the patient a pill or an injection.
+      </p>
+
+      <p class = "whiten">
+      This method can be used to deliver chemotherapy drugs, but is more commonly used for delivering immunotherapy drugs. 
+      </p>
+
+      
+    </h2>
+    <button ion-button class = "anchor-button-down" color = "default" large on-tap="expandSecondTreatment()">Learn More</button>
+    
+    <div class = "alt-purple-slide special-card-header whiten">
+      <div class = "special-card-internal">How to Help (1/3)</div>
+   </div>
+  </ion-slide>
+
+  <ion-slide class = "alt-purple-slide">
+    <h2 class = "anchor-other">
+      <span class = "whiten center-title-lower">BCAN</span>
+      <br />
+      <p class = "whiten">
+        The Bladder Cancer Advocacy Network uses a variety of angles to combat Bladder Cancer. It is led by a panel of urologists, oncologists, radiation oncologists and pathologists known as the Scientific Advisory Board that convenes to guide BCAN’s research efforts as knowledge of Bladder Cancer grows. 
+      </p>
+
+      <p class = "whiten">
+      These scientists and doctors are some of the leading experts in their respective fields, and you can find a complete list of the members of the SAB here . 
+      </p>
+
+      
+    </h2>
+    <button ion-button class = "anchor-button-down" color = "default" large on-tap="expandFirstDonation()">Learn More</button>
+    
+    <div class = "alt-blue-slide special-card-header whiten">
+      <div class = "special-card-internal">How to Help (2/3)</div>
+   </div>
+  </ion-slide>
+
+  <ion-slide class = "alt-blue-slide">
+    <h2 class = "anchor-other">
+      <span class = "whiten center-title-lower">Bladder Cancer Canada</span>
+      <br />
+      <p class = "whiten">
+        Bladder Cancer Canada is a non-profit advocacy organization committed to fighting Bladder Cancer. Although based in Canada, it operates worldwide.
+      </p>
+
+      <p class = "whiten">
+      Founded by Bladder Cancer survivors (or “thrivers” as they call themselves!), BCC is a transparent organization that focuses on patient interaction. Its Board of Directors works closely with a series of scientists comprising the Medical Advisory Board and Medical Research Board. 
+      </p>
+
+      
+    </h2>
+    <button ion-button class = "anchor-button-down" color = "default" large on-tap="expandSecondDonation()">Learn More</button>
+    
+    <div class = "blue-slide special-card-header whiten">
+   </div>
+  </ion-slide>
+</ion-slides>
+</ion-content>
+
+<script>
+/*
+function makeChart()
+{
+  console.log("test");
+var ctx = document.getElementById("bladderChart").getContext("2d");
+
+var data = {
+    labels: [
+        "Red",
+        "Blue",
+        "Yellow"
+    ],
+    datasets: [
+        {
+            data: [300, 50, 100],
+            backgroundColor: [
+                "#FF6384",
+                "#36A2EB",
+                "#FFCE56"
+            ],
+            hoverBackgroundColor: [
+                "#FF6384",
+                "#36A2EB",
+                "#FFCE56"
+            ]
+        }]
+};
+
+var myDoughnutChart = new Chart(ctx, {
+    type: 'doughnut',
+    data: data,
+    options: options
+});
+}
+makeChart();
+*/
+</script>

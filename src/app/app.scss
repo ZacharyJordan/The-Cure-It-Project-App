@@ -1,0 +1,109 @@
+// http://ionicframework.com/docs/v2/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+
+.link
+{
+    color:#85C1E9 !important;
+    text-decoration: underline;
+}
+
+.responsive-chart-wrapper
+{
+    position: relative;
+    width:100vw;
+    text-align:center;
+}
+
+.responsive-chart
+{
+    display: inline-block;
+    margin-left:auto;
+    margin-right:auto;
+
+    height:60vw;
+    width:60vw;
+}
+
+.main-back-button
+{
+    position: absolute;
+    display: block;
+    margin-top:15px;
+    margin-bottom:55px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.blue-slide
+{
+    background-color:#2980B9;
+}
+
+.alt-blue-slide
+{
+    background-color:#3498DB;
+}
+
+.purple-slide
+{
+    background-color:#A569BD;
+}
+
+.alt-purple-slide
+{
+    background-color:#9B59B6;
+}
+
+.green-slide
+{
+    background-color:#45B39D;
+}
+
+.alt-green-slide
+{
+    background-color:#16A085;
+}
+
+.red-slide
+{
+    background-color:#CD6155
+}
+
+.alt-red-slide
+{
+    background-color:#C0392B;
+}
+
+.slide-header-main
+{
+    font-size:32px;
+}
+
+.rel-pos
+{
+    position:relative;
+}
+
+.center-abs
+{
+    position: absolute;
+    display: block;
+    background-color:yellow;
+    text-align:center;
+}
+
