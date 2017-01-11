@@ -22,6 +22,10 @@
     text-decoration: underline;
 }
 
+.alter-margin
+{
+    margin-top:-3px;
+}
 
 .question
 {
@@ -29,12 +33,25 @@
     font-size:1.5em;
 }
 
+.center-button-wrapper
+{
+    position: absolute;
+    left:0;
+    width:100vw;
+    text-align:center;
+}
+
 .answer
 {
     position: relative;
-    top:-15px;
+    top:-10px;
     font-style:italic;
     font-size:1.3em;
+}
+
+.special-answer
+{
+    margin-bottom:-10px;
 }
 
 .push-content-down

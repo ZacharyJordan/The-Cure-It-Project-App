@@ -22114,16 +22114,31 @@ sub {
   text-decoration: underline;
 }
 
+.alter-margin {
+  margin-top: -3px;
+}
+
 .question {
   font-weight: bold;
   font-size: 1.5em;
 }
 
+.center-button-wrapper {
+  position: absolute;
+  left: 0;
+  width: 100vw;
+  text-align: center;
+}
+
 .answer {
   position: relative;
-  top: -15px;
+  top: -10px;
   font-style: italic;
   font-size: 1.3em;
+}
+
+.special-answer {
+  margin-bottom: -10px;
 }
 
 .push-content-down {
@@ -22424,17 +22439,4 @@ p {
   position: relative;
   left: -20px;
   overflow: visible !important;
-}
-
-.center-button-wrapper {
-  position: absolute;
-  left: 0;
-  width: 100vw;
-  text-align: center;
-}
-
-.center-button {
-  display: inline-block;
-  text-align: center;
-  margin-bottom: 20px;
 }

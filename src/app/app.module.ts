@@ -50,7 +50,12 @@ import {ColorectalCarcinoidsPage} from '../pages/colorectal-carcinoids/colorecta
 import {ColorectalUnderstandingPage} from '../pages/colorectal-understanding/colorectal-understanding';
 import {ColorectalDrugPage} from '../pages/colorectal-drug/colorectal-drug';
 import {StoryChristinaPage} from '../pages/story-christina/story-christina';
-
+import {StoryLisaPage} from '../pages/story-lisa/story-lisa';
+import {StoryAlliePage} from '../pages/story-allie/story-allie';
+import {StoryJayPage} from '../pages/story-jay/story-jay';
+import {StoryKomiPage} from '../pages/story-komi/story-komi';
+import {StoryShobiPage} from '../pages/story-shobi/story-shobi';
+import {StoryJakePage} from '../pages/story-jake/story-jake';
 
 @NgModule({
   declarations: [
@@ -102,7 +107,13 @@ import {StoryChristinaPage} from '../pages/story-christina/story-christina';
     ColorectalCarcinoidsPage,
     ColorectalUnderstandingPage,
     ColorectalDrugPage,
-    StoryChristinaPage
+    StoryChristinaPage,
+    StoryLisaPage,
+    StoryAlliePage,
+    StoryJayPage,
+    StoryKomiPage,
+    StoryShobiPage,
+    StoryJakePage
   ],
   imports: [
     IonicModule.forRoot(MyApp),
@@ -158,7 +169,13 @@ import {StoryChristinaPage} from '../pages/story-christina/story-christina';
     ColorectalCarcinoidsPage,
     ColorectalUnderstandingPage,
     ColorectalDrugPage,
-    StoryChristinaPage
+    StoryChristinaPage,
+    StoryLisaPage,
+    StoryAlliePage,
+    StoryJayPage,
+    StoryKomiPage,
+    StoryShobiPage,
+    StoryJakePage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })
