@@ -56,6 +56,8 @@ import {StoryJayPage} from '../pages/story-jay/story-jay';
 import {StoryKomiPage} from '../pages/story-komi/story-komi';
 import {StoryShobiPage} from '../pages/story-shobi/story-shobi';
 import {StoryJakePage} from '../pages/story-jake/story-jake';
+import {DonationPage} from '../pages/donation/donation';
+
 
 @NgModule({
   declarations: [
@@ -113,7 +115,8 @@ import {StoryJakePage} from '../pages/story-jake/story-jake';
     StoryJayPage,
     StoryKomiPage,
     StoryShobiPage,
-    StoryJakePage
+    StoryJakePage,
+    DonationPage
   ],
   imports: [
     IonicModule.forRoot(MyApp),
@@ -175,7 +178,8 @@ import {StoryJakePage} from '../pages/story-jake/story-jake';
     StoryJayPage,
     StoryKomiPage,
     StoryShobiPage,
-    StoryJakePage
+    StoryJakePage,
+    DonationPage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })
