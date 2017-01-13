@@ -22430,6 +22430,17 @@ p {
   font-size: 70%;
 }
 
+.style-logos {
+  position: relative;
+  top: 15px;
+  color: #fff;
+  font-size: 30px;
+}
+
+.push-right {
+  margin-right: 15px;
+}
+
 .charity-header {
   font-size: 2.7rem;
   color: #909497;

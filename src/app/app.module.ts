@@ -57,6 +57,14 @@ import {StoryKomiPage} from '../pages/story-komi/story-komi';
 import {StoryShobiPage} from '../pages/story-shobi/story-shobi';
 import {StoryJakePage} from '../pages/story-jake/story-jake';
 import {DonationPage} from '../pages/donation/donation';
+import {DonateBladderOnePage} from '../pages/donate-bladder-one/donate-bladder-one';
+import {DonateBladderTwoPage} from '../pages/donate-bladder-two/donate-bladder-two';
+import {DonateBloodOnePage} from '../pages/donate-blood-one/donate-blood-one';
+import {DonateBloodTwoPage} from '../pages/donate-blood-two/donate-blood-two';
+import {DonateBrainOnePage} from '../pages/donate-brain-one/donate-brain-one';
+import {DonateBrainTwoPage} from '../pages/donate-brain-two/donate-brain-two';
+import {DonateBoneOnePage} from '../pages/donate-bone-one/donate-bone-one';
+import {DonateBoneTwoPage} from '../pages/donate-bone-two/donate-bone-two';
 
 
 @NgModule({
@@ -116,7 +124,15 @@ import {DonationPage} from '../pages/donation/donation';
     StoryKomiPage,
     StoryShobiPage,
     StoryJakePage,
-    DonationPage
+    DonationPage,
+    DonateBladderOnePage,
+    DonateBladderTwoPage,
+    DonateBloodOnePage,
+    DonateBloodTwoPage,
+    DonateBrainOnePage,
+    DonateBrainTwoPage,
+    DonateBoneOnePage,
+    DonateBoneTwoPage
   ],
   imports: [
     IonicModule.forRoot(MyApp),
@@ -179,7 +195,15 @@ import {DonationPage} from '../pages/donation/donation';
     StoryKomiPage,
     StoryShobiPage,
     StoryJakePage,
-    DonationPage
+    DonationPage,
+    DonateBladderOnePage,
+    DonateBladderTwoPage,
+    DonateBloodOnePage,
+    DonateBloodTwoPage,
+    DonateBrainOnePage,
+    DonateBrainTwoPage,
+    DonateBoneOnePage,
+    DonateBoneTwoPage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })
