@@ -65,6 +65,34 @@ import {DonateBrainOnePage} from '../pages/donate-brain-one/donate-brain-one';
 import {DonateBrainTwoPage} from '../pages/donate-brain-two/donate-brain-two';
 import {DonateBoneOnePage} from '../pages/donate-bone-one/donate-bone-one';
 import {DonateBoneTwoPage} from '../pages/donate-bone-two/donate-bone-two';
+import {DonateBreastOnePage} from '../pages/donate-breast-one/donate-breast-one';
+import {DonateBreastTwoPage} from '../pages/donate-breast-two/donate-breast-two';
+import {DonateColorectalOnePage} from '../pages/donate-colorectal-one/donate-colorectal-one';
+import {DonateColorectalTwoPage} from '../pages/donate-colorectal-two/donate-colorectal-two';
+import {DonateEndometrialOnePage} from '../pages/donate-endometrial-one/donate-endometrial-one';
+import {DonateEndometrialTwoPage} from '../pages/donate-endometrial-two/donate-endometrial-two';
+import {DonateEyeOnePage} from '../pages/donate-eye-one/donate-eye-one';
+import {DonateEyeTwoPage} from '../pages/donate-eye-two/donate-eye-two';
+import {DonateLiverOnePage} from '../pages/donate-liver-one/donate-liver-one';
+import {DonateLiverTwoPage} from '../pages/donate-liver-two/donate-liver-two';
+import {DonateLungOnePage} from '../pages/donate-lung-one/donate-lung-one';
+import {DonateLungTwoPage} from '../pages/donate-lung-two/donate-lung-two';
+import {DonateLymphaticOnePage} from '../pages/donate-lymphatic-one/donate-lymphatic-one';
+import {DonateLymphaticTwoPage} from '../pages/donate-lymphatic-two/donate-lymphatic-two';
+import {DonateOralOnePage} from '../pages/donate-oral-one/donate-oral-one';
+import {DonateOralTwoPage} from '../pages/donate-oral-two/donate-oral-two';
+import {DonateOvarianOnePage} from '../pages/donate-ovarian-one/donate-ovarian-one';
+import {DonateOvarianTwoPage} from '../pages/donate-ovarian-two/donate-ovarian-two';
+import {DonatePancreaticOnePage} from '../pages/donate-pancreatic-one/donate-pancreatic-one';
+import {DonatePancreaticTwoPage} from '../pages/donate-pancreatic-two/donate-pancreatic-two';
+import {DonateSkinOnePage} from '../pages/donate-skin-one/donate-skin-one';
+import {DonateSkinTwoPage} from '../pages/donate-skin-two/donate-skin-two';
+import {DonateTesticularOnePage} from '../pages/donate-testicular-one/donate-testicular-one';
+import {DonateTesticularTwoPage} from '../pages/donate-testicular-two/donate-testicular-two';
+import {DonateThroatOnePage} from '../pages/donate-throat-one/donate-throat-one';
+import {DonateThroatTwoPage} from '../pages/donate-throat-two/donate-throat-two';
+import {DonateThyroidOnePage} from '../pages/donate-thyroid-one/donate-thyroid-one';
+import {DonateThyroidTwoPage} from '../pages/donate-thyroid-two/donate-thyroid-two';
 
 
 @NgModule({
@@ -132,7 +160,35 @@ import {DonateBoneTwoPage} from '../pages/donate-bone-two/donate-bone-two';
     DonateBrainOnePage,
     DonateBrainTwoPage,
     DonateBoneOnePage,
-    DonateBoneTwoPage
+    DonateBoneTwoPage,
+    DonateBreastOnePage,
+    DonateBreastTwoPage,
+    DonateColorectalOnePage,
+    DonateColorectalTwoPage,
+    DonateEndometrialOnePage,
+    DonateEndometrialTwoPage,
+    DonateEyeOnePage,
+    DonateEyeTwoPage,
+    DonateLiverOnePage,
+    DonateLiverTwoPage,
+    DonateLungOnePage,
+    DonateLungTwoPage,
+    DonateLymphaticOnePage,
+    DonateLymphaticTwoPage,
+    DonateOralOnePage,
+    DonateOralTwoPage,
+    DonateOvarianOnePage,
+    DonateOvarianTwoPage,
+    DonatePancreaticOnePage,
+    DonatePancreaticTwoPage,
+    DonateSkinOnePage,
+    DonateSkinTwoPage,
+    DonateTesticularOnePage,
+    DonateTesticularTwoPage,
+    DonateThroatOnePage,
+    DonateThroatTwoPage,
+    DonateThyroidOnePage,
+    DonateThyroidTwoPage
   ],
   imports: [
     IonicModule.forRoot(MyApp),
@@ -203,7 +259,35 @@ import {DonateBoneTwoPage} from '../pages/donate-bone-two/donate-bone-two';
     DonateBrainOnePage,
     DonateBrainTwoPage,
     DonateBoneOnePage,
-    DonateBoneTwoPage
+    DonateBoneTwoPage,
+    DonateBreastOnePage,
+    DonateBreastTwoPage,
+    DonateColorectalOnePage,
+    DonateColorectalTwoPage,
+    DonateEndometrialOnePage,
+    DonateEndometrialTwoPage,
+    DonateEyeOnePage,
+    DonateEyeTwoPage,
+    DonateLiverOnePage,
+    DonateLiverTwoPage,
+    DonateLungOnePage,
+    DonateLungTwoPage,
+    DonateLymphaticOnePage,
+    DonateLymphaticTwoPage,
+    DonateOralOnePage,
+    DonateOralTwoPage,
+    DonateOvarianOnePage,
+    DonateOvarianTwoPage,
+    DonatePancreaticOnePage,
+    DonatePancreaticTwoPage,
+    DonateSkinOnePage,
+    DonateSkinTwoPage,
+    DonateTesticularOnePage,
+    DonateTesticularTwoPage,
+    DonateThroatOnePage,
+    DonateThroatTwoPage,
+    DonateThyroidOnePage,
+    DonateThyroidTwoPage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })
