@@ -7,6 +7,10 @@ import {BreastRecurrentPage} from '../breast-recurrent/breast-recurrent';
 import {BreastMetastaticPage} from '../breast-metastatic/breast-metastatic';
 import {BreastProteinPage} from '../breast-protein/breast-protein';
 import {BreastLifestylePage} from '../breast-lifestyle/breast-lifestyle';
+import {Slides} from 'ionic-angular';
+import { ViewChild } from '@angular/core';
+import {DonateBreastOnePage} from '../donate-breast-one/donate-breast-one';
+import {DonateBreastTwoPage} from '../donate-breast-two/donate-breast-two';
 
 
 /*
@@ -20,6 +24,7 @@ import {BreastLifestylePage} from '../breast-lifestyle/breast-lifestyle';
   templateUrl: 'breast.html'
 })
 export class BreastPage {
+ @ViewChild(Slides) slides: Slides;
 
 labels: string[] = ["Less than 40", "Less than 50", "Between 50 and 60", "Above 65"];
   defaultFontColor:'#fff';
@@ -56,6 +61,21 @@ labels: string[] = ["Less than 40", "Less than 50", "Between 50 and 60", "Above 
     console.log('ionViewDidLoad BreastPage');
   }
 
+  goToType()
+  {
+    this.slides.slideTo(3, 600);
+  }
+
+  goToTreatment()
+  {
+    this.slides.slideTo(6, 600);
+  }
+
+  goToHelp()
+  {
+    this.slides.slideTo(8, 600);
+  }
+
   expandAbout()
   {
     this.navCtrl.push(BreastAboutPage);
@@ -84,5 +104,15 @@ labels: string[] = ["Less than 40", "Less than 50", "Between 50 and 60", "Above 
   expandSecondTreatment()
   {
     this.navCtrl.push(BreastProteinPage);
+  }
+
+  expandFirstDonation()
+  {
+    this.navCtrl.push(DonateBreastOnePage);
+  }
+
+  expandSecondDonation()
+  {
+    this.navCtrl.push(DonateBreastTwoPage);
   }
 }

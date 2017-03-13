@@ -1,0 +1,205 @@
+<!--
+  Generated template for the Bladder page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Testicular Cancer</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+<ion-slides [options]="mySlideOptions" pager>
+
+  <ion-slide class = "green-slide rel-pos">
+    <div class = "anchor-other pad">
+      <h1 class = "whiten slide-header-main">Testicular Cancer</h1>
+      <div class = "whiten slide-header">Incicence rates for Testicular Cancer have been rising for decades</div>
+    </div>
+    
+      <button ng-click="aboutDisease()" ion-button color = "default" class = "limit-button" on-tap = "goToType()">Types of Testicular Cancer</button>
+      <br />
+      <button ion-button color = "default" class = "limit-button" on-tap = "goToTreatment()">Treatment Advancements</button> 
+      <br />
+      <button ion-button color = "default" class = "limit-button" on-tap = "goToHelp()">How to Help</button>
+   
+    
+   <div class = "purple-slide special-card-header whiten">
+      <div class = "special-card-internal">About (1/2)</div>
+   </div>
+  </ion-slide>
+ 
+  <ion-slide class = "purple-slide rel-pos">
+    <h2 class = "anchor-other">
+      <!--<span class = "whiten center-title">Introduction (1/2)</span>-->
+      <span class = "whiten center-title-lower">What is Testicular Cancer?</span>
+      <br />
+      <p class = "whiten">
+    Testicular Cancer is, as the name implies, cancer that originates in the testis. 
+
+      </p>
+
+      <p class = "whiten">
+      The testis are largely considered to be the most important element of the male reproductive system, as they contain the glands in which spermatoza (commonly known as sperm) and testosterone are created.
+      </p>
+
+      
+    </h2>
+    <button ion-button class = "anchor-button-down" color = "default" large on-tap="expandAbout()">Learn More</button>
+
+    <div class = "blue-slide special-card-header whiten">
+      <div class = "special-card-internal">About (2/2)</div>
+   </div>
+
+  </ion-slide>
+
+  <ion-slide class = "blue-slide">
+    <h2 class = "anchor-other">
+      <!--<span class = "whiten center-title">Introduction (1/2)</span>-->
+      <span class = "whiten center-title-lower">Testicular Cancer Data</span>
+      <br />
+      <p class = "whiten">
+       The following chart illustrates the high percentage of Testicular Cancer patients that survive five years or more after their initial diagnosis.
+      </p>
+  
+    </h2>
+    <div class = "responsive-chart-wrapper">
+    <chart id = "testicularChart" class = "responsive-chart" [labels]="labels" [data]="data" type="pie"></chart>
+</div>
+    <div class = "red-slide special-card-header whiten">
+      <div class = "special-card-internal">Types (1/2)</div>
+   </div>
+
+  </ion-slide>
+
+  <ion-slide class = "red-slide">
+    <h2 class = "anchor-other">
+      <span class = "whiten center-title-lower">Seminomas</span>
+      <br />
+      <p class = "whiten">
+        Seminomas are one of the two primary forms of Testicular Cancer. A Seminoma is a form of cancer that begins in the cells that produces sperm.
+      </p>
+
+      <p class = "whiten">
+        Due to their place of origin, this form of Testicular Cancer typically is not extremely aggressive and as such is usually fairly treatable.
+      </p>
+  
+    </h2>
+<button ion-button class = "anchor-button-down" color = "default" large on-tap="expandFirstDisease()">Learn More</button>
+<div class = "blue-slide special-card-header whiten">
+      <div class = "special-card-internal">Types (2/2)</div>
+   </div>
+  </ion-slide>
+
+  <ion-slide class = "blue-slide">
+    <h2 class = "anchor-other">
+      <span class = "whiten center-title-lower">Nonseminomas</span>
+      <br />
+      <p class = "whiten">
+      Nonseminomas are the other primary form of Testicular Cancer. Although they are less common than Seminomas, they still pose a larger threat to most patients due to their ability to develop and spread relatively rapidly throughout the body. Unlike Seminomas, they begin in the cells that form sperm or eggs.
+      </p>
+  
+    </h2>
+<button ion-button class = "anchor-button-down" color = "default" large on-tap="expandSecondDisease()">Learn More</button>
+<div class = "red-slide special-card-header whiten">
+      <div class = "special-card-internal">Treatment (1/2) </div>
+   </div>
+  </ion-slide>
+
+  <ion-slide class = "red-slide">
+    <h2 class = "anchor-other">
+      <!--<span class = "whiten center-title">Introduction (1/2)</span>-->
+      <span class = "whiten center-title-lower">Self Examination</span>
+      <br />
+      <p class = "whiten">
+       The promotion of self-examination has been one of the most important factors in the early discovery of Testicular Cancer. To understand this, one must first recognize the symptoms of Testicular Cancer.
+      </p>
+
+      <p class = "whiten">
+   These can include, but are not limited to, things such as the enlargement of the testicle, a feeling of heaviness in the scrotum, a collection of fluid in the scrotum, and a persistent pain in the testicle or the scrotum.
+      </p>
+
+      
+    </h2>
+    <button ion-button class = "anchor-button-down" color = "default" large on-tap="expandFirstTreatment()">Learn More</button>
+    
+    <div class = "alt-green-slide special-card-header whiten">
+      <div class = "special-card-internal">Treatment (2/2)</div>
+   </div>
+  </ion-slide>
+
+  <ion-slide class = "alt-green-slide">
+    <h2 class = "anchor-other">
+      <!--<span class = "whiten center-title">Introduction (1/2)</span>-->
+      <span class = "whiten center-title-lower">Intensive Chemotherapy</span>
+      <br />
+      <p class = "whiten">
+       Unfortunately, many of the procedures that are currently feasable for treating Testicular Cancers have been known to produce uncomfortable side effects.
+      </p>
+
+      <p class = "whiten">
+   Perhaps the most common of these treatments is chemotherapy, which is used to great effect in many to subdue tumors that have spread beyond the point of origin.
+      </p>
+
+      
+    </h2>
+    <button ion-button class = "anchor-button-down" color = "default" large on-tap="expandSecondTreatment()">Learn More</button>
+    
+    <div class = "alt-purple-slide special-card-header whiten">
+      <div class = "special-card-internal">How to Help (1/2)</div>
+   </div>
+  </ion-slide>
+
+  <ion-slide class = "alt-purple-slide">
+    <h2 class = "anchor-other">
+      <span class = "whiten center-title-lower">Testicular Cancer Society</span>
+      <br />
+      <p class = "whiten">
+        The Testicular Cancer Society has taken a varied and aggressive approach in their fight against Testicular Cancers. They attempt to raise awareness about the harms of the disease while also offering support to those who are already suffering from it.
+      </p>
+
+      <p class = "whiten">
+     From one on one support to information regarding the proper way to perform a self-check for Testicular Cancer, the Testicular Cancer Society has taken meaningful strides towards a future free from the confusion and feeling of hopelessness that is sometimes associated with something as serious as cancer.
+      </p>
+
+      
+    </h2>
+    <button ion-button class = "anchor-button-down" color = "default" large on-tap="expandFirstDonation()">Learn More</button>
+    
+    <div class = "alt-blue-slide special-card-header whiten">
+      <div class = "special-card-internal">How to Help (2/2)</div>
+   </div>
+  </ion-slide>
+
+  <ion-slide class = "alt-blue-slide">
+    <h2 class = "anchor-other">
+      <span class = "whiten center-title-lower">Testicular Cancer Awareness Foundation</span>
+      <br />
+      <br />
+      <p class = "whiten">
+      The Testicular Cancer Awareness Foundation is a nonprofit that strives to heighten the general public's awareness of the threat of Testicular Cancers.
+      </p>
+
+      <p class = "whiten">
+    In order to make this happen, they recognize that the important first step is to tear down the stigma and unnecessary unembarrassment that is associated with a Testicular Cancer diagnosis. Their goal is to create a society that is more welcoming of open and honest conversations regarding Testicular Cancer that are free from the fear of judgement.
+      </p>
+
+      
+    </h2>
+    <button ion-button class = "anchor-button-down" color = "default" large on-tap="expandSecondDonation()">Learn More</button>
+    
+    <div class = "blue-slide special-card-header whiten">
+   </div>
+  </ion-slide>
+</ion-slides>
+</ion-content>
+
+<script>
+
+</script>

@@ -7,7 +7,10 @@ import {BrainMeningiomasPage} from '../brain-meningiomas/brain-meningiomas';
 import {BrainGlioblastomasPage} from '../brain-glioblastomas/brain-glioblastomas';
 import {BrainLasersPage} from '../brain-lasers/brain-lasers';
 import {BrainVirusesPage} from '../brain-viruses/brain-viruses';
-
+import {Slides} from 'ionic-angular';
+import { ViewChild } from '@angular/core';
+import {DonateBrainOnePage} from '../donate-brain-one/donate-brain-one';
+import {DonateBrainTwoPage} from '../donate-brain-two/donate-brain-two';
 
 /*
   Generated class for the Brain page.
@@ -21,6 +24,8 @@ import {BrainVirusesPage} from '../brain-viruses/brain-viruses';
 })
 
 export class BrainPage {
+
+@ViewChild(Slides) slides: Slides;
 
 labels: string[] = ["5 year Survivors", "5 Year Fatalities"];
   defaultFontColor:'#fff';
@@ -56,6 +61,21 @@ labels: string[] = ["5 year Survivors", "5 Year Fatalities"];
     console.log('ionViewDidLoad BrainPage');
   }
 
+  goToType()
+  {
+    this.slides.slideTo(3, 600);
+  }
+
+  goToTreatment()
+  {
+    this.slides.slideTo(6, 600);
+  }
+
+  goToHelp()
+  {
+    this.slides.slideTo(8, 600);
+  }
+
   expandAbout()
   {
     this.navCtrl.push(BrainAboutPage);
@@ -84,6 +104,16 @@ labels: string[] = ["5 year Survivors", "5 Year Fatalities"];
   expandSecondTreatment()
   {
     this.navCtrl.push(BrainLasersPage);
+  }
+
+  expandFirstDonation()
+  {
+    this.navCtrl.push(DonateBrainOnePage);
+  }
+
+  expandSecondDonation()
+  {
+    this.navCtrl.push(DonateBrainTwoPage);
   }
 
 }

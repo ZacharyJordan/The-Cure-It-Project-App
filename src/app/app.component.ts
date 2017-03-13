@@ -3,6 +3,7 @@ import { Platform } from 'ionic-angular';
 import { StatusBar, Splashscreen } from 'ionic-native';
 import {AccountCreationPage} from '../pages/account-creation/account-creation';
 import { TabsPage } from '../pages/tabs/tabs';
+import {SplashScreenPage} from '../pages/splash-screen/splash-screen';
 
 
 @Component({
@@ -10,6 +11,8 @@ import { TabsPage } from '../pages/tabs/tabs';
 })
 export class MyApp {
 
+    //rootPage = SplashScreenPage;
+    //rootPage = AppIntroPage;
     rootPage = TabsPage;
   
   constructor(platform: Platform) {

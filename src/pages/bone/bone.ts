@@ -7,7 +7,10 @@ import {BoneEwingPage} from '../bone-ewing/bone-ewing';
 import {BoneChondrosarcomasPage} from '../bone-chondrosarcomas/bone-chondrosarcomas';
 import {BoneProtonPage} from '../bone-proton/bone-proton';
 import {BoneMyeloablativePage} from '../bone-myeloablative/bone-myeloablative';
-
+import {DonateBoneOnePage} from '../donate-bone-one/donate-bone-one';
+import {DonateBoneTwoPage} from '../donate-bone-two/donate-bone-two';
+import {ViewChild} from '@angular/core';
+import {Slides} from 'ionic-angular';
 /*
   Generated class for the Bone page.
 
@@ -19,7 +22,7 @@ import {BoneMyeloablativePage} from '../bone-myeloablative/bone-myeloablative';
   templateUrl: 'bone.html'
 })
 export class BonePage {
-
+@ViewChild(Slides) slides: Slides;
 labels: string[] = ["Ewing Tumors", "Chondrosarcomas", "Other", "Osteosarcomas"];
   defaultFontColor:'#fff';
   
@@ -55,6 +58,21 @@ labels: string[] = ["Ewing Tumors", "Chondrosarcomas", "Other", "Osteosarcomas"]
     console.log('ionViewDidLoad BonePage');
   }
 
+  goToType()
+  {
+    this.slides.slideTo(3, 600);
+  }
+
+  goToTreatment()
+  {
+    this.slides.slideTo(6, 600);
+  }
+
+  goToHelp()
+  {
+    this.slides.slideTo(8, 600);
+  }
+
   expandAbout()
   {
     this.navCtrl.push(BoneAboutPage);
@@ -85,5 +103,14 @@ labels: string[] = ["Ewing Tumors", "Chondrosarcomas", "Other", "Osteosarcomas"]
     this.navCtrl.push(BoneMyeloablativePage);
   }
   
+  expandFirstDonation()
+  {
+    this.navCtrl.push(DonateBoneOnePage);
+  }
+
+  expandSecondDonation()
+  {
+    this.navCtrl.push(DonateBoneTwoPage);
+  }
 
 }

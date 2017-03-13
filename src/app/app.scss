@@ -20,16 +20,24 @@
 {
     float:left;
 }
+
 .link
 {
     color:#85C1E9 !important;
     text-decoration: underline;
 }
 
+.fix-it
+{
+    position:relative;
+    top:-25vh !important;
+}
+
 .alter-margin
 {
     margin-top:-3px;
 }
+
 
 .question
 {
@@ -53,6 +61,7 @@
     font-size:1.3em;
 }
 
+
 .special-answer
 {
     margin-bottom:-10px;
@@ -61,7 +70,7 @@
 .push-content-down
 {
     position: relative;
-    top:30px;
+    top:50px;
     margin-top:10px;
     margin-bottom:10px;
 }
@@ -156,6 +165,32 @@
 {
     background-color:#C0392B;
 }
+
+.first-slide
+{
+    background-color:#E74C3C;
+}
+
+.second-slide
+{
+    background-color:#9B59B6;
+}
+
+.third-slide
+{
+    background-color:#2ECC71;
+}
+
+
+.fourth-slide
+{
+    background-color:#3498DB;
+}
+
+.center-button{
+    text-align: center;
+}
+
 
 .slide-header-main
 {

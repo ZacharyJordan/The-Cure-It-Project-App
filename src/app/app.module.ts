@@ -93,7 +93,86 @@ import {DonateThroatOnePage} from '../pages/donate-throat-one/donate-throat-one'
 import {DonateThroatTwoPage} from '../pages/donate-throat-two/donate-throat-two';
 import {DonateThyroidOnePage} from '../pages/donate-thyroid-one/donate-thyroid-one';
 import {DonateThyroidTwoPage} from '../pages/donate-thyroid-two/donate-thyroid-two';
-
+import {SplashScreenPage} from '../pages/splash-screen/splash-screen';
+import {EndometrialPage} from '../pages/endometrial/endometrial';
+import {EndometrialAboutPage} from '../pages/endometrial-about/endometrial-about';
+import {EndometrialCarcinomaPage} from '../pages/endometrial-carcinoma/endometrial-carcinoma';
+import {EndometrialUterinePage} from '../pages/endometrial-uterine/endometrial-uterine';
+import {HormonePage} from '../pages/hormone/hormone';
+import {EndometrialHysterPage} from '../pages/endometrial-hyster/endometrial-hyster';
+import {EyePage} from '../pages/eye/eye';
+import {EyeAboutPage} from '../pages/eye-about/eye-about';
+import {EyeLymphomaPage} from '../pages/eye-lymphoma/eye-lymphoma';
+import {EyeMelanomaPage} from '../pages/eye-melanoma/eye-melanoma';
+import {EyeOcularPage} from '../pages/eye-ocular/eye-ocular';
+import {EyeRadiationPage} from '../pages/eye-radiation/eye-radiation';
+import {EyeRetinoPage} from '../pages/eye-retino/eye-retino';
+import {LiverPage} from '../pages/liver/liver';
+import {LiverAboutPage} from '../pages/liver-about/liver-about';
+import {LiverAngiPage} from '../pages/liver-angi/liver-angi';
+import {LiverBilePage} from '../pages/liver-bile/liver-bile';
+import {LiverHeptaPage} from '../pages/liver-hepta/liver-hepta';
+import {LiverSurgeryPage} from '../pages/liver-surgery/liver-surgery';
+import {LiverUnderstandingPage} from '../pages/liver-understanding/liver-understanding';
+import {LymphaticPage} from '../pages/lymphatic/lymphatic';
+import {LymphaticAboutPage} from '../pages/lymphatic-about/lymphatic-about';
+import {LymphaticChemotherapyPage} from '../pages/lymphatic-chemotherapy/lymphatic-chemotherapy';
+import {LymphaticImmunotherapyPage} from '../pages/lymphatic-immunotherapy/lymphatic-immunotherapy';
+import {LymphaticNonhodPage} from '../pages/lymphatic-nonhod/lymphatic-nonhod';
+import {LymphaticHodPage} from '../pages/lymphatic-hod/lymphatic-hod';
+import {OralPage} from '../pages/oral/oral';
+import {OralChemotherapyPage} from '../pages/oral-chemotherapy/oral-chemotherapy';
+import {OralLifestylePage} from '../pages/oral-lifestyle/oral-lifestyle';
+import {OralSalivaryPage} from '../pages/oral-salivary/oral-salivary';
+import {OralVerrucousPage} from '../pages/oral-verrucous/oral-verrucous';
+import {OralAboutPage} from '../pages/oral-about/oral-about';
+import {OralSquamousPage} from '../pages/oral-squamous/oral-squamous';
+import {OvarianPage} from '../pages/ovarian/ovarian';
+import {OvarianAboutPage} from '../pages/ovarian-about/ovarian-about';
+import {OvarianCetPage} from '../pages/ovarian-cet/ovarian-cet';
+import {OvariamStromalPage} from '../pages/ovariam-stromal/ovariam-stromal';
+import {OvarianGermPage} from '../pages/ovarian-germ/ovarian-germ';
+import {OvarianUnderstandingPage} from '../pages/ovarian-understanding/ovarian-understanding';
+import {OvarianDrugsPage} from '../pages/ovarian-drugs/ovarian-drugs';
+import {LungPage} from '../pages/lung/lung';
+import {LungAboutPage} from '../pages/lung-about/lung-about';
+import {LungCarcinoidsPage} from '../pages/lung-carcinoids/lung-carcinoids';
+import {LungLobectomyPage} from '../pages/lung-lobectomy/lung-lobectomy';
+import {LungNscPage} from '../pages/lung-nsc/lung-nsc';
+import {LungRfaPage} from '../pages/lung-rfa/lung-rfa';
+import {LungScPage} from '../pages/lung-sc/lung-sc';
+import {PancreaticPage} from '../pages/pancreatic/pancreatic';
+import {PancreaticAboutPage} from '../pages/pancreatic-about/pancreatic-about';
+import {PancreaticEndocrinePage} from '../pages/pancreatic-endocrine/pancreatic-endocrine';
+import {PancreaticExocrinePage} from '../pages/pancreatic-exocrine/pancreatic-exocrine';
+import {PancreaticExternalPage} from '../pages/pancreatic-external/pancreatic-external';
+import {PancreaticPallativePage} from '../pages/pancreatic-pallative/pancreatic-pallative';
+import {SkinAboutPage} from '../pages/skin-about/skin-about';
+import {SkinBasalPage} from '../pages/skin-basal/skin-basal';
+import {SkinDrugsPage} from '../pages/skin-drugs/skin-drugs';
+import {SkinMelanomaPage} from '../pages/skin-melanoma/skin-melanoma';
+import {SkinPreventionPage} from '../pages/skin-prevention/skin-prevention';
+import {SkinSquamousPage} from '../pages/skin-squamous/skin-squamous';
+import {SkinPage} from '../pages/skin/skin';
+import {TesticularPage} from '../pages/testicular/testicular';
+import {TesticularAboutPage} from '../pages/testicular-about/testicular-about';
+import {TesticularNonseminomaPage} from '../pages/testicular-nonseminoma/testicular-nonseminoma';
+import {TesticularSeminomaPage} from '../pages/testicular-seminoma/testicular-seminoma';
+import {TesticularSelfPage} from '../pages/testicular-self/testicular-self';
+import {TesticularChemotherapyPage} from '../pages/testicular-chemotherapy/testicular-chemotherapy';
+import {ThroatPage} from '../pages/throat/throat';
+import {ThroatAboutPage} from '../pages/throat-about/throat-about';
+import {ThroatHypoPage} from '../pages/throat-hypo/throat-hypo';
+import {ThroatLarynPage} from '../pages/throat-laryn/throat-laryn';
+import {ThroatLaryngealPage} from '../pages/throat-laryngeal/throat-laryngeal';
+import {ThroatRadiationPage} from '../pages/throat-radiation/throat-radiation';
+import {ThyroidPage} from '../pages/thyroid/thyroid';
+import {ThyroidAboutPage} from '../pages/thyroid-about/thyroid-about';
+import {ThyroidFollicularPage} from '../pages/thyroid-follicular/thyroid-follicular';
+import {ThyroidHurthlePage} from '../pages/thyroid-hurthle/thyroid-hurthle';
+import {ThyroidPapillaryPage} from '../pages/thyroid-papillary/thyroid-papillary';
+import {ThyroidRadioactivePage} from '../pages/thyroid-radioactive/thyroid-radioactive';
+import {ThyroidThyroidectomyPage} from '../pages/thyroid-thyroidectomy/thyroid-thyroidectomy';
 
 @NgModule({
   declarations: [
@@ -188,7 +267,86 @@ import {DonateThyroidTwoPage} from '../pages/donate-thyroid-two/donate-thyroid-t
     DonateThroatOnePage,
     DonateThroatTwoPage,
     DonateThyroidOnePage,
-    DonateThyroidTwoPage
+    DonateThyroidTwoPage,
+    SplashScreenPage,
+    EndometrialPage,
+    EndometrialCarcinomaPage,
+    EndometrialUterinePage,
+    EndometrialAboutPage,
+    HormonePage,
+    EndometrialHysterPage,
+    EyePage,
+    EyeAboutPage,
+    EyeLymphomaPage,
+    EyeMelanomaPage,
+    EyeRadiationPage,
+    EyeRetinoPage,
+    EyeOcularPage,
+    LiverAboutPage,
+    LiverBilePage,
+    LiverAngiPage,
+    LiverHeptaPage,
+    LiverPage, 
+    LiverSurgeryPage,
+    LiverUnderstandingPage,
+    LymphaticPage,
+    LymphaticAboutPage,
+    LymphaticChemotherapyPage,
+    LymphaticHodPage,
+    LymphaticImmunotherapyPage,
+    LymphaticNonhodPage,
+    OralPage,
+    OralAboutPage,
+    OralChemotherapyPage,
+    OralLifestylePage,
+    OralSalivaryPage,
+    OralSquamousPage,
+    OralVerrucousPage,
+    OvarianPage,
+    OvarianAboutPage,
+    OvarianCetPage,
+    OvarianGermPage,
+    OvariamStromalPage,
+    OvarianDrugsPage,
+    LungPage,
+    LungAboutPage,
+    LungCarcinoidsPage,
+    LungLobectomyPage,
+    LungNscPage,
+    LungRfaPage,
+    LungScPage,
+    PancreaticPage,
+    PancreaticAboutPage,
+    PancreaticEndocrinePage,
+    PancreaticExocrinePage,
+    PancreaticExternalPage,
+    PancreaticPallativePage,
+    SkinAboutPage,
+    SkinBasalPage,
+    SkinDrugsPage,
+    SkinMelanomaPage,
+    SkinPage,
+    SkinPreventionPage,
+    SkinSquamousPage,
+    TesticularPage,
+    TesticularAboutPage,
+    TesticularNonseminomaPage,
+    TesticularSelfPage,
+    TesticularSeminomaPage,
+    TesticularChemotherapyPage,
+    ThroatPage,
+    ThroatAboutPage,
+    ThroatHypoPage,
+    ThroatLarynPage,
+    ThroatLaryngealPage,
+    ThroatRadiationPage,
+    ThyroidPage,
+    ThyroidAboutPage,
+    ThyroidFollicularPage,
+    ThyroidHurthlePage,
+    ThyroidPapillaryPage,
+    ThyroidRadioactivePage,
+    ThyroidThyroidectomyPage
   ],
   imports: [
     IonicModule.forRoot(MyApp),
@@ -287,7 +445,86 @@ import {DonateThyroidTwoPage} from '../pages/donate-thyroid-two/donate-thyroid-t
     DonateThroatOnePage,
     DonateThroatTwoPage,
     DonateThyroidOnePage,
-    DonateThyroidTwoPage
+    DonateThyroidTwoPage,
+    SplashScreenPage,
+    EndometrialPage,
+    EndometrialCarcinomaPage,
+    EndometrialUterinePage,
+    EndometrialAboutPage,
+    HormonePage,
+    EndometrialHysterPage,
+    EyePage,
+    EyeAboutPage,
+    EyeLymphomaPage,
+    EyeMelanomaPage,
+    EyeRadiationPage,
+    EyeRetinoPage,
+    EyeOcularPage,
+    LiverAboutPage,
+    LiverBilePage,
+    LiverAngiPage,
+    LiverHeptaPage,
+    LiverPage, 
+    LiverSurgeryPage,
+    LiverUnderstandingPage,
+    LymphaticPage,
+    LymphaticAboutPage,
+    LymphaticChemotherapyPage,
+    LymphaticHodPage,
+    LymphaticImmunotherapyPage,
+    LymphaticNonhodPage,
+    OralPage,
+    OralAboutPage,
+    OralChemotherapyPage,
+    OralLifestylePage,
+    OralSalivaryPage,
+    OralSquamousPage,
+    OralVerrucousPage,
+    OvarianPage,
+    OvarianAboutPage,
+    OvarianCetPage,
+    OvarianGermPage,
+    OvariamStromalPage,
+    OvarianDrugsPage,
+    LungPage,
+    LungAboutPage,
+    LungCarcinoidsPage,
+    LungLobectomyPage,
+    LungNscPage,
+    LungRfaPage,
+    LungScPage,
+    PancreaticPage,
+    PancreaticAboutPage,
+    PancreaticEndocrinePage,
+    PancreaticExocrinePage,
+    PancreaticExternalPage,
+    PancreaticPallativePage,
+    SkinAboutPage,
+    SkinBasalPage,
+    SkinDrugsPage,
+    SkinMelanomaPage,
+    SkinPage,
+    SkinPreventionPage,
+    SkinSquamousPage,
+    TesticularPage,
+    TesticularAboutPage,
+    TesticularNonseminomaPage,
+    TesticularSelfPage,
+    TesticularSeminomaPage,
+    TesticularChemotherapyPage,
+    ThroatPage,
+    ThroatAboutPage,
+    ThroatHypoPage,
+    ThroatLarynPage,
+    ThroatLaryngealPage,
+    ThroatRadiationPage,
+    ThyroidPage,
+    ThyroidAboutPage,
+    ThyroidFollicularPage,
+    ThyroidHurthlePage,
+    ThyroidPapillaryPage,
+    ThyroidRadioactivePage,
+    ThyroidThyroidectomyPage
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })

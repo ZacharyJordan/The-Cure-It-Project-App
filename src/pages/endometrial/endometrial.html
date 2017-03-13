@@ -1,0 +1,202 @@
+<!--
+  Generated template for the Bladder page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Endometrial Cancer</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+<ion-slides [options]="mySlideOptions" pager>
+
+  <ion-slide class = "green-slide rel-pos">
+    <div class = "anchor-other pad">
+      <h1 class = "whiten slide-header-main">Endometrial Cancer</h1>
+      <div class = "whiten slide-header">1 in 37 women will have Endometrial Cancer at some point in their life</div>
+    </div>
+    
+      <button ng-click="aboutDisease()" ion-button color = "default" class = "limit-button" on-tap="goToType()">Types of Endometrial Cancer</button>
+      <br />
+      <button ion-button color = "default" class = "limit-button" on-tap = "goToTreatment()">Treatment Advancements</button> 
+      <br />
+      <button ion-button color = "default" class = "limit-button" on-tap = "goToHelp()">How to Help</button>
+   
+    
+   <div class = "purple-slide special-card-header whiten">
+      <div class = "special-card-internal">About (1/2)</div>
+   </div>
+  </ion-slide>
+ 
+  <ion-slide class = "purple-slide rel-pos">
+    <h2 class = "anchor-other">
+      <!--<span class = "whiten center-title">Introduction (1/2)</span>-->
+      <span class = "whiten center-title-lower">What is Endometrial Cancer?</span>
+      <br />
+      <p class = "whiten">
+    Loosely defined, Endometiral Cancer is the uncontrollable growth of cells that originates in the lining of the womb (the uterus).
+
+      </p>
+
+      <p class = "whiten">
+      There are two different types of Endometrial Cancers, Endometrial Carcinomas, and Uterine Sarcomas. These 2 forms of cancer will be discussed in great detail below.
+      </p>
+
+      
+    </h2>
+    <button ion-button class = "anchor-button-down" color = "default" large on-tap="expandAbout()">Learn More</button>
+
+    <div class = "blue-slide special-card-header whiten">
+      <div class = "special-card-internal">About (2/2)</div>
+   </div>
+
+  </ion-slide>
+
+  <ion-slide class = "blue-slide">
+    <h2 class = "anchor-other">
+      <!--<span class = "whiten center-title">Introduction (1/2)</span>-->
+      <span class = "whiten center-title-lower">Endometrial Cancer Data</span>
+      <br />
+      <p class = "whiten">
+       As shown through the graph below, Endometrial Carcinomas are easily the most common type of Endometrial Cancer, accounting for 92% of all cases.
+      </p>
+  
+    </h2>
+    <div class = "responsive-chart-wrapper">
+    <chart id = "endometrialChart" class = "responsive-chart" [labels]="labels" [data]="data" type="pie"></chart>
+</div>
+    <div class = "red-slide special-card-header whiten">
+      <div class = "special-card-internal">Types (1/3)</div>
+   </div>
+
+  </ion-slide>
+
+  <ion-slide class = "red-slide">
+    <h2 class = "anchor-other">
+      <span class = "whiten center-title-lower">Endometrial Carcinomas</span>
+      <br />
+      <p class = "whiten">
+        Endometrial Carcinomas are cancers that begin in the inner lining of the uterus. The uterus is composed of two distinct layers: the inner layer is the endometrium, and the outer layer is the myometrium. Encometrial Carcinomas are defined as the uncontrollable growth of abnormal cells in the endometrium.
+      </p>
+  
+    </h2>
+<button ion-button class = "anchor-button-down" color = "default" large on-tap="expandFirstDisease()">Learn More</button>
+<div class = "blue-slide special-card-header whiten">
+      <div class = "special-card-internal">Types (2/3)</div>
+   </div>
+  </ion-slide>
+
+  <ion-slide class = "blue-slide">
+    <h2 class = "anchor-other">
+      <span class = "whiten center-title-lower">Uterine Sarcomas</span>
+      <br />
+      <p class = "whiten">
+      While Uterine Sarcomas are far less common than Endometrial Carcinomas, they share so much in common that comparisons between them are inevitable. Like Endometrial Carcinomas, Euterine Sarcomas typically originate in the endometrium.
+      </p>
+        
+        <p class = "whiten">
+        They are often much more aggressive than Endometiral Carcinomas, something that explains why they are often refered to as the 2nd form of Endometrial Carcinomas.
+      </p>
+  
+    </h2>
+<button ion-button class = "anchor-button-down" color = "default" large on-tap="expandSecondDisease()">Learn More</button>
+<div class = "green-slide special-card-header whiten">
+      <div class = "special-card-internal">Treatment (1/2) </div>
+   </div>
+  </ion-slide>
+
+<ion-slide class = "green-slide">
+    <h2 class = "anchor-other">
+      <!--<span class = "whiten center-title">Introduction (1/2)</span>-->
+      <span class = "whiten center-title-lower">Hysterectomy</span>
+      <br />
+      <p class = "whiten">
+       For many women, surgery is the go-to treatment for Endometrial Cancer of any form. The specific type of surgery that is done is called a hysterectomy. A hysterectomy involves removing the uterus as well as any other troublesome satellite structures of the uterus such as the cervix or ovaries.
+      </p>
+        
+        <p class = "whiten">
+       While the basic idea behind a hysterectomy has not changed over the past couple of years, advancements in our understanding of how the uterus functions has made the surgery more effective and safe.
+      </p>
+      
+    </h2>
+    <button ion-button class = "anchor-button-down" color = "default" large on-tap="expandFirstTreatment()">Learn More</button>
+    
+    <div class = "alt-blue-slide special-card-header whiten">
+      <div class = "special-card-internal">Treatment (2/2)</div>
+   </div>
+  </ion-slide>
+
+  <ion-slide class = "alt-blue-slide">
+    <h2 class = "anchor-other">
+      <!--<span class = "whiten center-title">Introduction (1/2)</span>-->
+      <span class = "whiten center-title-lower">Hormone Therapy</span>
+      <br />
+      <p class = "whiten">
+       One of the most exciting developments in the area of Endometrial Cancer treatment has presented itself in the form of advanced hormone therapy. 
+      </p>
+      <p class = "whiten">
+       To be more specific, the progestin family of hormones cause cancerous cells to react in a manner that is useful for containing the spread of Endometrial Cancer.
+      </p>
+
+      
+    </h2>
+    <button ion-button class = "anchor-button-down" color = "default" large on-tap="expandSecondTreatment()">Learn More</button>
+    
+    <div class = "alt-purple-slide special-card-header whiten">
+      <div class = "special-card-internal">How to Help (1/2)</div>
+   </div>
+  </ion-slide>
+
+  <ion-slide class = "alt-purple-slide">
+    <h2 class = "anchor-other">
+      <span class = "whiten center-title-lower">The Foundation for Women's Cancer</span>
+      <br />
+      <p class = "whiten">
+        The Foundation for Women's Cancer is an organization that has been tirelessly working to combat cancer in females since its inception in 1991. They attempt to reach this goal on three different fronts: raising public awareness, providing education, and supporting research for top institutions around the world.
+      </p>
+
+      <p class = "whiten">
+    Their work would go unfulfilled without the continuous support provided by people like you. The foundation has to date funded 2.5 million dollars in research, and the recipients were able to return nearly 58 million dollars in the form of extramural research funding. That is a 23-fold return on investment. This kind of astonishing growth can only continue with the support of you.
+      </p>
+
+      
+    </h2>
+    <button ion-button class = "anchor-button-down" color = "default" large on-tap="expandFirstDonation()">Learn More</button>
+    
+    <div class = "alt-blue-slide special-card-header whiten">
+      <div class = "special-card-internal">How to Help (2/2)</div>
+   </div>
+  </ion-slide>
+
+  <ion-slide class = "alt-blue-slide">
+    <h2 class = "anchor-other">
+      <span class = "whiten center-title-lower">The Mary Kay Foundation</span>
+      <br />
+      <p class = "whiten">
+      The Mary Kay Foundation is an organization founded in memoriam of Mary Kay, a cancer patient who died Thankgiving day 2001, and her dream to further cancer research to the benefit of patients all around the world. This foundation is not specific to Endometrial Cancers, instead seeking to confront all cancers that afflict women. 
+      </p>
+
+      <p class = "whiten">
+   The mission statement of the Mary Kay foundation is a simple one: to continuously provide support for top medical facilities in order to help fund research that leads to the eradication of cancer afflicting women while also ending the disease of domestic violence all around the world by providing shelters and local outreach programs. 
+      </p>
+
+      
+    </h2>
+    <button ion-button class = "anchor-button-down" color = "default" large on-tap="expandSecondDonation()">Learn More</button>
+    
+    <div class = "blue-slide special-card-header whiten">
+   </div>
+  </ion-slide>
+</ion-slides>
+</ion-content>
+
+<script>
+
+</script>

@@ -7,6 +7,10 @@ import {BloodLymphomaPage} from '../blood-lymphoma/blood-lymphoma';
 import {BloodCellPage} from '../blood-cell/blood-cell';
 import {BloodChemotherapyPage} from '../blood-chemotherapy/blood-chemotherapy';
 import {BloodAboutPage} from '../blood-about/blood-about';
+import {ViewChild} from '@angular/core';
+import {Slides} from 'ionic-angular';
+import {DonateBloodOnePage} from '../donate-blood-one/donate-blood-one';
+import {DonateBloodTwoPage} from '../donate-blood-two/donate-blood-two';
 
 /*
   Generated class for the Blood page.
@@ -19,6 +23,8 @@ import {BloodAboutPage} from '../blood-about/blood-about';
   templateUrl: 'blood.html'
 })
 export class BloodPage {
+
+@ViewChild(Slides) slides: Slides;
 
  labels: string[] = ["Leukemia", "Myeloma", "Lymphoma"];
   defaultFontColor:'#fff';
@@ -46,6 +52,21 @@ export class BloodPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad BloodPage');
+  }
+
+  goToType()
+  {
+    this.slides.slideTo(3, 600);
+  }
+
+  goToTreatment()
+  {
+    this.slides.slideTo(6, 600);
+  }
+
+  goToHelp()
+  {
+    this.slides.slideTo(8, 600);
   }
 
   expandAbout()
@@ -76,6 +97,16 @@ export class BloodPage {
   expandSecondTreatment()
   {
     this.navCtrl.push(BloodChemotherapyPage);
+  }
+
+  expandFirstDonation()
+  {
+      this.navCtrl.push(DonateBloodOnePage);
+  }
+
+  expandSecondDonation()
+  {
+      this.navCtrl.push(DonateBloodTwoPage);
   }
 
   mySlideOptions = {

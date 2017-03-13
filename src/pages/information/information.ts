@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import {AppIntroPage} from '../app-intro/app-intro';
 
 /*
   Generated class for the Information page.
@@ -17,6 +18,11 @@ export class InformationPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad InformationPage');
+  }
+
+   openAppIntro()
+  {
+    this.navCtrl.push(AppIntroPage);
   }
 
 }

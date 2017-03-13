@@ -1,0 +1,235 @@
+<!--
+  Generated template for the Bladder page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Oral Cancer</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+<ion-slides [options]="mySlideOptions" pager>
+
+  <ion-slide class = "green-slide rel-pos">
+    <div class = "anchor-other pad">
+      <h1 class = "whiten slide-header-main">Oral Cancer</h1>
+      <div class = "whiten slide-header">More people die from Oral Cancer each year than from gun murders</div>
+    </div>
+    
+      <button ng-click="aboutDisease()" ion-button color = "default" class = "limit-button" on-tap = "goToType()">Types of Oral Cancer</button>
+      <br />
+      <button ion-button color = "default" class = "limit-button" on-tap = "goToTreatment()">Treatment Advancements</button> 
+      <br />
+      <button ion-button color = "default" class = "limit-button" on-tap = "goToHelp()">How to Help</button>
+   
+    
+   <div class = "purple-slide special-card-header whiten">
+      <div class = "special-card-internal">About (1/2)</div>
+   </div>
+  </ion-slide>
+ 
+  <ion-slide class = "purple-slide rel-pos">
+    <h2 class = "anchor-other">
+      <!--<span class = "whiten center-title">Introduction (1/2)</span>-->
+      <span class = "whiten center-title-lower">What is Oral Cancer?</span>
+      <br />
+      <p class = "whiten">
+   Oral Cancer is a disease in which a group of oral cells begins to divide uncontrollably, resulting in a tumorous mass. The term "Oral Cancer" can refer to cancers of the lips, cheeks, mouth, tounge, throat, as well as related reigons.
+
+      </p>
+
+      <p class = "whiten">
+      The three that we will be analyzing later in this page are Squamous Cell Carcinomas, Verrucous Carcinomas, and Salivary Gland Carcinomas.
+      </p>
+
+      
+    </h2>
+    <button ion-button class = "anchor-button-down" color = "default" large on-tap="expandAbout()">Learn More</button>
+
+    <div class = "blue-slide special-card-header whiten">
+      <div class = "special-card-internal">About (2/2)</div>
+   </div>
+
+  </ion-slide>
+
+  <ion-slide class = "blue-slide">
+    <h2 class = "anchor-other">
+      <!--<span class = "whiten center-title">Introduction (1/2)</span>-->
+      <span class = "whiten center-title-lower">Oral Cancer Data</span>
+      <br />
+      <p class = "whiten">
+       Below is a chart that details the composition of the various forms of Oral Cancers, something which allows us to isolate the harms of each individual varient and their resulting impacts on society. Worth noting is that about 90 percent of all Oral Cancer cases are diagnosed as being Squamous Cell 
+      </p>
+  
+    </h2>
+    <div class = "responsive-chart-wrapper">
+    <chart id = "oralChart" class = "responsive-chart" [labels]="labels" [data]="data" type="pie"></chart>
+</div>
+    <div class = "red-slide special-card-header whiten">
+      <div class = "special-card-internal">Types (1/3)</div>
+   </div>
+
+  </ion-slide>
+
+  <ion-slide class = "red-slide">
+    <h2 class = "anchor-other">
+      <span class = "whiten center-title-lower">Squamous Cell Carcinomas</span>
+      <br />
+      <p class = "whiten">
+       Your throat and parts of your mouth are covered with many flat squamous cells. Contracting Squamous Cell Carcinoma means that some of these cells have become abnormal and are now actively fighting against the body.
+      </p>
+
+      <p class = "whiten">
+        Squamous Cell Carcinomas are a relatively pervasive problem, with over 30,000 people being effected by it each year in the United States alone. This means that Oral Squamous Cell Carcinomas account for 2.5 percent of all cancer cases in the United States.
+      </p>
+  
+    </h2>
+<button ion-button class = "anchor-button-down" color = "default" large on-tap="expandFirstDisease()">Learn More</button>
+<div class = "blue-slide special-card-header whiten">
+      <div class = "special-card-internal">Types (2/3)</div>
+   </div>
+  </ion-slide>
+
+  <ion-slide class = "blue-slide">
+    <h2 class = "anchor-other">
+      <span class = "whiten center-title-lower">Verrucous Carcinomas</span>
+      <br />
+      <p class = "whiten">
+      Verrucous Carcinomas are a relatively rare varient of Squamous Cell Carcinomas, accounting for around 5 percent of all oral cavity cancers. It is typically very slow growing, which means that it rarely spreads to other parts of the body.
+      </p>
+        
+        <p class = "whiten">
+        However, it can become deeply infused with the oral cavity, something which sometimes results in the degredation of the jaw bone or similar features.
+      </p>
+  
+    </h2>
+<button ion-button class = "anchor-button-down" color = "default" large on-tap="expandSecondDisease()">Learn More</button>
+<div class = "green-slide special-card-header whiten">
+      <div class = "special-card-internal">Types (3/3) </div>
+   </div>
+  </ion-slide>
+
+<ion-slide class = "green-slide">
+    <h2 class = "anchor-other">
+      <!--<span class = "whiten center-title">Introduction (1/2)</span>-->
+      <span class = "whiten center-title-lower">Salivary Gland Carcinomas</span>
+      <br />
+      <p class = "whiten">
+       Your salivary glands are responsible for creating saliva, a lubricating substance involved in the early process of digesting food.
+      </p>
+      
+        <p class = "whiten">
+       Salivary Gland Carcinomas are classified when abnormal cells begin to disrupt this bodily function. They are relatively uncommon, only accounting for about 3 percent of head and neck tumors.
+      </p>
+        
+    </h2>
+    <button ion-button class = "anchor-button-down" color = "default" large on-tap="expandThirdDisease()">Learn More</button>
+    
+    <div class = "red-slide special-card-header whiten">
+      <div class = "special-card-internal">Treatment (1/2)</div>
+   </div>
+  </ion-slide>
+
+
+
+  <ion-slide class = "red-slide">
+    <h2 class = "anchor-other">
+      <!--<span class = "whiten center-title">Introduction (1/2)</span>-->
+      <span class = "whiten center-title-lower">Advancements in Chemotherapy</span>
+      <br />
+      <p class = "whiten">
+       Chemotherapy has always served as a valuable tool for doctors and patients alike to combat Oral Cancers. However, the side effects that this form of treatment can sometimes have has attached a negative stigma to the practice, something which has made some patients apprehensive to attempting it.
+      </p>
+
+      <p class = "whiten">
+   Thankfully, recent advancements have brought with them new applications of chemotherapy that are both better suited for targeting cancerous tumors and more comfortable for those that must experience it.
+      </p>
+
+      
+    </h2>
+    <button ion-button class = "anchor-button-down" color = "default" large on-tap="expandFirstTreatment()">Learn More</button>
+    
+    <div class = "alt-green-slide special-card-header whiten">
+      <div class = "special-card-internal">Treatment (2/2)</div>
+   </div>
+  </ion-slide>
+
+  <ion-slide class = "alt-green-slide">
+    <h2 class = "anchor-other">
+      <!--<span class = "whiten center-title">Introduction (1/2)</span>-->
+      <span class = "whiten center-title-lower">Advancements in Lifestyle Understanding</span>
+      <br /><br />
+      <p class = "whiten">
+       Recent discoveries have done much to better our understanding regarding the actual causes of Oral Cancers, something that has given people everywhere the opportunity to protect themselves from this terrible disease.
+      </p>
+
+      <p class = "whiten">
+   This means that it is now possible for everyone to take significant steps towards ensuring a healthier, safer life free from the burden of cancer.
+      </p>
+
+      
+    </h2>
+    <button ion-button class = "anchor-button-down" color = "default" large on-tap="expandSecondTreatment()">Learn More</button>
+    
+    <div class = "alt-purple-slide special-card-header whiten">
+      <div class = "special-card-internal">How to Help (1/2)</div>
+   </div>
+  </ion-slide>
+
+  <ion-slide class = "alt-purple-slide">
+    <h2 class = "anchor-other">
+      <span class = "whiten center-title-lower">The Oral Cancer Foundation</span>
+      <br />
+      <p class = "whiten">
+        The Oral Cancer Foundation has long since been a valuable participant in the battle against Oral Cancers. 
+      </p>
+
+      <p class = "whiten">
+     The Oral Cancer foundation has also been responsible for the organization of many nationwide events that have done much to enhance public awareness regarding the disease. 
+      </p>
+        
+        <p class = "whiten">
+     These campaigns can involve everything from bake sales to neighborhood parades, and are capable of spreading happiness as well as raising money and awareness for the fight against this terrible disease.
+      </p>
+
+      
+    </h2>
+    <button ion-button class = "anchor-button-down" color = "default" large on-tap="expandFirstDonation()">Learn More</button>
+    
+    <div class = "alt-blue-slide special-card-header whiten">
+      <div class = "special-card-internal">How to Help (2/2)</div>
+   </div>
+  </ion-slide>
+
+  <ion-slide class = "alt-blue-slide">
+    <h2 class = "anchor-other">
+      <span class = "whiten center-title-lower">The Mouth Cancer Foundation</span>
+      <br />
+      <p class = "whiten">
+      Established over a decade ago, The Mouth Cancer Foundation has dedicated itself to supporting people who suffer from mouth, throat, and other related cancers. 
+      </p>
+
+      <p class = "whiten">
+  They also boast an impressive online support group that has proven to help thousands people gain information regarding how best to deal with the threat of Oral Cancers. 
+      </p>
+
+      
+    </h2>
+    <button ion-button class = "anchor-button-down" color = "default" large on-tap="expandSecondDonation()">Learn More</button>
+    
+    <div class = "blue-slide special-card-header whiten">
+   </div>
+  </ion-slide>
+</ion-slides>
+</ion-content>
+
+<script>
+
+</script>

@@ -7,6 +7,10 @@ import {ColorectalSarcomasPage} from '../colorectal-sarcomas/colorectal-sarcomas
 import {ColorectalCarcinoidsPage} from '../colorectal-carcinoids/colorectal-carcinoids';
 import {ColorectalUnderstandingPage} from '../colorectal-understanding/colorectal-understanding';
 import {ColorectalDrugPage} from '../colorectal-drug/colorectal-drug';
+import {Slides} from 'ionic-angular';
+import { ViewChild } from '@angular/core';
+import {DonateColorectalOnePage} from '../donate-colorectal-one/donate-colorectal-one';
+import {DonateColorectalTwoPage} from '../donate-colorectal-two/donate-colorectal-two';
 /*
   Generated class for the Colorectal page.
 
@@ -19,8 +23,26 @@ import {ColorectalDrugPage} from '../colorectal-drug/colorectal-drug';
 })
 export class ColorectalPage {
 
+  @ViewChild(Slides) slides: Slides;
+
 labels: string[] = ["Adenocarcinomas ", "Other Forms"];
   defaultFontColor:'#fff';
+  
+
+  goToType()
+  {
+    this.slides.slideTo(3, 600);
+  }
+
+  goToTreatment()
+  {
+    this.slides.slideTo(6, 600);
+  }
+
+  goToHelp()
+  {
+    this.slides.slideTo(8, 600);
+  }
   
   expandAbout()
   {
@@ -50,6 +72,16 @@ labels: string[] = ["Adenocarcinomas ", "Other Forms"];
   expandSecondTreatment()
   {
     this.navCtrl.push(ColorectalDrugPage);
+  }
+
+  expandFirstDonation()
+  {
+    this.navCtrl.push(DonateColorectalOnePage);
+  }
+
+  expandSecondDonation()
+  {
+    this.navCtrl.push(DonateColorectalTwoPage);
   }
 
   data: Chart.Dataset[] = [

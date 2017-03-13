@@ -1,0 +1,208 @@
+<!--
+  Generated template for the Bladder page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Lymphatic Cancer</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+<ion-slides [options]="mySlideOptions" pager>
+
+  <ion-slide class = "green-slide rel-pos">
+    <div class = "anchor-other pad">
+      <h1 class = "whiten slide-header-main">Lymphatic Cancer</h1>
+      <div class = "whiten slide-header">The number of people with Non-Hodgkin's Lymphoma has doubled since the 1970s</div>
+    </div>
+    
+      <button ng-click="aboutDisease()" ion-button color = "default" class = "limit-button" on-tap = "goToType()">Types of Lymphatic Cancer</button>
+      <br />
+      <button ion-button color = "default" class = "limit-button" on-tap = "goToTreatment()">Treatment Advancements</button> 
+      <br />
+      <button ion-button color = "default" class = "limit-button" on-tap = "goToHelp()">How to Help</button>
+   
+    
+   <div class = "purple-slide special-card-header whiten">
+      <div class = "special-card-internal">About (1/2)</div>
+   </div>
+  </ion-slide>
+ 
+  <ion-slide class = "purple-slide rel-pos">
+    <h2 class = "anchor-other">
+      <!--<span class = "whiten center-title">Introduction (1/2)</span>-->
+      <span class = "whiten center-title-lower">What is Lymphatic Cancer?</span>
+      <br />
+      <p class = "whiten">
+    Lymphoma is classified as the uncontrollable growth of a specific type of white blood cell called a lymphatic cell. It is a variant of Blood Cancer, but possesses enough unique properties to warrant individual analysis.
+
+      </p>
+
+      <p class = "whiten">
+      There are 2 main types of Lymphatic Cancers: Hodgkin's Disease, and Non-Hodgkin's Lymphoma. The specifics of both of these will be dissected in great detail down below.
+      </p>
+
+      
+    </h2>
+    <button ion-button class = "anchor-button-down" color = "default" large on-tap="expandAbout()">Learn More</button>
+
+    <div class = "blue-slide special-card-header whiten">
+      <div class = "special-card-internal">About (2/2)</div>
+   </div>
+
+  </ion-slide>
+
+  <ion-slide class = "blue-slide">
+    <h2 class = "anchor-other">
+      <!--<span class = "whiten center-title">Introduction (1/2)</span>-->
+      <span class = "whiten center-title-lower">Lymphatic Cancer Data</span>
+      <br />
+      <p class = "whiten">
+       As can be seen through the chart below, Non-Hodgkin's Lymphoma (sometimes referred to as NHL) is far more common than Hodgkin's Disease. In fact, Non-Hodgkin's Lymphoma is the 6th most prominent form of cancer in men, and the 5th most common in women as of 2014.
+      </p>
+  
+    </h2>
+    <div class = "responsive-chart-wrapper">
+    <chart id = "testicularChart" class = "responsive-chart" [labels]="labels" [data]="data" type="pie"></chart>
+</div>
+    <div class = "red-slide special-card-header whiten">
+      <div class = "special-card-internal">Types (1/2)</div>
+   </div>
+
+  </ion-slide>
+
+  <ion-slide class = "red-slide">
+    <h2 class = "anchor-other">
+      <span class = "whiten center-title-lower">Non-Hodgkin's Lymphoma</span>
+      <br />
+      <p class = "whiten">
+       Non-Hodgkin's Lymphoma is the most common form of Lymphatic Cancers, with around 8 cases documented for every one cases of Hodgkin's Disease. It is the 6th most common form of cancer in men, and the 5th most common cancer in women, thus posing a serious threat to everybody.
+      </p>
+
+      <p class = "whiten">
+        Perhaps the most troubling fact is that the prominence of this disease has been persistently growing since the early 1970's, with an 83 percent increase being observed in the quarter-century following 1973.
+      </p>
+  
+    </h2>
+<button ion-button class = "anchor-button-down" color = "default" large on-tap="expandFirstDisease()">Learn More</button>
+<div class = "blue-slide special-card-header whiten">
+      <div class = "special-card-internal">Types (2/2)</div>
+   </div>
+  </ion-slide>
+
+  <ion-slide class = "blue-slide">
+    <h2 class = "anchor-other">
+      <span class = "whiten center-title-lower">Hodgkin's Disease</span>
+      <br />
+      <p class = "whiten">
+      Hodgkin's Disease (sometimes referred to as HD) attacks the same area that Non-Hodgkin's Lymphoma does: the lymphocytes. Hodgkin's Disease takes over these cells, and in doing so weakens the immune system.
+      </p>
+        
+        <p class = "whiten">
+        This has the adverse effect of making the body more prone to sickness. Because of this, the symptoms of Hodgkin's Disease are very similar to Non-Hodgkin's Lymphoma.
+      </p>
+  
+    </h2>
+<button ion-button class = "anchor-button-down" color = "default" large on-tap="expandSecondDisease()">Learn More</button>
+<div class = "red-slide special-card-header whiten">
+      <div class = "special-card-internal">Treatment (1/2) </div>
+   </div>
+  </ion-slide>
+
+  <ion-slide class = "red-slide">
+    <h2 class = "anchor-other">
+      <!--<span class = "whiten center-title">Introduction (1/2)</span>-->
+      <span class = "whiten center-title-lower">Advancements in Immunotherapy</span>
+      <br />
+      <p class = "whiten">
+       In its most basic form, immunotherapy is the practice of applying the immune system to combat the development and spread of cancerous cells.
+      </p>
+
+      <p class = "whiten">
+   While such therapies have existed for some time now, recent developments have made this form of treatment significantly more effective and comfortable for the patient when applied against Lymphatic Cancers.
+      </p>
+
+      
+    </h2>
+    <button ion-button class = "anchor-button-down" color = "default" large on-tap="expandFirstTreatment()">Learn More</button>
+    
+    <div class = "alt-green-slide special-card-header whiten">
+      <div class = "special-card-internal">Treatment (2/2)</div>
+   </div>
+  </ion-slide>
+
+  <ion-slide class = "alt-green-slide">
+    <h2 class = "anchor-other">
+      <!--<span class = "whiten center-title">Introduction (1/2)</span>-->
+      <span class = "whiten center-title-lower">Advancements in Chemotherapy</span>
+      <br />
+      <p class = "whiten">
+       Chemotherapy is the application of a powerful drug or combinations of drugs to combat cancerous cells in the body.
+      </p>
+
+      <p class = "whiten">
+   Although it is a treatment option that has historically been associated with negative side effects and inconsistent results, recent developments have sought to upset that understanding through the careful refinement of the practice.
+      </p>
+
+      
+    </h2>
+    <button ion-button class = "anchor-button-down" color = "default" large on-tap="expandSecondTreatment()">Learn More</button>
+    
+    <div class = "alt-purple-slide special-card-header whiten">
+      <div class = "special-card-internal">How to Help (1/2)</div>
+   </div>
+  </ion-slide>
+
+  <ion-slide class = "alt-purple-slide">
+    <h2 class = "anchor-other">
+      <span class = "whiten center-title-lower">Lymphoma Research Foundation</span>
+      <br />
+      <p class = "whiten">
+        The Lymphoma Research Foundation is an organization that has long since established itself as one of the most reputable authorities in regards to the research and development of new Lymphatic Cancer treatments. 
+      </p>
+
+      <p class = "whiten">
+    The organization is notable due to its tireless support of research efforts that ultimately elevate our knowledge of the causes of Lymphatic Cancers and how to effectively combat them.
+      </p>
+
+      
+    </h2>
+    <button ion-button class = "anchor-button-down" color = "default" large on-tap="expandFirstDonation()">Learn More</button>
+    
+    <div class = "alt-blue-slide special-card-header whiten">
+      <div class = "special-card-internal">How to Help (2/2)</div>
+   </div>
+  </ion-slide>
+
+  <ion-slide class = "alt-blue-slide">
+    <h2 class = "anchor-other">
+      <span class = "whiten center-title-lower">Lymphoma Foundation of America</span>
+      <br />
+      <p class = "whiten">
+      The Lymphoma Foundation of America is an organization that has remained selflessly dedicated to the eradication of Lymphatic Cancers since its inception in 1986. 
+      </p>
+
+      <p class = "whiten">
+   Their operations are extensive, with the scope of their services including: one on one counseling, educational programs, second opinions, and doctor suggestions from around the nation. 
+      </p>
+
+      
+    </h2>
+    <button ion-button class = "anchor-button-down" color = "default" large on-tap="expandSecondDonation()">Learn More</button>
+    
+    <div class = "blue-slide special-card-header whiten">
+   </div>
+  </ion-slide>
+</ion-slides>
+</ion-content>
+
+<script>
+
+</script>

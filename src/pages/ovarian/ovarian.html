@@ -1,0 +1,231 @@
+<!--
+  Generated template for the Bladder page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Ovarian Cancer</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+<ion-slides [options]="mySlideOptions" pager>
+
+  <ion-slide class = "green-slide rel-pos">
+    <div class = "anchor-other pad">
+      <h1 class = "whiten slide-header-main">Ovarian Cancer</h1>
+      <div class = "whiten slide-header">Ovarian Cancer is the 4th most common cause of cancer death for women</div>
+    </div>
+    
+      <button ng-click="aboutDisease()" ion-button color = "default" class = "limit-button" on-tap = "goToType()">Types of Ovarian Cancer</button>
+      <br />
+      <button ion-button color = "default" class = "limit-button" on-tap = "goToTreatment()">Treatment Advancements</button> 
+      <br />
+      <button ion-button color = "default" class = "limit-button" on-tap = "goToHelp()">How to Help</button>
+   
+    
+   <div class = "purple-slide special-card-header whiten">
+      <div class = "special-card-internal">About (1/2)</div>
+   </div>
+  </ion-slide>
+ 
+  <ion-slide class = "purple-slide rel-pos">
+    <h2 class = "anchor-other">
+      <!--<span class = "whiten center-title">Introduction (1/2)</span>-->
+      <span class = "whiten center-title-lower">What is Ovarian Cancer?</span>
+      <br />
+      <p class = "whiten">
+    Ovarian Cancer is a form of cancer that begins in the ovaries. The ovaries, found exclusively in females, are responsible for maintaining the health of the reproductve system and ensuring fertility.
+
+      </p>
+
+      <p class = "whiten">
+      here are several types of Ovarian Cancers that we will cover in detail. These are Common Epithelial Tumors, Germ Cell Tumors, and Stromal Tumors.
+      </p>
+
+      
+    </h2>
+    <button ion-button class = "anchor-button-down" color = "default" large on-tap="expandAbout()">Learn More</button>
+
+    <div class = "blue-slide special-card-header whiten">
+      <div class = "special-card-internal">About (2/2)</div>
+   </div>
+
+  </ion-slide>
+
+  <ion-slide class = "blue-slide">
+    <h2 class = "anchor-other">
+      <!--<span class = "whiten center-title">Introduction (1/2)</span>-->
+      <span class = "whiten center-title-lower">Ovarian Cancer Data</span>
+      <br />
+      <p class = "whiten">
+       Below is a pie graph that details the 5-year survival rate of those that suffer from Ovarian Cancer. As you can see, Ovarian Cancer is incredible aggressive, claiming over half of all people diagnosed within this timeframe.
+      </p>
+  
+    </h2>
+    <div class = "responsive-chart-wrapper">
+    <chart id = "ovarianChart" class = "responsive-chart" [labels]="labels" [data]="data" type="pie"></chart>
+</div>
+    <div class = "red-slide special-card-header whiten">
+      <div class = "special-card-internal">Types (1/3)</div>
+   </div>
+
+  </ion-slide>
+
+  <ion-slide class = "red-slide">
+    <h2 class = "anchor-other">
+      <span class = "whiten center-title-lower">Common Epithelial Tumors (CETs)</span>
+      <br />
+      <p class = "whiten">
+        Common Epithelial Tumors (sometimes called CETs) are the most frequently observed form of Ovarian Cancers, making up around 90 percent of all diagnosed cases.
+      </p>
+
+      <p class = "whiten">
+       There exists several other ways to classify diseases of this nature, the most common of which are through the distinction of Serous and Endometrioid tumors.
+      </p>
+  
+    </h2>
+<button ion-button class = "anchor-button-down" color = "default" large on-tap="expandFirstDisease()">Learn More</button>
+<div class = "blue-slide special-card-header whiten">
+      <div class = "special-card-internal">Types (2/3)</div>
+   </div>
+  </ion-slide>
+
+  <ion-slide class = "blue-slide">
+    <h2 class = "anchor-other">
+      <span class = "whiten center-title-lower">Germ Cell Tumors</span>
+      <br />
+      <p class = "whiten">
+      Germ Cell Tumors are relatively rare within the context of Ovarian Cancer, accounting for roughly 2 percent of all newly diagnosed cases. They almost always occur in younger women, and can affect those who are still teenagers.
+      </p>
+        
+        <p class = "whiten">
+        Germ Cell Tumors are usually relatively easy to handle if they are found early and given proper treatment.
+      </p>
+  
+    </h2>
+<button ion-button class = "anchor-button-down" color = "default" large on-tap="expandSecondDisease()">Learn More</button>
+<div class = "green-slide special-card-header whiten">
+      <div class = "special-card-internal">Types (3/3) </div>
+   </div>
+  </ion-slide>
+
+<ion-slide class = "green-slide">
+    <h2 class = "anchor-other">
+      <!--<span class = "whiten center-title">Introduction (1/2)</span>-->
+      <span class = "whiten center-title-lower">Stromal Tumors</span>
+      <br />
+      <p class = "whiten">
+       Stromal Tumors are an especially rare type of Ovarian Cancer. They develop from the cell tissue that is typically responsible for producing female hormones.
+      </p>
+        
+        <p class = "whiten">
+       One of the largest issues with Stromal Tumor treatment is the issue of recurrence, as Stromal Tumors have been known to come back years after substantial remission has occured. This means that patients can rarely consider themselves 'cured', as the threat of the cancer coming back is a persistent one.
+      </p>
+      
+    </h2>
+    <button ion-button class = "anchor-button-down" color = "default" large on-tap="expandThirdDisease()">Learn More</button>
+    
+    <div class = "red-slide special-card-header whiten">
+      <div class = "special-card-internal">Treatment (1/2)</div>
+   </div>
+  </ion-slide>
+
+
+
+  <ion-slide class = "red-slide">
+    <h2 class = "anchor-other">
+      <!--<span class = "whiten center-title">Introduction (1/2)</span>-->
+      <span class = "whiten center-title-lower">Advancements in Understanding</span>
+      <br />
+      <p class = "whiten">
+       Because Ovarian Cancer is so difficult to detect, grasping an increased understanding of what causes the disease the first place is all but a necessity.
+      </p>
+
+      <p class = "whiten">
+   This allows scientists and doctors alike to develop a new standard under which to operate when approaching Ovarian Cancer treatment.
+      </p>
+
+      
+    </h2>
+    <button ion-button class = "anchor-button-down" color = "default" large on-tap="expandFirstTreatment()">Learn More</button>
+    
+    <div class = "alt-green-slide special-card-header whiten">
+      <div class = "special-card-internal">Treatment (2/2)</div>
+   </div>
+  </ion-slide>
+
+  <ion-slide class = "alt-green-slide">
+    <h2 class = "anchor-other">
+      <!--<span class = "whiten center-title">Introduction (1/2)</span>-->
+      <span class = "whiten center-title-lower">Advancements in Drug Development</span>
+      <br />
+      <p class = "whiten">
+       Recent research has done much to provide new options to doctors and patients alike through the development of life-saving drugs.
+      </p>
+
+      <p class = "whiten">
+  Because Ovarian Cancer is so difficult to detect at an early stage, many scientists have directed their efforts instead to dealing with Ovarian Cancer in its more advanced stages. This allows the sickest of the sick to be met with new treatments that provide them with hope when previously there was none.
+      </p>
+
+      
+    </h2>
+    <button ion-button class = "anchor-button-down" color = "default" large on-tap="expandSecondTreatment()">Learn More</button>
+    
+    <div class = "alt-purple-slide special-card-header whiten">
+      <div class = "special-card-internal">How to Help (1/2)</div>
+   </div>
+  </ion-slide>
+
+  <ion-slide class = "alt-purple-slide">
+    <h2 class = "anchor-other">
+      <span class = "whiten center-title-lower">The Ovarian Cancer Research Fund</span>
+      <br />
+      <p class = "whiten">
+        The Ovarian Cancer Research Fund has made it its mission to fight Ovarian Cancer on both preventative and reactionary fronts. They have completely committed themselves over the years to driving innovative research programs that enable scientists to be more proactive in their battle against Ovarian Cancers.
+      </p>
+
+      <p class = "whiten">
+     The Ovarian Cancer Research Fund has been very progressive in the allocation of funds, awarding 237 grants totaling over 65 million dollars that have changed the way researchers approach Ovarian Cancer treatment. The research projects that they fund have gone on to be published in some of the most prestigious medical journals on the planet, including the New England Journal of Science and the Clinical Cancer Research Journal.
+      </p>
+
+      
+    </h2>
+    <button ion-button class = "anchor-button-down" color = "default" large on-tap="expandFirstDonation()">Learn More</button>
+    
+    <div class = "alt-blue-slide special-card-header whiten">
+      <div class = "special-card-internal">How to Help (2/2)</div>
+   </div>
+  </ion-slide>
+
+  <ion-slide class = "alt-blue-slide">
+    <h2 class = "anchor-other">
+      <span class = "whiten center-title-lower">The National Ovarian Cancer Coalition</span>
+      <br />
+      <p class = "whiten">
+      Since its founding in 1995, the National Ovarian Cancer Coalition has tirelessly pursued a means to bring an end to suffering at the hands of Ovarian Cancer. They feature a best in class leadership team that has been instrumental in guiding the foundation to be the beacon of innovation that it is today.
+      </p>
+
+      <p class = "whiten">
+   The Coalition has promoted and funded a great number of programs, all of which have advanced the fight against Ovarian Cancer. These programs are diverse in their application, covering everything from the promotion of knowledge regarding risk factors to securing lab time for researchers across the globe.
+      </p>
+
+      
+    </h2>
+    <button ion-button class = "anchor-button-down" color = "default" large on-tap="expandSecondDonation()">Learn More</button>
+    
+    <div class = "blue-slide special-card-header whiten">
+   </div>
+  </ion-slide>
+</ion-slides>
+</ion-content>
+
+<script>
+
+</script>

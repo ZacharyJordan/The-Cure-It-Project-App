@@ -1,0 +1,231 @@
+<!--
+  Generated template for the Bladder page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Thyroid Cancer</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+<ion-slides [options]="mySlideOptions" pager>
+
+  <ion-slide class = "green-slide rel-pos">
+    <div class = "anchor-other pad">
+      <h1 class = "whiten slide-header-main">Thyroid Cancer</h1>
+      <div class = "whiten slide-header">Thyroid Cancers are the 5th most common form of cancer on the planet</div>
+    </div>
+    
+      <button ng-click="aboutDisease()" ion-button color = "default" class = "limit-button" on-tap = "goToType()">Types of Thyroid Cancer</button>
+      <br />
+      <button ion-button color = "default" class = "limit-button" on-tap = "goToTreatment()">Treatment Advancements</button> 
+      <br />
+      <button ion-button color = "default" class = "limit-button" on-tap = "goToHelp()">How to Help</button>
+   
+    
+   <div class = "purple-slide special-card-header whiten">
+      <div class = "special-card-internal">About (1/2)</div>
+   </div>
+  </ion-slide>
+ 
+  <ion-slide class = "purple-slide rel-pos">
+    <h2 class = "anchor-other">
+      <!--<span class = "whiten center-title">Introduction (1/2)</span>-->
+      <span class = "whiten center-title-lower">What is Thyroid Cancer?</span>
+      <br />
+      <p class = "whiten">
+     In its most basic form, Thyroid Cancer is defined as the uncontrollable growth of cells in the thyroid gland, a butterfly-shaped gland located just below the center of the neck.
+      </p>
+
+      <p class = "whiten">
+      There are 3 primary types of Thyroid Cancers: Papillary Carcinomas, Follicular Carcinomas, and Hurthle Cell Carcinomas. All of these will be discussed in great detail. 
+      </p>
+
+      
+    </h2>
+    <button ion-button class = "anchor-button-down" color = "default" large on-tap="expandAbout()">Learn More</button>
+
+    <div class = "blue-slide special-card-header whiten">
+      <div class = "special-card-internal">About (2/2)</div>
+   </div>
+
+  </ion-slide>
+
+  <ion-slide class = "blue-slide">
+    <h2 class = "anchor-other">
+      <!--<span class = "whiten center-title">Introduction (1/2)</span>-->
+      <span class = "whiten center-title-lower">Thyroid Cancer Data</span>
+      <br />
+      <p class = "whiten">
+       As shown through the graph below, Papillary Carcinomas are easily the most common types of Bone Cancer, accounting for 80% of all Thyroid Cancer cases. This is followed by Follicular Carcinomas, and finally, Hurthle Cell Carcinomas. 
+      </p>
+  
+    </h2>
+    <div class = "responsive-chart-wrapper">
+    <chart id = "thyroidChart" class = "responsive-chart" [labels]="labels" [data]="data" type="pie"></chart>
+</div>
+    <div class = "red-slide special-card-header whiten">
+      <div class = "special-card-internal">Types (1/3)</div>
+   </div>
+
+  </ion-slide>
+
+  <ion-slide class = "red-slide">
+    <h2 class = "anchor-other">
+      <span class = "whiten center-title-lower">Papillary Carcinomas</span>
+      <br />
+      <p class = "whiten">
+        As illustrated by the chart above, Papillary Carcinomas are the most frequent form of Thyroid Cancer. Before discussing this disease in detail, it is essential to first understand the implications of the cancer in regards to its location in the thyroid.
+      </p>
+
+      <p class = "whiten">
+        The main purpose of the thyroid to regulate the prominence of certain hormones by sending them to key points in the body.
+      </p>
+  
+    </h2>
+<button ion-button class = "anchor-button-down" color = "default" large on-tap="expandFirstDisease()">Learn More</button>
+<div class = "blue-slide special-card-header whiten">
+      <div class = "special-card-internal">Types (2/3)</div>
+   </div>
+  </ion-slide>
+
+  <ion-slide class = "blue-slide">
+    <h2 class = "anchor-other">
+      <span class = "whiten center-title-lower">Follicular Carcinomas</span>
+      <br />
+      <p class = "whiten">
+      Follicular Carcinomas are a relatively rare subset of Thyroid Cancer, accounting for just 17% of total cases. They share many similarities with Papillary Carcinomas, and as such are often described as being a specific varient of that form of Thyroid Cancer.
+      </p>
+
+      <p class = "whiten">
+       Both spread relatively easily, and both oiginate within the thyroid. However, there are a few differences that set it apart from other varients of Thyroid Cancer.
+      </p>
+  
+    </h2>
+<button ion-button class = "anchor-button-down" color = "default" large on-tap="expandSecondDisease()">Learn More</button>
+<div class = "green-slide special-card-header whiten">
+      <div class = "special-card-internal">Types (3/3) </div>
+   </div>
+  </ion-slide>
+
+<ion-slide class = "green-slide">
+    <h2 class = "anchor-other">
+      <!--<span class = "whiten center-title">Introduction (1/2)</span>-->
+      <span class = "whiten center-title-lower">Hurthle Cell Carcinomas</span>
+      <br />
+      <p class = "whiten">
+       Hurthle Cell Carcinomas (sometimes referred to as HCCs) are the rarest form of Thyroid Cancer. Just as Follicular Carcinomas are varients of Papillary Carcinomas, HCCs are varients of Follicular Carcinomas.
+      </p>
+
+      <p class = "whiten">
+     These cells are ripe with cytoplasm, and when infected can disable the mitochondria.
+      </p>
+
+      
+    </h2>
+    <button ion-button class = "anchor-button-down" color = "default" large on-tap="expandThirdDisease()">Learn More</button>
+    
+    <div class = "red-slide special-card-header whiten">
+      <div class = "special-card-internal">Treatment (1/2)</div>
+   </div>
+  </ion-slide>
+
+
+
+  <ion-slide class = "red-slide">
+    <h2 class = "anchor-other">
+      <!--<span class = "whiten center-title">Introduction (1/2)</span>-->
+      <span class = "whiten center-title-lower">Radioactive Iodine</span>
+      <br />
+      <p class = "whiten">
+       Radioactive Iodine is one of the most exciting new developments in the field of Thyroid Cancer research. They exist as a relative noninvasive means to treat particularly advanced cases of Thyroid Cancer, and can even be used in situations in which the cancer has spread beyond its point of origin. 
+      </p>
+
+      <p class = "whiten">
+   Thyroid cells are one of the few cells in the body that possess the mechanisms to properly absorb and concentrate Iodine. Medical professionals take advantage of this fact by inserting radioactive iodine into the bloodstream of the patient.
+      </p>
+
+      
+    </h2>
+    <button ion-button class = "anchor-button-down" color = "default" large on-tap="expandFirstTreatment()">Learn More</button>
+    
+    <div class = "alt-green-slide special-card-header whiten">
+      <div class = "special-card-internal">Treatment (2/2)</div>
+   </div>
+  </ion-slide>
+
+  <ion-slide class = "alt-green-slide">
+    <h2 class = "anchor-other">
+      <!--<span class = "whiten center-title">Introduction (1/2)</span>-->
+      <span class = "whiten center-title-lower">Thyroidectomy</span>
+      <br />
+      <p class = "whiten">
+       A Thyroidectomy involves the removal of all of most of the thyroid in an attempt to halt the advancement of cancerous cells. This is an especially new form of treatment, as scientists and doctors were previously not able to emulate the functioning of the thyroid.
+      </p>
+
+      <p class = "whiten">
+     The aftercare of this treatment, while disruptive and long lasting in its effect, is generally considered by most medical professionals to be an important part in ensuring a safe recovery.
+      </p>
+
+      
+    </h2>
+    <button ion-button class = "anchor-button-down" color = "default" large on-tap="expandSecondTreatment()">Learn More</button>
+    
+    <div class = "alt-purple-slide special-card-header whiten">
+      <div class = "special-card-internal">How to Help (1/2)</div>
+   </div>
+  </ion-slide>
+
+  <ion-slide class = "alt-purple-slide">
+    <h2 class = "anchor-other">
+      <span class = "whiten center-title-lower">Thyroid Cancer Survivors' Association</span>
+      <br />
+      <p class = "whiten">
+        The Thyroid Cancer Survivors' Association is an expansive organization that is an expansive organization that has selflessly dedicated itself to the eradication of Thyroid Cancers. The organization has made a targeted effort to act on levels both local and global in order to accomplish these goals. 
+      </p>
+
+      <p class = "whiten">
+     In accordance with this fact, they sponsor support groups that are active on the internet and in individualized communities as well as provide resources to better help physicians and patients alike come to terms with the many complexities of Thyroid Cancer.
+      </p>
+
+      
+    </h2>
+    <button ion-button class = "anchor-button-down" color = "default" large on-tap="expandFirstDonation()">Learn More</button>
+    
+    <div class = "alt-blue-slide special-card-header whiten">
+      <div class = "special-card-internal">How to Help (2/2)</div>
+   </div>
+  </ion-slide>
+
+  <ion-slide class = "alt-blue-slide">
+    <h2 class = "anchor-other">
+      <span class = "whiten center-title-lower">Light of Life Foundation</span>
+      <br />
+      <p class = "whiten">
+      The Light of Life Foundation is an organization that works tirelessly to improve the quality of life for Thyroid Cancer patients through the promotion of education of the general public.
+      </p>
+
+      <p class = "whiten">
+     The foundation was founded by Joan Shey, a former Thyroid Cancer patient who hopes to provide support for patients around the world through a system that is adaptive to their specific needs.
+      </p>
+
+      
+    </h2>
+    <button ion-button class = "anchor-button-down" color = "default" large on-tap="expandSecondDonation()">Learn More</button>
+    
+    <div class = "blue-slide special-card-header whiten">
+   </div>
+  </ion-slide>
+</ion-slides>
+</ion-content>
+
+<script>
+
+</script>

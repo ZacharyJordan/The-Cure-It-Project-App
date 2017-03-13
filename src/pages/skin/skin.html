@@ -1,0 +1,231 @@
+<!--
+  Generated template for the Bladder page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Skin Cancer</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+<ion-slides [options]="mySlideOptions" pager>
+
+  <ion-slide class = "green-slide rel-pos">
+    <div class = "anchor-other pad">
+      <h1 class = "whiten slide-header-main">Skin Cancer</h1>
+      <div class = "whiten slide-header">Approximately one in five people will develop Skin Cancer in their lifetime</div>
+    </div>
+    
+      <button ng-click="aboutDisease()" ion-button color = "default" class = "limit-button" on-tap = "goToType()">Types of Skin Cancer</button>
+      <br />
+      <button ion-button color = "default" class = "limit-button" on-tap = "goToTreatment()">Treatment Advancements</button> 
+      <br />
+      <button ion-button color = "default" class = "limit-button" on-tap = "goToHelp()">How to Help</button>
+   
+    
+   <div class = "purple-slide special-card-header whiten">
+      <div class = "special-card-internal">About (1/2)</div>
+   </div>
+  </ion-slide>
+ 
+  <ion-slide class = "purple-slide rel-pos">
+    <h2 class = "anchor-other">
+      <!--<span class = "whiten center-title">Introduction (1/2)</span>-->
+      <span class = "whiten center-title-lower">What is Skin Cancer?</span>
+      <br />
+      <p class = "whiten">
+    Skin Cancer is a disease in which a group of Skin Cells begins dividing uncontrollably due to a series of mutations and genetic defects, thus resulting in cancerous tumors.
+
+      </p>
+
+      <p class = "whiten">
+      All Skin Cancers can be grouped into several primary categories. For the sake of education, we will simplify these categories into three main groups: Melanoma, Basal Cell Cardinoma, and Squamous Cell Carinoma.
+      </p>
+
+      
+    </h2>
+    <button ion-button class = "anchor-button-down" color = "default" large on-tap="expandAbout()">Learn More</button>
+
+    <div class = "blue-slide special-card-header whiten">
+      <div class = "special-card-internal">About (2/2)</div>
+   </div>
+
+  </ion-slide>
+
+  <ion-slide class = "blue-slide">
+    <h2 class = "anchor-other">
+      <!--<span class = "whiten center-title">Introduction (1/2)</span>-->
+      <span class = "whiten center-title-lower">Skin Cancer Data</span>
+      <br />
+      <p class = "whiten">
+       Below is a chart that demonstrates the percentages of deaths within Skin Cancer that result from its most deadly varient: Melanoma.
+      </p>
+  
+    </h2>
+    <div class = "responsive-chart-wrapper">
+    <chart id = "testicularChart" class = "responsive-chart" [labels]="labels" [data]="data" type="pie"></chart>
+</div>
+    <div class = "red-slide special-card-header whiten">
+      <div class = "special-card-internal">Types (1/3)</div>
+   </div>
+
+  </ion-slide>
+
+  <ion-slide class = "red-slide">
+    <h2 class = "anchor-other">
+      <span class = "whiten center-title-lower">Melanoma</span>
+      <br />
+      <p class = "whiten">
+        Melanoma is a form of cancer that begins in the Melanocytes, the portion of the skin responsible for producing Melanin and controlling skin color.
+      </p>
+
+      <p class = "whiten">
+        While Melanoma is the most rare form of Skin Cancer, accounting for less than 2 percent of all cases diagnosed per year, it is also the most deadly.
+      </p>
+  
+    </h2>
+<button ion-button class = "anchor-button-down" color = "default" large on-tap="expandFirstDisease()">Learn More</button>
+<div class = "blue-slide special-card-header whiten">
+      <div class = "special-card-internal">Types (2/3)</div>
+   </div>
+  </ion-slide>
+
+  <ion-slide class = "blue-slide">
+    <h2 class = "anchor-other">
+      <span class = "whiten center-title-lower">Basal Cell Cardinoma</span>
+      <br />
+      <p class = "whiten">
+      Basal Cell Cardinoma is a form of Skin Cancer in which an uncontrolled growth develops in the skin's basal cells. It is the most common form of cancer in the United States.
+      </p>
+        
+        <p class = "whiten">
+        Thankfully, Basal Cell Cardinomas are nearly always a relatively unaggressive form of Skin Cancer and typically do not spread beyond the original tumor site.
+      </p>
+  
+    </h2>
+<button ion-button class = "anchor-button-down" color = "default" large on-tap="expandSecondDisease()">Learn More</button>
+<div class = "green-slide special-card-header whiten">
+      <div class = "special-card-internal">Types (3/3) </div>
+   </div>
+  </ion-slide>
+
+<ion-slide class = "green-slide">
+    <h2 class = "anchor-other">
+      <!--<span class = "whiten center-title">Introduction (1/2)</span>-->
+      <span class = "whiten center-title-lower">Squamous Cell Carcinoma</span>
+      <br />
+      <p class = "whiten">
+       Squamous Cell Carcinoma is a form of Skin Cancer in which abnormal cells begin arising in the skin's upper layers. They are the second most common form of Skin Cancer, accounting for nearly 20 percent of all non-Melanoma Skin Cancers.
+      </p>
+
+      <p class = "whiten">
+        They are relatively easy to detect due to the scaly red patches and open sores that the disease often creates. This, in combination with the slow-moving nature of the cancer, means that less than 1 percent of all those afflicted will eventually die as a result of their disease.
+      </p>
+      
+    </h2>
+    <button ion-button class = "anchor-button-down" color = "default" large on-tap="expandThirdDisease()">Learn More</button>
+    
+    <div class = "red-slide special-card-header whiten">
+      <div class = "special-card-internal">Treatment (1/2)</div>
+   </div>
+  </ion-slide>
+
+
+
+  <ion-slide class = "red-slide">
+    <h2 class = "anchor-other">
+      <!--<span class = "whiten center-title">Introduction (1/2)</span>-->
+      <span class = "whiten center-title-lower">Treatment by Drugs</span>
+      <br />
+      <p class = "whiten">
+       The aggressive nature of Melanoma Skin Cancer means that the likelihood of it responding positively to chemotherapy treatements is often quite low. While it can sometimes shrink tumors by as much as 15 percent, this is usually not enough to improve the survival rate of the patient as a whole.
+      </p>
+
+      <p class = "whiten">
+   Thankfully, the emergence of new drugs such as Vemurafenib and Ipilimumab have the potential to transform Skin Cancer treatements as we know them, giving hope to patients that have otherwise exhausted all other options.
+      </p>
+
+      
+    </h2>
+    <button ion-button class = "anchor-button-down" color = "default" large on-tap="expandFirstTreatment()">Learn More</button>
+    
+    <div class = "alt-green-slide special-card-header whiten">
+      <div class = "special-card-internal">Treatment (2/2)</div>
+   </div>
+  </ion-slide>
+
+  <ion-slide class = "alt-green-slide">
+    <h2 class = "anchor-other">
+      <!--<span class = "whiten center-title">Introduction (1/2)</span>-->
+      <span class = "whiten center-title-lower">Treatment by Prevention</span>
+      <br />
+      <p class = "whiten">
+       It has been discovered that nearly all cases of Skin Cancer can be prevented long before they become life threatening. This is due to the visible nature of the disease, as it often makes itself present in the form of visible sores and harsh rashes.
+      </p>
+
+      <p class = "whiten">
+   It is for this reason that there has been a recent movement to promote public education regarding these terrible cancers, as increased awareness will undoubtably save lives as people learn to check themselves for signs of Skin Cancer and take steps to prevent themselves from ever contracting it in the first place.
+      </p>
+
+      
+    </h2>
+    <button ion-button class = "anchor-button-down" color = "default" large on-tap="expandSecondTreatment()">Learn More</button>
+    
+    <div class = "alt-purple-slide special-card-header whiten">
+      <div class = "special-card-internal">How to Help (1/2)</div>
+   </div>
+  </ion-slide>
+
+  <ion-slide class = "alt-purple-slide">
+    <h2 class = "anchor-other">
+      <span class = "whiten center-title-lower">The Skin Cancer Foundation</span>
+      <br />
+      <p class = "whiten">
+        Founded over 35 years ago, The Skin Cancer Foundation is currently the only international organization whose sole focus is improving the prevention and treatment of Skin Cancer. They are responsible for the distribution of millions of medically-reviewed pamphlets, posters, books, and newsletters annually, all of which contribute greatly to the goal of educating the public about the dangers of Skin Cancer.
+      </p>
+
+      <p class = "whiten">
+     The Skin Cancer Foundation has also been responsible for donating over 1.5 million dollars to over 150 boundary-pushing research projects. 
+      </p>
+
+      
+    </h2>
+    <button ion-button class = "anchor-button-down" color = "default" large on-tap="expandFirstDonation()">Learn More</button>
+    
+    <div class = "alt-blue-slide special-card-header whiten">
+      <div class = "special-card-internal">How to Help (2/2)</div>
+   </div>
+  </ion-slide>
+
+  <ion-slide class = "alt-blue-slide">
+    <h2 class = "anchor-other">
+      <span class = "whiten center-title-lower">The American Skin Association</span>
+      <br />
+      <p class = "whiten">
+      The American Skin Association has spent the past two decades fighting against Skin Cancers through the application of research grants and public outreach programs. They seek to make sure that everyone, regardless of race, age, or social status, has the opportunity to recieve education regarding the dangers of skin diseases and what can be done to prevent them. 
+      </p>
+
+      <p class = "whiten">
+   Their active approach in combating these deadly diseases has led them to donate over 7.9 million dollars in advanced dermatological reasearch, something that they argue is "the key to earlier diagnosis, less invasive therapies and, in time, prevention and cure." 
+      </p>
+
+      
+    </h2>
+    <button ion-button class = "anchor-button-down" color = "default" large on-tap="expandSecondDonation()">Learn More</button>
+    
+    <div class = "blue-slide special-card-header whiten">
+   </div>
+  </ion-slide>
+</ion-slides>
+</ion-content>
+
+<script>
+
+</script>

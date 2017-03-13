@@ -1,0 +1,208 @@
+<!--
+  Generated template for the Bladder page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Throat Cancer</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+<ion-slides [options]="mySlideOptions" pager>
+
+  <ion-slide class = "green-slide rel-pos">
+    <div class = "anchor-other pad">
+      <h1 class = "whiten slide-header-main">Throat Cancer</h1>
+      <div class = "whiten slide-header">About 13,560 new cases of Throat Cancer occur each year</div>
+    </div>
+    
+      <button ng-click="aboutDisease()" ion-button color = "default" class = "limit-button" on-tap = "goToType()">Types of Throat Cancer</button>
+      <br />
+      <button ion-button color = "default" class = "limit-button" on-tap = "goToTreatment()">Treatment Advancements</button> 
+      <br />
+      <button ion-button color = "default" class = "limit-button" on-tap = "goToHelp()">How to Help</button>
+   
+    
+   <div class = "purple-slide special-card-header whiten">
+      <div class = "special-card-internal">About (1/2)</div>
+   </div>
+  </ion-slide>
+ 
+  <ion-slide class = "purple-slide rel-pos">
+    <h2 class = "anchor-other">
+      <!--<span class = "whiten center-title">Introduction (1/2)</span>-->
+      <span class = "whiten center-title-lower">What is Throat Cancer?</span>
+      <br />
+      <p class = "whiten">
+    Throat Cancer is an aggressive cancer that has two forms: laryngeal and hypopharyngeal cancers, both four-stage cancers.
+      </p>
+
+      <p class = "whiten">
+      Throat Cancer, like many other cancers, don’t have an exact cause, but there are certain risk factors that can intensify or increase the chances of one obtaining Throat Cancer.
+      </p>
+
+      
+    </h2>
+    <button ion-button class = "anchor-button-down" color = "default" large on-tap="expandAbout()">Learn More</button>
+
+    <div class = "blue-slide special-card-header whiten">
+      <div class = "special-card-internal">About (2/2)</div>
+   </div>
+
+  </ion-slide>
+
+  <ion-slide class = "blue-slide">
+    <h2 class = "anchor-other">
+      <!--<span class = "whiten center-title">Introduction (1/2)</span>-->
+      <span class = "whiten center-title-lower">Throat Cancer Data</span>
+      <br />
+      <p class = "whiten">
+       Below is a graph that shows the 5-year survival rate of Throat Cancers, with only 60.7% of people surviving past 5 years.
+      </p>
+  
+    </h2>
+    <div class = "responsive-chart-wrapper">
+    <chart id = "throatChart" class = "responsive-chart" [labels]="labels" [data]="data" type="pie"></chart>
+</div>
+    <div class = "red-slide special-card-header whiten">
+      <div class = "special-card-internal">Types (1/2)</div>
+   </div>
+
+  </ion-slide>
+
+  <ion-slide class = "red-slide">
+    <h2 class = "anchor-other">
+      <span class = "whiten center-title-lower">Laryngeal Cancer</span>
+      <br />
+      <p class = "whiten">
+        This is one of the two main forms of throat cancer. The cancer starts in the larynx which is located above the opening to the trachea (windpipe).The larynx is most well-known as the voice box because your vocal chords are here but also serves to shut your throat from food or water entering the lungs and helps you breathe.
+      </p>
+
+      <p class = "whiten">
+        The malignant squamous cells cover the larynx and growth of even more cells can result in the numerous amounts of symptoms associated with it.
+      </p>
+  
+    </h2>
+<button ion-button class = "anchor-button-down" color = "default" large on-tap="expandFirstDisease()">Learn More</button>
+<div class = "blue-slide special-card-header whiten">
+      <div class = "special-card-internal">Types (2/2)</div>
+   </div>
+  </ion-slide>
+
+  <ion-slide class = "blue-slide">
+    <h2 class = "anchor-other">
+      <span class = "whiten center-title-lower">Hypopharyngeal Cancer</span>
+      <br />
+      <p class = "whiten">
+      The second type of throat cancer is Hypopharyngeal Cancer which exists the pharynx. The pharynx like the larynx exists in the throat but also in the back of nasal cavity covering three areas called the nasopharynx, oropharynx, and hypopharynx.
+      </p>
+
+      <p class = "whiten">
+       Also, like Laryngeal Cancer, the cancer in the pharynx is caused by flat squamous cells that irregularly multiply out of control and form tumors that can grow to other parts of the body.
+      </p>
+  
+    </h2>
+<button ion-button class = "anchor-button-down" color = "default" large on-tap="expandSecondDisease()">Learn More</button>
+<div class = "red-slide special-card-header whiten">
+      <div class = "special-card-internal">Treatment (1/2) </div>
+   </div>
+  </ion-slide>
+
+
+  <ion-slide class = "red-slide">
+    <h2 class = "anchor-other">
+      <!--<span class = "whiten center-title">Introduction (1/2)</span>-->
+      <span class = "whiten center-title-lower">Laryngectomy</span>
+      <br />
+      <p class = "whiten">
+       Whether or not the severity of the Laryngeal Cancer is high or low, treatment by Laryngectomy requires some form on removal of the larynx.
+      </p>
+
+      <p class = "whiten">
+   The purpose of any Laryngectomy is the same: to remove the entire cancer while leaving behind as much of the larynx as possible. So, some people will undergo a partial Laryngectomy where the top part of one’s Larynx is removed along with the cancer cells.
+      </p>
+
+      
+    </h2>
+    <button ion-button class = "anchor-button-down" color = "default" large on-tap="expandFirstTreatment()">Learn More</button>
+    
+    <div class = "alt-green-slide special-card-header whiten">
+      <div class = "special-card-internal">Treatment (2/2)</div>
+   </div>
+  </ion-slide>
+
+  <ion-slide class = "alt-green-slide">
+    <h2 class = "anchor-other">
+      <!--<span class = "whiten center-title">Introduction (1/2)</span>-->
+      <span class = "whiten center-title-lower">Radiation Therapy</span>
+      <br />
+      <p class = "whiten">
+       A common way to rid early stage Throat Cancers is to use radiation therapy. Although the cost is much higher than other methods, it can kill cancer cells and not damage vocal chords, allowing patients to speak normally.
+      </p>
+
+      <p class = "whiten">
+    It may be used after surgery to try to lower the risk that the cancer will come back. There are even more different types of radiation therapy, but the most common type is external beam radiation therapy.
+      </p>
+
+      
+    </h2>
+    <button ion-button class = "anchor-button-down" color = "default" large on-tap="expandSecondTreatment()">Learn More</button>
+    
+    <div class = "alt-purple-slide special-card-header whiten">
+      <div class = "special-card-internal">How to Help (1/2)</div>
+   </div>
+  </ion-slide>
+
+  <ion-slide class = "alt-purple-slide">
+    <h2 class = "anchor-other">
+      <span class = "whiten center-title-lower">Throat Cancer Foundation</span>
+      <br />
+      <p class = "whiten">
+        The Throat Cancer Foundation was founded in 2012 by Jamie Ræ, a survivor of throat cancer. His group aims to reduce the effect throat cancer has not only on the people who have it but everyone else around them too. His inspiration came from a want to teach and inform people of ways to donate and learn about throat cancer, an underreported cancer.
+      </p>
+
+      <p class = "whiten">
+     The group is excelled in knowing up-to-date information regarding throat cancer and try to serve as a support group along with funding research to help end throat cancer. The group also wants to end HPV infections and has pushed for global HPV vaccination opportunities for all people. 
+      </p>
+
+      
+    </h2>
+    <button ion-button class = "anchor-button-down" color = "default" large on-tap="expandFirstDonation()">Learn More</button>
+    
+    <div class = "alt-blue-slide special-card-header whiten">
+      <div class = "special-card-internal">How to Help (2/2)</div>
+   </div>
+  </ion-slide>
+
+  <ion-slide class = "alt-blue-slide">
+    <h2 class = "anchor-other">
+      <span class = "whiten center-title-lower">Oracle Cancer Trust</span>
+      <br />
+      <p class = "whiten">
+      The Oracle Cancer Trust is a UK based charity organization that conducts research to ensure breakthroughs in head and neck cancer treatment.
+      </p>
+
+      <p class = "whiten">
+     Improving the life of patients and ending throat cancers by funding and performing experimental studies, quality of life analysis and clinical studies of ground-breaking anti-cancer therapies is their goal and numerous grants have been given to fund this.
+      </p>
+
+      
+    </h2>
+    <button ion-button class = "anchor-button-down" color = "default" large on-tap="expandSecondDonation()">Learn More</button>
+    
+    <div class = "blue-slide special-card-header whiten">
+   </div>
+  </ion-slide>
+</ion-slides>
+</ion-content>
+
+<script>
+
+</script>

@@ -1,0 +1,228 @@
+<!--
+  Generated template for the Bladder page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Liver Cancer</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+<ion-slides [options]="mySlideOptions" pager>
+
+  <ion-slide class = "green-slide rel-pos">
+    <div class = "anchor-other pad">
+      <h1 class = "whiten slide-header-main">Liver Cancer</h1>
+      <div class = "whiten slide-header">Liver Cancer mortality rates have more tha tripled in the past 4 decades</div>
+    </div>
+    
+      <button ng-click="aboutDisease()" ion-button color = "default" class = "limit-button" on-tap = "goToType()">Types of Liver Cancer</button>
+      <br />
+      <button ion-button color = "default" class = "limit-button" on-tap = "goToTreatment()">Treatment Advancements</button> 
+      <br />
+      <button ion-button color = "default" class = "limit-button" on-tap = "goToHelp()">How to Help</button>
+   
+    
+   <div class = "purple-slide special-card-header whiten">
+      <div class = "special-card-internal">About (1/2)</div>
+   </div>
+  </ion-slide>
+ 
+  <ion-slide class = "purple-slide rel-pos">
+    <h2 class = "anchor-other">
+      <!--<span class = "whiten center-title">Introduction (1/2)</span>-->
+      <span class = "whiten center-title-lower">What is Liver Cancer?</span>
+      <br />
+      <p class = "whiten">
+    Liver Cancers are cancers that involve the growth and spread of abnormal cells in the liver. There are several different types of Liver Cancer, all of which possess different characteristics and require a different approach in treatment.
+
+      </p>
+
+      <p class = "whiten">
+      The four that we will be taking a closer look at will be Hepatocellular Carcinomas, Bile Duct Cancers, Angiosarcomas and Hemangiosarcomas.
+      </p>
+
+      
+    </h2>
+    <button ion-button class = "anchor-button-down" color = "default" large on-tap="expandAbout()">Learn More</button>
+
+    <div class = "blue-slide special-card-header whiten">
+      <div class = "special-card-internal">About (2/2)</div>
+   </div>
+
+  </ion-slide>
+
+  <ion-slide class = "blue-slide">
+    <h2 class = "anchor-other">
+      <!--<span class = "whiten center-title">Introduction (1/2)</span>-->
+      <span class = "whiten center-title-lower">Liver Cancer Data</span>
+      <br />
+      <p class = "whiten">
+       Below is a chart that details the percentage of Liver Cancer cases that were linked to preventable lifestyle factors. As you can see, a substantial portion of Liver Cancer cases fall under this category.
+      </p>
+  
+    </h2>
+    <div class = "responsive-chart-wrapper">
+    <chart id = "liverChart" class = "responsive-chart" [labels]="labels" [data]="data" type="pie"></chart>
+</div>
+    <div class = "red-slide special-card-header whiten">
+      <div class = "special-card-internal">Types (1/3)</div>
+   </div>
+
+  </ion-slide>
+
+  <ion-slide class = "red-slide">
+    <h2 class = "anchor-other">
+      <span class = "whiten center-title-lower">Hepatocellular Carcinomas</span>
+      <br />
+      <p class = "whiten">
+        Despite being strangely rare in the United States, Hepatocellular Carcinomas are by far the most common form of Liver Cancer.
+      </p>
+
+      <p class = "whiten">
+       In fact, they have risen in prominence in recent years to become the third leading cause of cancer deaths worldwide, with well over 500,000 people affected. 
+      </p>
+  
+    </h2>
+<button ion-button class = "anchor-button-down" color = "default" large on-tap="expandFirstDisease()">Learn More</button>
+<div class = "blue-slide special-card-header whiten">
+      <div class = "special-card-internal">Types (2/3)</div>
+   </div>
+  </ion-slide>
+
+  <ion-slide class = "blue-slide">
+    <h2 class = "anchor-other">
+      <span class = "whiten center-title-lower">Bile Duct Cancers</span>
+      <br />
+      <p class = "whiten">
+      Bile Duct Cancers are a rare form of cancer that starts in the thin tubes that reach from the liver to the small intestine. It is fairly uncommon in the United States, accounting for about only 2,000-3,000 of the 33,000 cases of Liver Cancer that occur there each year.
+      </p>
+        
+        <p class = "whiten">
+        That said, it is much more common in parts of Southeast Asia due to the relative prominence of a parasitic infection that has been linked to causing Bile Duct Cancer.
+      </p>
+  
+    </h2>
+<button ion-button class = "anchor-button-down" color = "default" large on-tap="expandSecondDisease()">Learn More</button>
+<div class = "green-slide special-card-header whiten">
+      <div class = "special-card-internal">Types (3/3) </div>
+   </div>
+  </ion-slide>
+
+<ion-slide class = "green-slide">
+    <h2 class = "anchor-other">
+      <!--<span class = "whiten center-title">Introduction (1/2)</span>-->
+      <br />
+      <span class = "whiten center-title-lower">Angiosarcomas and Hemangiosarcomas</span>
+      <br />
+      <p class = "whiten">
+       Angiosarcomas and Hemangiosarcomas are both extremely rare varients of Liver Cancer. Angiosarcoma, for instance, accounts for just 1 percent of all Liver Cancers. That said, it can still be incredibly dangerous.
+      </p>
+        
+        <p class = "whiten">
+       Angiosarcomas are often very difficult to detect, partly because they begin in the blood vessels of the liver. This means that they are usually diagnosed at an advanced stage, something that can limit treatment options. 
+      </p>
+      
+    </h2>
+    <button ion-button class = "anchor-button-down" color = "default" large on-tap="expandThirdDisease()">Learn More</button>
+    
+    <div class = "red-slide special-card-header whiten">
+      <div class = "special-card-internal">Treatment (1/2)</div>
+   </div>
+  </ion-slide>
+
+
+
+  <ion-slide class = "red-slide">
+    <h2 class = "anchor-other">
+      <!--<span class = "whiten center-title">Introduction (1/2)</span>-->
+      <span class = "whiten center-title-lower">Advancements in Understanding</span>
+      <br />
+      <p class = "whiten">
+       One of the most powerful tools that has emerged in recent years to fight Liver Cancer is an increased understanding of what causes the disease in the first place. This allows doctors and researchers alike to operate under a set of guidelines that facilitate the early detection and prevention of the disease.
+        </p>
+
+      
+    </h2>
+    <button ion-button class = "anchor-button-down" color = "default" large on-tap="expandFirstTreatment()">Learn More</button>
+    
+    <div class = "alt-green-slide special-card-header whiten">
+      <div class = "special-card-internal">Treatment (2/2)</div>
+   </div>
+  </ion-slide>
+
+  <ion-slide class = "alt-green-slide">
+    <h2 class = "anchor-other">
+      <!--<span class = "whiten center-title">Introduction (1/2)</span>-->
+      <span class = "whiten center-title-lower">Advancements in Surgery</span>
+      <br />
+      <p class = "whiten">
+      Recent discoveries have done much to allow researchers to explore new varients of traditional surgery in their efforts to boost the survival rates of Liver Cancer patients.
+      </p>
+
+      <p class = "whiten">
+   These surgeries options to individuals who may have none, something that effectively enhancing the comfort and health of those suffering from this disease.
+      </p>
+
+      
+    </h2>
+    <button ion-button class = "anchor-button-down" color = "default" large on-tap="expandSecondTreatment()">Learn More</button>
+    
+    <div class = "alt-purple-slide special-card-header whiten">
+      <div class = "special-card-internal">How to Help (1/2)</div>
+   </div>
+  </ion-slide>
+
+  <ion-slide class = "alt-purple-slide">
+    <h2 class = "anchor-other">
+      <span class = "whiten center-title-lower">The Foundation for Liver Research</span>
+      <br />
+      <p class = "whiten">
+       The Foundation for Liver Research has been operating on the front lines of the fight against liver disease for over 3 decades now. They have committed themselves completely to funding ground-breaking research programs as well as providing laboratory space for the scientists who make such research possible. 
+      </p>
+
+      <p class = "whiten">
+     The research made possible by those who donate is extensive and well documented. At the time of writing, they are involved in projects that involve 8 different areas of liver disease. It is through research such as this that a meaningful advance against Liver Cancer and diseases like it can be made.
+      </p>
+
+      
+    </h2>
+    <button ion-button class = "anchor-button-down" color = "default" large on-tap="expandFirstDonation()">Learn More</button>
+    
+    <div class = "alt-blue-slide special-card-header whiten">
+      <div class = "special-card-internal">How to Help (2/2)</div>
+   </div>
+  </ion-slide>
+
+  <ion-slide class = "alt-blue-slide">
+    <h2 class = "anchor-other">
+      <span class = "whiten center-title-lower">The Liver Cancer Research Fund</span>
+      <br />
+      <p class = "whiten">
+      The Liver Cancer Research Fund has spent the past few years maintaining the fight against Liver Cancer. They work with a best in class team of experts to push the currently established limits of medical knowledge through innovative clinical research.
+      </p>
+
+      <p class = "whiten">
+   The fund has seen a massive boost in demand over the past few years, something that they have handled with ease. In 2010 alone they assisted over 3,000 patients through their Liver Tumor Clinic, and treated 400 patients with a Liver Cancer related operation. They are pioneering new surgery techniques that provide patients with less painful procedures and shorter recovery times.
+      </p>
+
+      
+    </h2>
+    <button ion-button class = "anchor-button-down" color = "default" large on-tap="expandSecondDonation()">Learn More</button>
+    
+    <div class = "blue-slide special-card-header whiten">
+   </div>
+  </ion-slide>
+</ion-slides>
+</ion-content>
+
+<script>
+
+</script>

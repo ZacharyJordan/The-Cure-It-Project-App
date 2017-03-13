@@ -1,0 +1,231 @@
+<!--
+  Generated template for the Bladder page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Eye Cancer</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+<ion-slides [options]="mySlideOptions" pager>
+
+  <ion-slide class = "green-slide rel-pos">
+    <div class = "anchor-other pad">
+      <h1 class = "whiten slide-header-main">Eye Cancer</h1>
+      <div class = "whiten slide-header">It is virtually impossible to prevent Eye Cancers with current technology</div>
+    </div>
+    
+      <button ng-click="aboutDisease()" ion-button color = "default" class = "limit-button">Types of Eye Cancer</button>
+      <br />
+      <button ion-button color = "default" class = "limit-button">Treatment Advancements</button> 
+      <br />
+      <button ion-button color = "default" class = "limit-button">How to Help</button>
+   
+    
+   <div class = "purple-slide special-card-header whiten">
+      <div class = "special-card-internal">About (1/2)</div>
+   </div>
+  </ion-slide>
+ 
+  <ion-slide class = "purple-slide rel-pos">
+    <h2 class = "anchor-other">
+      <!--<span class = "whiten center-title">Introduction (1/2)</span>-->
+      <span class = "whiten center-title-lower">What is Eye Cancer?</span>
+      <br />
+      <p class = "whiten">
+    Eye cancers are tumorous growths found in the ocular region of the head. The threat of Eye Cancer is one that has grown over the past couple of years, in part due to their tendancy to spread to other parts of the body relatively quickly when compared to other diseases.
+
+      </p>
+
+      <p class = "whiten">
+      There are three primary types of Eye Cancers that we will be covering. They are Intraocular Melanomas, Intraocular Lymphomas, and Retinoblastomas. The specifics of each type will be discussed thouroughly down below.
+      </p>
+
+      
+    </h2>
+    <button ion-button class = "anchor-button-down" color = "default" large on-tap="expandAbout()">Learn More</button>
+
+    <div class = "blue-slide special-card-header whiten">
+      <div class = "special-card-internal">About (2/2)</div>
+   </div>
+
+  </ion-slide>
+
+  <ion-slide class = "blue-slide">
+    <h2 class = "anchor-other">
+      <!--<span class = "whiten center-title">Introduction (1/2)</span>-->
+      <span class = "whiten center-title-lower">Eye Cancer Data</span>
+      <br />
+      <p class = "whiten">
+       Below is a chart that demonstrates the percentages of deaths within Skin Cancer that result from its most deadly varient: Melanoma.
+      </p>
+  
+    </h2>
+    <div class = "responsive-chart-wrapper">
+    <chart id = "eyeChart" class = "responsive-chart" [labels]="labels" [data]="data" type="pie"></chart>
+</div>
+    <div class = "red-slide special-card-header whiten">
+      <div class = "special-card-internal">Types (1/3)</div>
+   </div>
+
+  </ion-slide>
+
+  <ion-slide class = "red-slide">
+    <h2 class = "anchor-other">
+      <span class = "whiten center-title-lower">Retinoblastomas</span>
+      <br />
+      <p class = "whiten">
+        Retinoblastomas are a form of Eye Cancer that is found exclusively in children under the age of 5. Although Retinoblastomas are by no means common, their influence demands attention.
+      </p>
+
+      <p class = "whiten">
+        They are usually contracted as a result of a mutation in a gene referred to in the scientific community as the RB gene.
+      </p>
+  
+    </h2>
+<button ion-button class = "anchor-button-down" color = "default" large on-tap="expandFirstDisease()">Learn More</button>
+<div class = "blue-slide special-card-header whiten">
+      <div class = "special-card-internal">Types (2/3)</div>
+   </div>
+  </ion-slide>
+
+  <ion-slide class = "blue-slide">
+    <h2 class = "anchor-other">
+      <span class = "whiten center-title-lower">Intraocular Melanomas</span>
+      <br />
+      <p class = "whiten">
+      Before we can properly dicuss Intraocular Melanomas and the impact that they have on people, it's important to first understand exactly what Melanoma is. In short, Melanoma is caused when malignant cells rapidly grow from melanin, a pigment in the skin which is responsible for tanning.
+      </p>
+        
+        <p class = "whiten">
+        his explains why there are health restrictions on tanning beds, and why you use sunscream when you go to the beach. Although Melanoma is usually on our side, it can sometimes start growing rapidly in the eye, thus resulting in Intraocular Melanoma.
+      </p>
+  
+    </h2>
+<button ion-button class = "anchor-button-down" color = "default" large on-tap="expandSecondDisease()">Learn More</button>
+<div class = "green-slide special-card-header whiten">
+      <div class = "special-card-internal">Types (3/3) </div>
+   </div>
+  </ion-slide>
+
+<ion-slide class = "green-slide">
+    <h2 class = "anchor-other">
+      <!--<span class = "whiten center-title">Introduction (1/2)</span>-->
+      <span class = "whiten center-title-lower">Intraocular Lymphomas</span>
+      <br />
+      <p class = "whiten">
+       Like Intraocular Melanomas, Intraocular Lymphomas involve a broader type of cancer: Lymphoma. The difference between Intraocular Lymphoma and standard Lymphoma is based on location, as Intraocular Lymphomas occur in the ocular region of the head.
+      </p>
+        
+        <p class = "whiten">
+       Lymphoma is defined as the uninhibited growth of lypmph nodes. Lypmph nodes regulate important parts of the immune system, and are typically only visible when swollen. Such swelling can indicate major problems in whatever region of the body it occurs in. In this case, the swelling occurs in the ocular region.
+      </p>
+      
+    </h2>
+    <button ion-button class = "anchor-button-down" color = "default" large on-tap="expandThirdDisease()">Learn More</button>
+    
+    <div class = "red-slide special-card-header whiten">
+      <div class = "special-card-internal">Treatment (1/2)</div>
+   </div>
+  </ion-slide>
+
+
+
+  <ion-slide class = "red-slide">
+    <h2 class = "anchor-other">
+      <!--<span class = "whiten center-title">Introduction (1/2)</span>-->
+      <span class = "whiten center-title-lower">Radiation Therapy</span>
+      <br />
+      <p class = "whiten">
+      Radiation therapy makes use of high energy x-rays or other types of radiation to kill cancer cells. It is a common treatment for many forms of Eye Cancer, but is used most commonly to treat Intraocular Melanoma.
+      </p>
+
+      <p class = "whiten">
+   While radiation can often preserve some vision in the eye, this sometimes may be lost anyway if the radiation damages vital structures near the infected point. One advantage over surgery that this treatment holds is the preservation of the eye structure, something which may result in a better appearance after treatment.
+      </p>
+
+      
+    </h2>
+    <button ion-button class = "anchor-button-down" color = "default" large on-tap="expandFirstTreatment()">Learn More</button>
+    
+    <div class = "alt-green-slide special-card-header whiten">
+      <div class = "special-card-internal">Treatment (2/2)</div>
+   </div>
+  </ion-slide>
+
+  <ion-slide class = "alt-green-slide">
+    <h2 class = "anchor-other">
+      <!--<span class = "whiten center-title">Introduction (1/2)</span>-->
+      <span class = "whiten center-title-lower">Ocular Surgery</span>
+      <br />
+      <p class = "whiten">
+      Although its application has been limited in recent years in favor of radiation therapy, surgery is sometimes used to treat certain forms of Eye cancers.
+      </p>
+
+      <p class = "whiten">
+   The exception to this is Intraocular Lymphomas, where surgery is not an option due to the fact that the disease has almost certainly spread beyond the point of origin before such options are explored.
+      </p>
+
+      
+    </h2>
+    <button ion-button class = "anchor-button-down" color = "default" large on-tap="expandSecondTreatment()">Learn More</button>
+    
+    <div class = "alt-purple-slide special-card-header whiten">
+      <div class = "special-card-internal">How to Help (1/2)</div>
+   </div>
+  </ion-slide>
+
+  <ion-slide class = "alt-purple-slide">
+    <h2 class = "anchor-other">
+      <span class = "whiten center-title-lower">The Eye Tumor Research Foundation</span>
+      <br />
+      <p class = "whiten">
+        The Eye Tumor Research Foundation is an organization that has selflessly dedicated itself to the research of Eye Cancers in order to win the fight for life and sight. The ultimate goal of the foundation is to make current treatment programs for patients more comfortable and effective through the means of further developing current methods of diagnosis and treatment.
+      </p>
+
+      <p class = "whiten">
+     All contributions made to the foundation are spent in adherence to one fundamental goal: providing meaningful support to those who are actively involved in the research of Eye Cancers. Your generous donations are a necessity to ensure that they continue to make steps towards this goal.
+      </p>
+
+      
+    </h2>
+    <button ion-button class = "anchor-button-down" color = "default" large on-tap="expandFirstDonation()">Learn More</button>
+    
+    <div class = "alt-blue-slide special-card-header whiten">
+      <div class = "special-card-internal">How to Help (2/2)</div>
+   </div>
+  </ion-slide>
+
+  <ion-slide class = "alt-blue-slide">
+    <h2 class = "anchor-other">
+      <span class = "whiten center-title-lower">The Eye Cancer Foundation</span>
+      <br />
+      <p class = "whiten">
+      Established in 1989 as The Eyecare Foundation, The Eye Cancer Foundation has long since been a valuable resource for Eye Cancer patients and their families. Their mission is two-fold: to directly assist the research of new diagnostic treatments for Eye Cancer and to provide much needed patient support services.
+      </p>
+
+      <p class = "whiten">
+   They have historically been responsible for providing a foundation upon which rapidly developing technological and informational capabilities can best serve patients and their families. They aspire to motivate patients and aspire them to triumph over their disease through the means of easing mental and emotional burdens placed on them.
+      </p>
+
+      
+    </h2>
+    <button ion-button class = "anchor-button-down" color = "default" large on-tap="expandSecondDonation()">Learn More</button>
+    
+    <div class = "blue-slide special-card-header whiten">
+   </div>
+  </ion-slide>
+</ion-slides>
+</ion-content>
+
+<script>
+
+</script>

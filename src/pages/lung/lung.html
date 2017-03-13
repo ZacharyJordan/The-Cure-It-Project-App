@@ -1,0 +1,227 @@
+<!--
+  Generated template for the Bladder page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Lung Cancer</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+<ion-slides [options]="mySlideOptions" pager>
+
+  <ion-slide class = "green-slide rel-pos">
+    <div class = "anchor-other pad">
+      <h1 class = "whiten slide-header-main">Lung Cancer</h1>
+      <div class = "whiten slide-header">More people die from Lung Cancer than Colon, Breast, and Prostate Cancers combined</div>
+    </div>
+    
+      <button ng-click="aboutDisease()" ion-button color = "default" class = "limit-button" on-tap = "goToType()">Types of Lung Cancer</button>
+      <br />
+      <button ion-button color = "default" class = "limit-button" on-tap = "goToTreatment()">Treatment Advancements</button> 
+      <br />
+      <button ion-button color = "default" class = "limit-button" on-tap = "goToHelp()">How to Help</button>
+   
+    
+   <div class = "purple-slide special-card-header whiten">
+      <div class = "special-card-internal">About (1/2)</div>
+   </div>
+  </ion-slide>
+ 
+  <ion-slide class = "purple-slide rel-pos">
+    <h2 class = "anchor-other">
+      <!--<span class = "whiten center-title">Introduction (1/2)</span>-->
+      <span class = "whiten center-title-lower">What is Lung Cancer?</span>
+      <br />
+      <p class = "whiten">
+    Lung Cancers are, in their most basic form, tumorous growths located in the lungs. Their influence can involve anything from taking over the membrane of the lung to disrupting air holes inside the lung.
+
+      </p>
+
+      <p class = "whiten">
+      There are three primary types of Lung Cancer: Non-Small Cell Lung Cancer (also called NSC Lung Cancer), Small Cell Lung Cancer (also called SC Lung Cancer), and Lung Carcinoids. Details of each type will be throughly dicussed below.
+      </p>
+
+      
+    </h2>
+    <button ion-button class = "anchor-button-down" color = "default" large on-tap="expandAbout()">Learn More</button>
+
+    <div class = "blue-slide special-card-header whiten">
+      <div class = "special-card-internal">About (2/2)</div>
+   </div>
+
+  </ion-slide>
+
+  <ion-slide class = "blue-slide">
+    <h2 class = "anchor-other">
+      <!--<span class = "whiten center-title">Introduction (1/2)</span>-->
+      <span class = "whiten center-title-lower">Lung Cancer Data</span>
+      <br />
+      <p class = "whiten">
+       The graph below reveals the 3 primary types of Lung Cancer and their relative prevalence in total Lung Cancer cases. The clear leader is NSC Lung Cancer, with SC Lung Cancer and Lung Carcinoids consisting of only 20% of total Lung Cancer cases.
+      </p>
+  
+    </h2>
+    <div class = "responsive-chart-wrapper">
+    <chart id = "lungChart" class = "responsive-chart" [labels]="labels" [data]="data" type="pie"></chart>
+</div>
+    <div class = "red-slide special-card-header whiten">
+      <div class = "special-card-internal">Types (1/3)</div>
+   </div>
+
+  </ion-slide>
+
+  <ion-slide class = "red-slide">
+    <h2 class = "anchor-other">
+      <span class = "whiten center-title-lower">NSC Lung Cancer</span>
+      <br />
+      <p class = "whiten">
+        Non-Small Cell Lung Cancer (also called NSC Lung Cancer for short) is by far the most common type of Lung Cancer, accounting for around 85% percent of total Lung Cancer cases.
+      </p>
+
+      <p class = "whiten">
+        To fully appreciate the impact that NSC Lung Cancer has on the body, it is important to first grasp a basic understanding of lung functioning.
+      </p>
+  
+    </h2>
+<button ion-button class = "anchor-button-down" color = "default" large on-tap="expandFirstDisease()">Learn More</button>
+<div class = "blue-slide special-card-header whiten">
+      <div class = "special-card-internal">Types (2/3)</div>
+   </div>
+  </ion-slide>
+
+  <ion-slide class = "blue-slide">
+    <h2 class = "anchor-other">
+      <span class = "whiten center-title-lower">SC Lung Cancer</span>
+      <br />
+      <p class = "whiten">
+      Small Cell Lung Cancer (also called SC Lung Cancer for short) is different from NSC Lung Cancer in a few different ways. As is apparent from the name, the actual size of the cancerous cells are much smaller in size, and typically require sophisticated scientific instruments to examine properly.
+      </p>
+        
+        <p class = "whiten">
+        While NSC Lung Cancer starts in the bronchioles, SC Lung Cancer almost always originates in the bronchi. 
+      </p>
+  
+    </h2>
+<button ion-button class = "anchor-button-down" color = "default" large on-tap="expandSecondDisease()">Learn More</button>
+<div class = "green-slide special-card-header whiten">
+      <div class = "special-card-internal">Types (3/3) </div>
+   </div>
+  </ion-slide>
+
+<ion-slide class = "green-slide">
+    <h2 class = "anchor-other">
+      <!--<span class = "whiten center-title">Introduction (1/2)</span>-->
+      <span class = "whiten center-title-lower">Lung Carcinoids</span>
+      <br />
+      <p class = "whiten">
+       Accounting for just 5% of total cases, Lung Carcinoids are by far the least common form of Lung Cancer. Lung Carcinoids are different from the two other types of Lung Cancer in that they typically don't affect the physical pathways of the lungs, but rather special types of cells called nueroendocrine cells that produce hormones such as adrenaline in order to regulate and control the energy levels of lung cells.
+      </p>
+      
+    </h2>
+    <button ion-button class = "anchor-button-down" color = "default" large on-tap="expandThirdDisease()">Learn More</button>
+    
+    <div class = "red-slide special-card-header whiten">
+      <div class = "special-card-internal">Treatment (1/2)</div>
+   </div>
+  </ion-slide>
+
+
+
+  <ion-slide class = "red-slide">
+    <h2 class = "anchor-other">
+      <!--<span class = "whiten center-title">Introduction (1/2)</span>-->
+      <span class = "whiten center-title-lower">Lobectomy</span>
+      <br />
+      <p class = "whiten">
+       Lobectomies are a form of Lung Cancer surgery that has been greatly improved in recent years. A Lobectomy is a fairy intensive surgery, and typically involves one of the lobes of a lung being removed.
+      </p>
+
+      <p class = "whiten">
+   To provide a frame of reference for that fact, a normal pair of lungs contains a total of 5 lobes. While the specifics of the surgery are subject to change in adherance to the specifics circumstances surrounding the patient's case of Lung Cancer, it is typically favored for being a less aggressive option than the removal of an entire lung.
+      </p>
+
+      
+    </h2>
+    <button ion-button class = "anchor-button-down" color = "default" large on-tap="expandFirstTreatment()">Learn More</button>
+    
+    <div class = "alt-green-slide special-card-header whiten">
+      <div class = "special-card-internal">Treatment (2/2)</div>
+   </div>
+  </ion-slide>
+
+  <ion-slide class = "alt-green-slide">
+    <h2 class = "anchor-other">
+      <!--<span class = "whiten center-title">Introduction (1/2)</span>-->
+      <span class = "whiten center-title-lower">Radiofrequency Ablation (RFA)</span>
+      <br />
+      <p class = "whiten">
+       Radiofrequent Albation is a method of cancer treatment that us unique to the lungs due to the inherant nature of their structure.
+      </p>
+
+      <p class = "whiten">
+   It is an image-guided technique that heats and destroys cancer cells, thus making it minimally invasive when compared to other, more drastic procedures.
+      </p>
+
+      
+    </h2>
+    <button ion-button class = "anchor-button-down" color = "default" large on-tap="expandSecondTreatment()">Learn More</button>
+    
+    <div class = "alt-purple-slide special-card-header whiten">
+      <div class = "special-card-internal">How to Help (1/2)</div>
+   </div>
+  </ion-slide>
+
+  <ion-slide class = "alt-purple-slide">
+    <h2 class = "anchor-other">
+      <span class = "whiten center-title-lower">SmokeFree.gov</span>
+      <br />
+      <p class = "whiten">
+  SmokeFree.gov is a little bit different from the other organizations that we've promoted in that it doesn't actually cater to the treatment of Lung Cancer specifically. Rather, it attempts to undermine the #1 cause of Lung Cancer: smoking.
+    </p>
+
+    <p class = "whiten">
+Smoking is easily the most dangerous and most prevalent cause of Lung Cancers, increasing the risk of contracting the disease by a factor of 15 to 30 in some cases. While smoking, the body inhales 7000 different chemicals, 70 of which have been directly linked to cancer in humans. 
+    </p>
+
+      
+    </h2>
+    <button ion-button class = "anchor-button-down" color = "default" large on-tap="expandFirstDonation()">Learn More</button>
+    
+    <div class = "alt-blue-slide special-card-header whiten">
+      <div class = "special-card-internal">How to Help (2/2)</div>
+   </div>
+  </ion-slide>
+
+  <ion-slide class = "alt-blue-slide">
+    <h2 class = "anchor-other">
+      <span class = "whiten center-title-lower">Lung Cancer Foundation of America</span>
+      <br />
+      <p class = "whiten">
+      The Lung Cancer Foundation of America is an organization based in the United States that has set their sights on one tremendous goal: establishing groundbreaking results in the field of Lung Cancer treatment. They hope that their work will one day improve the lives of the hundreds of thousands of Lung Cancer patients on both national and global levels.
+      </p>
+
+      <p class = "whiten">
+   In order to accomplish this, the LCFA works to raise both the funds and the national profile of Lung Cacner in order to substantially increase support of innovative research efforts that save lives. They strive to communicate their goals in a way that is both direct and exceedingly clear, and as such have created a promotional video that details the specifics of this wonderful center for transformative science in the area of Lung Cancer treatment.
+      </p>
+
+      
+    </h2>
+    <button ion-button class = "anchor-button-down" color = "default" large on-tap="expandSecondDonation()">Learn More</button>
+    
+    <div class = "blue-slide special-card-header whiten">
+   </div>
+  </ion-slide>
+</ion-slides>
+</ion-content>
+
+<script>
+
+</script>

@@ -8,6 +8,8 @@ import {BladderPhotodynamicPage} from '../bladder-photodynamic/bladder-photodyna
 import {BladderIntravesicalPage} from '../bladder-intravesical/bladder-intravesical';
 import {BladderTransitionalPage} from '../bladder-transitional/bladder-transitional';
 import {BladderSquamousPage} from '../bladder-squamous/bladder-squamous';
+import {DonateBladderOnePage} from '../donate-bladder-one/donate-bladder-one';
+import {DonateBladderTwoPage} from '../donate-bladder-two/donate-bladder-two';
 
 /*
   Generated class for the Bladder page.
@@ -22,6 +24,8 @@ import {BladderSquamousPage} from '../bladder-squamous/bladder-squamous';
   templateUrl: 'bladder.html'
 })
 export class BladderPage {
+
+@ViewChild(Slides) slides: Slides;
 
   labels: string[] = ["Females", "Males"];
   defaultFontColor:'#fff';
@@ -44,10 +48,19 @@ export class BladderPage {
   ];
   @ViewChild('mySlider') slider: Slides;
 
-  aboutDisease()
+  goToType()
   {
-    console.log("t");
-    this.slider.slideTo(1);
+    this.slides.slideTo(3, 600);
+  }
+
+  goToTreatment()
+  {
+    this.slides.slideTo(5, 600);
+  }
+
+  goToHelp()
+  {
+    this.slides.slideTo(7, 600);
   }
 
   expandAbout()
@@ -74,6 +87,17 @@ export class BladderPage {
   {
     this.navCtrl.push(BladderSquamousPage);
   }
+
+  expandFirstDonation()
+  {
+    this.navCtrl.push(DonateBladderOnePage)
+  }
+
+  expandSecondDonation()
+  {
+    this.navCtrl.push(DonateBladderTwoPage);
+  }
+
 
    mySlideOptions = {
     direction: "vertical",
