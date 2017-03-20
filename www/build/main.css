@@ -22109,6 +22109,10 @@ sub {
   }
 }
 
+html {
+  font-size: 53%;
+}
+
 .float-left {
   float: left;
 }
@@ -22124,7 +22128,7 @@ sub {
 }
 
 .alter-margin {
-  margin-top: -3px;
+  margin-top: -10px;
 }
 
 .question {
@@ -22152,7 +22156,7 @@ sub {
 
 .push-content-down {
   position: relative;
-  top: 50px;
+  top: 35px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -22175,6 +22179,7 @@ sub {
 
 .responsive-chart-wrapper {
   position: relative;
+  top: 40px;
   width: 100vw;
   text-align: center;
 }
@@ -22199,6 +22204,12 @@ sub {
   left: 50%;
   -webkit-transform: translate(-50%, 0);
   transform: translate(-50%, 0);
+}
+
+.anchor-other {
+  display: inline-block !important;
+  text-align: center;
+  width: 100vw;
 }
 
 .blue-slide {
@@ -22254,7 +22265,8 @@ sub {
 }
 
 .slide-header-main {
-  font-size: 32px;
+  font-size: 1.1rem;
+  color: #fff;
 }
 
 .rel-pos {
@@ -22266,6 +22278,99 @@ sub {
   display: block;
   background-color: yellow;
   text-align: center;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
+  /* iPhone 5 */
+  .slide-header-main {
+    font-size: 3rem !important;
+  }
+  .whiten {
+    font-size: 1.65rem !important;
+  }
+  .center-title-lower {
+    font-size: 2.1rem !important;
+  }
+  .heading {
+    font-size: 2.5rem !important;
+  }
+  .special-card-internal {
+    font-size: 2.3rem !important;
+  }
+  .center-button-wrapper {
+    margin-top: 12px !important;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) {
+  /* iPhone 6 */
+  .slide-header-main {
+    font-size: 3.5rem !important;
+  }
+  .whiten {
+    font-size: 1.95rem !important;
+  }
+  .center-title-lower {
+    font-size: 2.5rem !important;
+  }
+  .heading {
+    font-size: 2.7rem !important;
+  }
+  .special-card-internal {
+    font-size: 2.7rem !important;
+  }
+  .center-button-wrapper {
+    margin-top: 12px !important;
+  }
+  .limit-button {
+    font-size: 1.95rem !important;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  /* iPad */
+  .anchor-button-down {
+    font-size: 2.9rem !important;
+    width: 200px !important;
+    height: 90px !important;
+    line-height: 110px;
+  }
+  .alter-margin {
+    font-size: 2.9rem !important;
+    margin: 2px 2px 2px 2px !important;
+    width: 320px !important;
+    height: 90px !important;
+    line-height: 110px;
+  }
+  .main-back-button {
+    font-size: 2.9rem !important;
+    margin: 2px 2px 2px 2px !important;
+    width: 320px !important;
+    height: 90px !important;
+    line-height: 110px;
+    margin-bottom: 5px !important;
+  }
+  .slide-header-main {
+    font-size: 5.5rem !important;
+  }
+  .whiten {
+    font-size: 3.15rem !important;
+  }
+  .center-title-lower {
+    font-size: 3.5rem !important;
+  }
+  .heading {
+    font-size: 3.5rem !important;
+  }
+  .special-card-internal {
+    font-size: 3.5rem !important;
+  }
+  .center-button-wrapper {
+    margin-top: 12px !important;
+  }
+  .limit-button {
+    font-size: 2.95rem !important;
+  }
 }
 
 #alter-style {
@@ -22354,7 +22459,14 @@ sub {
   color: white !important;
 }
 
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) {
+  .top-center {
+    font-size: 4.1rem !important;
+  }
+}
+
 .whiten {
+  font-size: 1.65rem;
   color: #F7F9F9;
 }
 
@@ -22412,6 +22524,7 @@ sub {
 }
 
 .center-title-lower {
+  font-size: 2.3rem;
   position: absolute;
   display: block;
   top: 1vh;
@@ -22453,6 +22566,12 @@ p {
 
 .smaller-note {
   font-size: 70%;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  ion-list-header {
+    font-size: 2.2rem !important;
+  }
 }
 
 .style-logos {
@@ -22523,6 +22642,35 @@ p {
   text-align: center;
 }
 
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) {
+  /* iPhone 6 */
+  h2 {
+    font-size: 2.3rem !important;
+  }
+  .move-left {
+    font-size: 1.9rem !important;
+  }
+  p {
+    font-size: 1.75rem !important;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  /* iPad  */
+  .larger-header {
+    font-size: 2.7rem !important;
+  }
+  button {
+    font-size: 2rem !important;
+  }
+  .charity-header {
+    font-size: 3.8rem !important;
+  }
+  ion-card-content {
+    font-size: 2.5rem !important;
+  }
+}
+
 .push-icon-right {
   margin-right: 4px;
 }
@@ -22538,10 +22686,63 @@ p {
   overflow: visible !important;
 }
 
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) {
+  /* iPhone 6 */
+  h2 {
+    font-size: 2.3rem !important;
+  }
+  .move-left {
+    font-size: 1.9rem !important;
+  }
+  p {
+    font-size: 1.75rem !important;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  /* iPad  */
+  h2 {
+    font-size: 3.1rem !important;
+  }
+  .move-left {
+    font-size: 2.65rem !important;
+  }
+  p {
+    font-size: 2.5rem !important;
+  }
+}
+
 .center-button {
   display: inline-block;
   text-align: center;
   margin-bottom: 20px;
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) {
+  ion-card-header {
+    font-size: 2.2rem !important;
+  }
+  ion-card-content {
+    font-size: 1.65rem !important;
+  }
+  button {
+    font-size: 1.9rem !important;
+  }
+  .center-button {
+    padding: 5px 5px 5px 5px !important;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  ion-card-header {
+    font-size: 3.0rem !important;
+  }
+  ion-card-content {
+    font-size: 2.15rem !important;
+  }
+  button {
+    font-size: 2.3rem !important;
+  }
 }
 
 page-splash-screen {

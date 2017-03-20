@@ -32,3 +32,20 @@ page-account-creation {
     color:white !important;
 }
 
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) 
+and (orientation : portrait) { 
+    .top-center
+    {
+        font-size:4.1rem !important;
+    }
+}
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) { 
+    
+   
+}

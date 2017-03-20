@@ -19,3 +19,46 @@ page-home {
     left:-20px;
     overflow: visible !important;
 }
+
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) 
+and (orientation : portrait) { 
+    /* iPhone 6 */ 
+
+h2{
+    font-size:2.3rem !important;
+}
+
+.move-left
+{
+    font-size:1.9rem !important;
+}
+
+p
+{
+    font-size:1.75rem !important;
+}
+}
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) { 
+    
+    /* iPad  */
+    h2{
+        font-size:3.1rem !important;
+    }
+
+    .move-left
+    {
+        font-size:2.65rem !important;
+    }
+
+    p
+    {
+        font-size:2.5rem !important;
+    }
+
+     }

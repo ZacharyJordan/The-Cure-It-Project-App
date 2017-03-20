@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import {BladderPage} from '../bladder/bladder';
+
 
 /*
   Generated class for the DonateBladderOne page.
@@ -19,4 +21,8 @@ export class DonateBladderOnePage {
     console.log('ionViewDidLoad DonateBladderOnePage');
   }
 
+  openBladder()
+  {
+    this.navCtrl.push(BladderPage);
+  }
 }
