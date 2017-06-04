@@ -30,14 +30,14 @@
     Each year, BCAN provides thousands of patients and the medical community with the educational 
     resources and support services they need to navigate their bladder cancer journey.
   </ion-card-content>
-  <button ion-button icon-left clear small on-tap = "bladderFirst()">
+  <button ion-button icon-left clear small (click)="bladderFirst()">
     <ion-icon name="paper"></ion-icon>
     <div>Learn More</div>
   </button>
 
-  <button ion-button icon-left clear small>
+  <button (click)="openUrl()" ion-button icon-left clear small>
       <ion-icon name="medkit"></ion-icon>
-      <div>Donate</div>
+      <div>Donate!!</div>
    </button>
    <br />
    <br />

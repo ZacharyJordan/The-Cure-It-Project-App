@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams, Platform } from 'ionic-angular';
 import {InformationPage} from '../information/information';
 import {DonateBladderOnePage} from '../donate-bladder-one/donate-bladder-one';
 import {DonateBladderTwoPage} from '../donate-bladder-two/donate-bladder-two';
@@ -37,6 +37,8 @@ import {DonateThroatOnePage} from '../donate-throat-one/donate-throat-one';
 import {DonateThroatTwoPage} from '../donate-throat-two/donate-throat-two';
 import {DonateThyroidOnePage} from '../donate-thyroid-one/donate-thyroid-one';
 import {DonateThyroidTwoPage} from '../donate-thyroid-two/donate-thyroid-two';
+import {NgModule} from '@angular/core';
+import {InAppBrowser} from 'ionic-native';
 
 
 /*
@@ -49,9 +51,31 @@ import {DonateThyroidTwoPage} from '../donate-thyroid-two/donate-thyroid-two';
   selector: 'page-donation',
   templateUrl: 'donation.html'
 })
+
+@NgModule({
+
+
+  providers: [
+ 
+    InAppBrowser
+  
+  ]
+ 
+})
+
+
 export class DonationPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {}
+
+  constructor(public navCtrl: NavController, public navParams: NavParams, public platform: Platform) {}
+
+openUrl() {
+
+        this.platform.ready().then(() => {
+          let browser = new InAppBrowser("https://www.techiediaries.com",'_blank');
+
+        });
+}  
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad DonationPage');
