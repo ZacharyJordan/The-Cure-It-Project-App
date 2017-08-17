@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-
+import {DonateBreastOnePage} from '../donate-breast-one/donate-breast-one';
 /*
   Generated class for the BreastRecurrent page.
 
@@ -17,6 +17,11 @@ export class BreastRecurrentPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad BreastRecurrentPage');
+  }
+
+  donateBladder()
+  {
+    this.navCtrl.push(DonateBreastOnePage);
   }
 
 }

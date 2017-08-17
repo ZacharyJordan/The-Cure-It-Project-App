@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-
+import {DonateEyeTwoPage} from '../donate-eye-two/donate-eye-two';
 /*
   Generated class for the EyeLymphoma page.
 
@@ -17,6 +17,11 @@ export class EyeLymphomaPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad EyeLymphomaPage');
+  }
+
+  donateTesticular()
+  {
+    this.navCtrl.push(DonateEyeTwoPage);
   }
 
 }

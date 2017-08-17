@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-
+import {DonateLymphaticOnePage} from '../donate-lymphatic-one/donate-lymphatic-one';
 /*
   Generated class for the LymphaticAbout page.
 
@@ -17,6 +17,11 @@ export class LymphaticAboutPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad LymphaticAboutPage');
+  }
+
+  donateBladder()
+  {
+    this.navCtrl.push(DonateLymphaticOnePage);
   }
 
 }

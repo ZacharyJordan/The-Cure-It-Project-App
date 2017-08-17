@@ -9,6 +9,8 @@ import {EyeRadiationPage} from '../eye-radiation/eye-radiation';
 import {EyeRetinoPage} from '../eye-retino/eye-retino';
 import {DonateEyeOnePage} from '../donate-eye-one/donate-eye-one';
 import {DonateEyeTwoPage} from '../donate-eye-two/donate-eye-two';
+import {Slides} from 'ionic-angular';
+import { ViewChild } from '@angular/core';
 /*
 import {EndometrialCarcinomaPage} from '../endometrial-carcinoma/endometrial-carcinoma';
 import {EndometrialUterinePage} from '../endometrial-uterine/endometrial-uterine';
@@ -28,8 +30,9 @@ import {DonateEndometrialTwoPage} from '../donate-endometrial-two/donate-endomet
   selector: 'page-eye',
   templateUrl: 'eye.html'
 })
-export class EyePage {
 
+export class EyePage {
+@ViewChild(Slides) slides: Slides;
 labels: string[] = ["Less than 40", "Less than 50", "Between 50 and 60", "Above 65"];
   defaultFontColor:'#fff';
   
@@ -58,6 +61,21 @@ labels: string[] = ["Less than 40", "Less than 50", "Between 50 and 60", "Above 
     direction: "vertical",
     pager:"true"
   };
+
+   goToType()
+  {
+    this.slides.slideTo(3, 600);
+  }
+
+  goToTreatment()
+  {
+    this.slides.slideTo(6, 600);
+  }
+
+  goToHelp()
+  {
+    this.slides.slideTo(8, 600);
+  }
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {}
 

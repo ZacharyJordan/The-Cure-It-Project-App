@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-
+import {DonateOvarianTwoPage} from '../donate-ovarian-two/donate-ovarian-two';
 /*
   Generated class for the OvarianCet page.
 
@@ -17,6 +17,11 @@ export class OvarianCetPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad OvarianCetPage');
+  }
+
+  donateTesticular()
+  {
+    this.navCtrl.push(DonateOvarianTwoPage);
   }
 
 }

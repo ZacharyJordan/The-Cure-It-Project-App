@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-
+import {DonateEndometrialOnePage} from '../donate-endometrial-one/donate-endometrial-one';
 /*
   Generated class for the EndometrialUterine page.
 
@@ -17,6 +17,11 @@ export class EndometrialUterinePage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad EndometrialUterinePage');
+  }
+
+  donateTesticular()
+  {
+    this.navCtrl.push(DonateEndometrialOnePage);
   }
 
 }

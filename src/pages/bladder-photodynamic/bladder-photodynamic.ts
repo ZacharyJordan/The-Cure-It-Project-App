@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-
+import {DonateBladderOnePage} from '../donate-bladder-one/donate-bladder-one';
 /*
   Generated class for the BladderPhotodynamic page.
 
@@ -17,6 +17,11 @@ export class BladderPhotodynamicPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad BladderPhotodynamicPage');
+  }
+
+  donateBladder()
+  {
+    this.navCtrl.push(DonateBladderOnePage);
   }
 
 }

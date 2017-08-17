@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-
+import {DonateOralOnePage} from '../donate-oral-one/donate-oral-one';
 /*
   Generated class for the OralChemotherapy page.
 
@@ -17,6 +17,11 @@ export class OralChemotherapyPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad OralChemotherapyPage');
+  }
+
+  donateThroat()
+  {
+    this.navCtrl.push(DonateOralOnePage);
   }
 
 }

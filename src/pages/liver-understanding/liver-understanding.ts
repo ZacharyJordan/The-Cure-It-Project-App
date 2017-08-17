@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-
+import {DonateLiverOnePage} from '../donate-liver-one/donate-liver-one';
 /*
   Generated class for the LiverUnderstanding page.
 
@@ -17,6 +17,11 @@ export class LiverUnderstandingPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad LiverUnderstandingPage');
+  }
+
+  donateSkin()
+  {
+    this.navCtrl.push(DonateLiverOnePage);
   }
 
 }

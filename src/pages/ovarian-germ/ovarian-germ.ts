@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-
+import {DonateOvarianOnePage} from '../donate-ovarian-one/donate-ovarian-one';
 /*
   Generated class for the OvarianGerm page.
 
@@ -19,4 +19,8 @@ export class OvarianGermPage {
     console.log('ionViewDidLoad OvarianGermPage');
   }
 
+  donateTesticular()
+  {
+    this.navCtrl.push(DonateOvarianOnePage);
+  }
 }

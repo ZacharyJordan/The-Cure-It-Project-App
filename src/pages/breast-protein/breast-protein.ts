@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-
+import {DonateBreastTwoPage} from '../donate-breast-two/donate-breast-two';
 /*
   Generated class for the BreastProtein page.
 
@@ -19,4 +19,8 @@ export class BreastProteinPage {
     console.log('ionViewDidLoad BreastProteinPage');
   }
 
+  donateBladder()
+  {
+    this.navCtrl.push(DonateBreastTwoPage);
+  }
 }

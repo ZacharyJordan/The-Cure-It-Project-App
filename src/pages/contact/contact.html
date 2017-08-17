@@ -14,7 +14,7 @@
       General Information
     </ion-list-header>
 
-    <button ion-item on-tap="facts()">
+    <button (click)="openUrl('https://www.cancer.org/research/cancer-facts-statistics.html')" ion-item>
       <ion-icon name='clipboard' item-left></ion-icon>
       Facts + Statistics
       <ion-note item-right>
@@ -22,7 +22,7 @@
       </ion-note>
     </button>
 
-    <button ion-item>
+    <button (click)="openUrl('https://www.cancer.org/cancer/cancer-causes.html')" ion-item>
       <ion-icon name='no-smoking' item-left></ion-icon>
       Causes of cancer
       <ion-note item-right>
@@ -30,7 +30,7 @@
       </ion-note>
     </button>
 
-    <button ion-item>
+    <button (click)="openUrl('https://www.cancer.org/research/currently-funded-cancer-research.html')" ion-item>
       <ion-icon name='flask' item-left></ion-icon>
       Research initiatives
       <ion-note item-right>
@@ -38,7 +38,7 @@
       </ion-note>
     </button>
 
-    <button ion-item>
+    <button (click)="openUrl('http://blogs.cancer.org/expertvoices/')" ion-item>
       <ion-icon name='megaphone' item-left></ion-icon>
       Expert voices
       <ion-note item-right>
@@ -46,7 +46,7 @@
       </ion-note>
     </button>
 
-    <button ion-item>
+    <button (click)="openUrl('https://www.cancer.org/american-cancer-society-books.html')" ion-item>
       <ion-icon name='book' item-left></ion-icon>
       Nonfiction books
       <ion-note item-right>
@@ -54,7 +54,7 @@
       </ion-note>
     </button>
 
-    <button ion-item>
+    <button (click)="openUrl('https://www.cancer.org/cancer/cancer-basics/signs-and-symptoms-of-cancer.html')" ion-item>
       <ion-icon name='sad' item-left></ion-icon>
       Symptoms
       <ion-note item-right>
@@ -62,7 +62,7 @@
       </ion-note>
     </button>
 
-    <button ion-item>
+    <button (click)="openUrl('https://www.cancer.org/healthy.html')" ion-item>
       <ion-icon name='happy' item-left></ion-icon>
       Staying healthy
       <ion-note item-right>
@@ -70,15 +70,7 @@
       </ion-note>
     </button>
 
-    <button ion-item>
-      <ion-icon name='beaker' item-left></ion-icon>
-      Modern research
-      <ion-note item-right>
-      <span class = "smaller-note">Journal of Cancer Research</span>
-      </ion-note>
-    </button>
-
-    <button ion-item>
+    <button (click)="openUrl('https://www.cancer.gov/about-cancer/understanding/what-is-cancer')" ion-item>
       <ion-icon name='medical' item-left></ion-icon>
       What is cancer?
       <ion-note item-right>
@@ -86,7 +78,7 @@
       </ion-note>
     </button>
 
-    <button ion-item>
+    <button (click)="openUrl('https://www.cancer.gov/types')" ion-item>
       <ion-icon name='medkit' item-left></ion-icon>
       Cancer types
       <ion-note item-right>
@@ -94,7 +86,7 @@
       </ion-note>
     </button>
 
-    <button ion-item>
+    <button (click)="openUrl('https://www.cancer.gov/about-cancer/treatment/drugs/')" ion-item>
       <ion-icon name='nuclear' item-left></ion-icon>
       Cancer drugs
       <ion-note item-right>
@@ -102,7 +94,7 @@
       </ion-note>
     </button>
 
-    <button ion-item>
+    <button (click)="openUrl('https://www.cancer.gov/publications/dictionaries/cancer-terms')" ion-item>
       <ion-icon name='paper' item-left></ion-icon>
       Cancer terms
       <ion-note item-right>
@@ -110,7 +102,7 @@
       </ion-note>
     </button>
 
-    <button ion-item>
+    <button (click)="openUrl('https://seer.cancer.gov/cgi-bin/glossary/glossary.pl')" ion-item>
       <ion-icon name='pie' item-left></ion-icon>
       Statistical terms
       <ion-note item-right>
@@ -118,7 +110,7 @@
       </ion-note>
     </button>
 
-    <button ion-item>
+    <button (click)="openUrl('https://www.cancer.gov/types/common-cancers')" ion-item>
       <ion-icon name='warning' item-left></ion-icon>
       Common cancers
       <ion-note item-right>
@@ -126,7 +118,7 @@
       </ion-note>
     </button>
 
-    <button ion-item>
+    <button (click)="openUrl('https://seer.cancer.gov/report_to_nation/')" ion-item>
       <ion-icon name='folder' item-left></ion-icon>
       Annual reports
       <ion-note item-right>
@@ -134,7 +126,7 @@
       </ion-note>
     </button>
 
-    <button ion-item>
+    <button (click)="openUrl('https://www.reddit.com/r/cancer/')" ion-item>
       <ion-icon name='laptop' item-left></ion-icon>
       Cancer subreddit
       <ion-note item-right>
@@ -146,7 +138,7 @@
       Medical Treatment
     </ion-list-header>
 
-    <button ion-item>
+    <button (click)="openUrl('https://www.cancer.org/treatment/treatments-and-side-effects/treatment-types.html')" ion-item>
       <ion-icon name='medkit' item-left></ion-icon>
       Treatment types
       <ion-note item-right>
@@ -154,7 +146,7 @@
       </ion-note>
     </button>
 
-    <button ion-item>
+    <button (click)="openUrl('https://www.cancer.org/cancer/cancer-in-children/how-are-childhood-cancers-treated.html')" ion-item>
       <ion-icon name='man' item-left></ion-icon>
       Youth treatment
       <ion-note item-right>
@@ -162,7 +154,7 @@
       </ion-note>
     </button>
 
-    <button ion-item>
+    <button (click)="openUrl('https://www.cancer.org/cancer/cancer-in-children.html')" ion-item>
       <ion-icon name='contacts' item-left></ion-icon>
       Childhood cancer
       <ion-note item-right>
@@ -170,7 +162,7 @@
       </ion-note>
     </button>
 
-    <button ion-item>
+    <button (click)="openUrl('https://www.cancer.org/treatment/treatments-and-side-effects/complementary-and-alternative-medicine/learning-about-new-cancer-prevention-methods.html')" ion-item>
       <ion-icon name='color-wand' item-left></ion-icon>
       New treatments
       <ion-note item-right>
@@ -178,7 +170,7 @@
       </ion-note>
     </button>
 
-    <button ion-item>
+    <button (click)="openUrl('https://www.cancer.org/treatment/children-and-cancer/when-your-child-has-cancer/understanding-health-care-system/cancer-care-team-members.html')" ion-item>
       <ion-icon name='people' item-left></ion-icon>
       Care team
       <ion-note item-right>
@@ -186,7 +178,7 @@
       </ion-note>
     </button>
 
-    <button ion-item>
+    <button (click)="openUrl('https://www.cancer.org/treatment/finding-and-paying-for-treatment/choosing-your-treatment-team.html?sitearea=eto')" ion-item>
       <ion-icon name='home' item-left></ion-icon>
       Treatment centers
       <ion-note item-right>
@@ -194,7 +186,7 @@
       </ion-note>
     </button>
 
-    <button ion-item>
+    <button (click)="openUrl('https://www.cancer.org/treatment/treatments-and-side-effects/treatment-types/surgery.html')" ion-item>
       <ion-icon name='cut' item-left></ion-icon>
       Use of surgery
       <ion-note item-right>
@@ -202,7 +194,7 @@
       </ion-note>
     </button>
 
-    <button ion-item>
+    <button (click)="openUrl('http://www.cancer.net/navigating-cancer-care/how-cancer-treated/personalized-and-targeted-therapies/what-personalized-cancer-medicine')" ion-item>
       <ion-icon name='body' item-left></ion-icon>
       Personalized medicine
       <ion-note item-right>
@@ -210,7 +202,7 @@
       </ion-note>
     </button>
 
-    <button ion-item>
+    <button (click)="openUrl('http://www.cancer.net/navigating-cancer-care/how-cancer-treated/chemotherapy/side-effects-chemotherapy')" ion-item>
       <ion-icon name='bug' item-left></ion-icon>
       Chemo side effects
       <ion-note item-right>
@@ -218,7 +210,7 @@
       </ion-note>
     </button>
 
-    <button ion-item>
+    <button (click)="openUrl('http://www.cancer.net/find-cancer-doctor')" ion-item>
       <ion-icon name='search' item-left></ion-icon>
       Finding a doctor
       <ion-note item-right>
@@ -226,7 +218,7 @@
       </ion-note>
     </button>
 
-    <button ion-item>
+    <button (click)="openUrl('http://www.cancerresearchuk.org/health-professional/cancer-statistics/incidence/age')" ion-item>
       <ion-icon name='stats' item-left></ion-icon>
       Incidence by age
       <ion-note item-right>
@@ -234,7 +226,7 @@
       </ion-note>
     </button>
 
-    <button ion-item>
+    <button (click)="openUrl('http://www.chemocare.com/chemotherapy/what-is-chemotherapy/default.aspx')" ion-item>
       <ion-icon name='pulse' item-left></ion-icon>
       What is chemo?
       <ion-note item-right>
@@ -242,7 +234,7 @@
       </ion-note>
     </button>
 
-    <button ion-item>
+    <button (click)="openUrl('http://www.mayoclinic.org/diseases-conditions/cancer/in-depth/cancer/art-20044517')" ion-item>
       <ion-icon name='podium' item-left></ion-icon>
       Understanding survival rates
       <ion-note item-right>
@@ -250,7 +242,7 @@
       </ion-note>
     </button>
 
-    <button ion-item>
+    <button (click)="openUrl('https://www.cancer.gov/about-cancer/understanding/statistics')" ion-item>
       <ion-icon name='heart' item-left></ion-icon>
       Survival stats
       <ion-note item-right>
@@ -258,7 +250,7 @@
       </ion-note>
     </button>
 
-    <button ion-item>
+    <button (click)="openUrl('http://www.webmd.com/cancer/features/how-to-find-the-best-cancer-treatment')" ion-item>
       <ion-icon name='color-fill' item-left></ion-icon>
       Choosing best care
       <ion-note item-right>
@@ -270,7 +262,7 @@
       Emotional Support
     </ion-list-header>
 
-    <button ion-item>
+    <button (click)="openUrl('https://www.cancer.org/treatment/support-programs-and-services.html')" ion-item>
       <ion-icon name='people' item-left></ion-icon>
       Support groups
       <ion-note item-right>
@@ -278,7 +270,7 @@
       </ion-note>
     </button>
 
-    <button ion-item>
+    <button (click)="openUrl('https://www.cancer.org/treatment/support-programs-and-services/road-to-recovery.html')" ion-item>
       <ion-icon name='car' item-left></ion-icon>
       Rides to treatment
       <ion-note item-right>
@@ -286,7 +278,7 @@
       </ion-note>
     </button>
 
-    <button ion-item>
+    <button (click)="openUrl('https://www.cancer.org/treatment/understanding-your-diagnosis/talking-about-cancer/how-to-be-a-friend-to-someone-with-cancer.html')" ion-item>
       <ion-icon name='happy' item-left></ion-icon>
       Keeping friends
       <ion-note item-right>
@@ -294,7 +286,7 @@
       </ion-note>
     </button>
 
-    <button ion-item>
+    <button (click)="openUrl('https://www.cancer.org/content/cancer/en/treatment/treatments-and-side-effects/physical-side-effects/fertility-and-sexual-side-effects/sexuality-for-women-with-cancer/cancer-sex-sexuality.html')" ion-item>
       <ion-icon name='heart' item-left></ion-icon>
       Sexual health
       <ion-note item-right>
@@ -302,7 +294,7 @@
       </ion-note>
     </button>
 
-    <button ion-item>
+    <button (click)="openUrl('https://www.cancer.org/treatment/treatments-and-side-effects/emotional-side-effects.html')" ion-item>
       <ion-icon name='eye-off' item-left></ion-icon>
       Respecting privacy
       <ion-note item-right>
@@ -310,7 +302,7 @@
       </ion-note>
     </button>
 
-    <button ion-item>
+    <button (click)="openUrl('https://www.cancer.org/treatment/treatments-and-side-effects/emotional-side-effects/anxiety-fear-depression.html')" ion-item>
       <ion-icon name='contacts' item-left></ion-icon>
       Anxiety support
       <ion-note item-right>
@@ -318,7 +310,7 @@
       </ion-note>
     </button>
 
-    <button ion-item>
+    <button (click)="openUrl('http://www.cancer.net/coping-with-cancer/talking-with-family-and-friends/supporting-friend-who-has-cancer')" ion-item>
       <ion-icon name='chatbubbles' item-left></ion-icon>
       Supporting friends
       <ion-note item-right>
@@ -326,7 +318,7 @@
       </ion-note>
     </button>
 
-    <button ion-item>
+    <button (click)="openUrl('http://www.cancer.net/coping-with-cancer/finding-support-and-information/counseling')" ion-item>
       <ion-icon name='person' item-left></ion-icon>
       Counseling opportunities
       <ion-note item-right>
@@ -334,7 +326,7 @@
       </ion-note>
     </button>
 
-    <button ion-item>
+    <button (click)="openUrl('http://www.cancerandcareers.org/en')" ion-item>
       <ion-icon name='briefcase' item-left></ion-icon>
       Maintaining careers
       <ion-note item-right>
@@ -342,7 +334,7 @@
       </ion-note>
     </button>
 
-    <button ion-item>
+    <button (click)="openUrl('https://www.cancercare.org/support_groups')" ion-item>
       <ion-icon name='help-buoy' item-left></ion-icon>
       Various support groups
       <ion-note item-right>
@@ -350,15 +342,7 @@
       </ion-note>
     </button>
 
-    <button ion-item>
-      <ion-icon name='desktop' item-left></ion-icon>
-      Online support
-      <ion-note item-right>
-      <span class = "smaller-note">Cancer Safety Council</span>
-      </ion-note>
-    </button>
-
-    <button ion-item>
+    <button (click)="openUrl('https://www.helpguide.org/articles/grief/coping-with-grief-and-loss.htm')" ion-item>
       <ion-icon name='sad' item-left></ion-icon>
       Coping with loss
       <ion-note item-right>
@@ -366,7 +350,7 @@
       </ion-note>
     </button>
 
-    <button ion-item>
+    <button (click)="openUrl('https://www.journeyforward.org/document/life-after-cancer-treatment-body-changes-and-intimacy')" ion-item>
       <ion-icon name='body' item-left></ion-icon>
       Body image
       <ion-note item-right>
@@ -374,7 +358,7 @@
       </ion-note>
     </button>
 
-    <button ion-item>
+    <button (click)="openUrl('https://www.livestrong.org/we-can-help/fertility-services')" ion-item>
       <ion-icon name='people' item-left></ion-icon>
       Parenting after cancer
       <ion-note item-right>
@@ -382,7 +366,7 @@
       </ion-note>
     </button>
 
-    <button ion-item>
+    <button (click)="openUrl('https://www.cancer.gov/about-cancer/coping')" ion-item>
       <ion-icon name='flower' item-left></ion-icon>
       Healthy coping
       <ion-note item-right>
@@ -394,7 +378,7 @@
       Join the Fight
     </ion-list-header>
 
-    <button ion-item>
+    <button (click)="openUrl('https://donate3.cancer.org/?')" ion-item>
       <ion-icon name='laptop' item-left></ion-icon>
       Online donation 1
       <ion-note item-right>
@@ -402,7 +386,7 @@
       </ion-note>
     </button>
 
-    <button ion-item>
+    <button (click)="openUrl('https://www.cancer.org/involved/volunteer/')" ion-item>
       <ion-icon name='hand' item-left></ion-icon>
       Volunteering 1
       <ion-note item-right>
@@ -410,7 +394,7 @@
       </ion-note>
     </button>
 
-    <button ion-item>
+    <button (click)="openUrl('https://www.cancer.org/treatment/support-programs-and-services/road-to-recovery.html')" ion-item>
       <ion-icon name='car' item-left></ion-icon>
       Give patients rides
       <ion-note item-right>
@@ -418,7 +402,7 @@
       </ion-note>
     </button>
 
-    <button ion-item>
+    <button (click)="openUrl('https://www.cancerresearch.org/giving-to-cri')" ion-item>
       <ion-icon name='desktop' item-left></ion-icon>
       Online donation 2
       <ion-note item-right>
@@ -426,7 +410,7 @@
       </ion-note>
     </button>
 
-    <button ion-item>
+    <button (click)="openUrl('http://childrenscancer.org/donate')" ion-item>
       <ion-icon name='globe' item-left></ion-icon>
       Online donation 3
       <ion-note item-right>
@@ -434,7 +418,7 @@
       </ion-note>
     </button>
 
-    <button ion-item>
+    <button on-tap="openDonationPage()" ion-item>
       <ion-icon name='cash' item-left></ion-icon>
       Our donation page
       <ion-note item-right>
@@ -442,7 +426,7 @@
       </ion-note>
     </button>
 
-    <button ion-item>
+    <button (click)="openUrl('http://thecureitproject.com/FAQ.html')" ion-item>
       <ion-icon name='clock' item-left></ion-icon>
       Time and Skill donations
       <ion-note item-right>
@@ -450,7 +434,7 @@
       </ion-note>
     </button>
 
-    <button ion-item>
+    <button (click)="openUrl('http://www.choosehope.com/calendar-of-cancer-awareness-months')" ion-item>
       <ion-icon name='calendar' item-left></ion-icon>
       Cancer awareness months
       <ion-note item-right>
@@ -458,7 +442,7 @@
       </ion-note>
     </button>
 
-    <button ion-item>
+    <button (click)="openUrl('https://fcancer.org/')" ion-item>
       <ion-icon name='hammer' item-left></ion-icon>
       Donate talent
       <ion-note item-right>
@@ -466,7 +450,7 @@
       </ion-note>
     </button>
 
-    <button ion-item>
+    <button (click)="openUrl('http://cancer.northwestern.edu/public/contribute/volunteer/index.cfm')" ion-item>
       <ion-icon name='construct' item-left></ion-icon>
       Volunteering 2
       <ion-note item-right>

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-
+import {DonateThyroidOnePage} from '../donate-thyroid-one/donate-thyroid-one';
 /*
   Generated class for the ThyroidAbout page.
 
@@ -17,6 +17,11 @@ export class ThyroidAboutPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad ThyroidAboutPage');
+  }
+
+  donateBladder()
+  {
+    this.navCtrl.push(DonateThyroidOnePage);
   }
 
 }

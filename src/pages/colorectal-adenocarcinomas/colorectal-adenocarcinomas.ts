@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-
+import {DonateColorectalTwoPage} from '../donate-colorectal-two/donate-colorectal-two';
 /*
   Generated class for the ColorectalAdenocarcinomas page.
 
@@ -17,6 +17,11 @@ export class ColorectalAdenocarcinomasPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad ColorectalAdenocarcinomasPage');
+  }
+
+  donateBladder()
+  {
+    this.navCtrl.push(DonateColorectalTwoPage);
   }
 
 }

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-
+import {DonateOralOnePage} from '../donate-oral-one/donate-oral-one';
 /*
   Generated class for the OralAbout page.
 
@@ -17,6 +17,11 @@ export class OralAboutPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad OralAboutPage');
+  }
+
+  donateBladder()
+  {
+    this.navCtrl.push(DonateOralOnePage);
   }
 
 }

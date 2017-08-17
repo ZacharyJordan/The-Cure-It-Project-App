@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import {DonateBrainOnePage} from '../donate-brain-one/donate-brain-one';
 
 /*
   Generated class for the BrainMeningiomas page.
@@ -17,6 +18,11 @@ export class BrainMeningiomasPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad BrainMeningiomasPage');
+  }
+
+  donateBladder()
+  {
+    this.navCtrl.push(DonateBrainOnePage);
   }
 
 }

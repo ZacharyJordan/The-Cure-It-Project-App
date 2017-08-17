@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-
+import {DonateBladderTwoPage} from '../donate-bladder-two/donate-bladder-two';
 /*
   Generated class for the BladderIntravesical page.
 
@@ -17,6 +17,11 @@ export class BladderIntravesicalPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad BladderIntravesicalPage');
+  }
+
+  donateBladder()
+  {
+    this.navCtrl.push(DonateBladderTwoPage);
   }
 
 }

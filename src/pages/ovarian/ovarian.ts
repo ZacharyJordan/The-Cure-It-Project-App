@@ -98,12 +98,12 @@ labels: string[] = ["Less than 40", "Less than 50", "Between 50 and 60", "Above 
 
   expandFirstTreatment()
   {
-    this.navCtrl.push(OvariamStromalPage);
+    this.navCtrl.push(OvarianUnderstandingPage);
   }
 
   expandSecondTreatment()
   {
-    this.navCtrl.push(OvariamStromalPage);
+    this.navCtrl.push(OvarianDrugsPage);
   }
 
   expandFirstDonation()

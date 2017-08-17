@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-
+import {DonatePancreaticTwoPage} from '../donate-pancreatic-two/donate-pancreatic-two';
 /*
   Generated class for the PancreaticPallative page.
 
@@ -19,4 +19,8 @@ export class PancreaticPallativePage {
     console.log('ionViewDidLoad PancreaticPallativePage');
   }
 
+  donateSkin()
+  { 
+    this.navCtrl.push(DonatePancreaticTwoPage);
+  }
 }

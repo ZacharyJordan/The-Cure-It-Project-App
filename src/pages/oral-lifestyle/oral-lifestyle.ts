@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-
+import {DonateOralTwoPage} from '../donate-oral-two/donate-oral-two';
 /*
   Generated class for the OralLifestyle page.
 
@@ -17,6 +17,11 @@ export class OralLifestylePage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad OralLifestylePage');
+  }
+
+  donateSkin()
+  {
+    this.navCtrl.push(DonateOralTwoPage);
   }
 
 }

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-
+import {DonateBoneOnePage} from '../donate-bone-one/donate-bone-one';
 /*
   Generated class for the BoneMyeloablative page.
 
@@ -19,4 +19,8 @@ export class BoneMyeloablativePage {
     console.log('ionViewDidLoad BoneMyeloablativePage');
   }
 
+  donateBladder()
+  {
+    this.navCtrl.push(DonateBoneOnePage);
+  }
 }

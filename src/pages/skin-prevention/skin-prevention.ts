@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-
+import {DonateSkinTwoPage} from '../donate-skin-two/donate-skin-two';
 /*
   Generated class for the SkinPrevention page.
 
@@ -17,6 +17,11 @@ export class SkinPreventionPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad SkinPreventionPage');
+  }
+
+  donateThroat()
+  {
+    this.navCtrl.push(DonateSkinTwoPage);
   }
 
 }

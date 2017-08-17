@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-
+import {DonateBreastTwoPage} from '../donate-breast-two/donate-breast-two';
 /*
   Generated class for the BreastInvasive page.
 
@@ -17,6 +17,11 @@ export class BreastInvasivePage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad BreastInvasivePage');
+  }
+
+  donateBladder()
+  {
+    this.navCtrl.push(DonateBreastTwoPage)
   }
 
 }

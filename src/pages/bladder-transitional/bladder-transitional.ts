@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import {DonateBladderOnePage} from '../donate-bladder-one/donate-bladder-one';
 
 /*
   Generated class for the BladderTransitional page.
@@ -17,6 +18,11 @@ export class BladderTransitionalPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad BladderTransitionalPage');
+  }
+  
+  donateBladder()
+  {
+    this.navCtrl.push(DonateBladderOnePage);
   }
 
 }

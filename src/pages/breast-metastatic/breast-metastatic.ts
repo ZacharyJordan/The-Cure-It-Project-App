@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-
+import {DonateBreastTwoPage} from '../donate-breast-two/donate-breast-two';
 /*
   Generated class for the BreastMetastatic page.
 
@@ -17,6 +17,11 @@ export class BreastMetastaticPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad BreastMetastaticPage');
+  }
+
+  donateBladder()
+  {
+    this.navCtrl.push(DonateBreastTwoPage);
   }
 
 }

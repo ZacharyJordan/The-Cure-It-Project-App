@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-
+import {DonateTesticularOnePage} from '../donate-testicular-one/donate-testicular-one';
 /*
   Generated class for the TesticularAbout page.
 
@@ -17,6 +17,11 @@ export class TesticularAboutPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad TesticularAboutPage');
+  }
+
+  donateBladder()
+  {
+    this.navCtrl.push(DonateTesticularOnePage);
   }
 
 }

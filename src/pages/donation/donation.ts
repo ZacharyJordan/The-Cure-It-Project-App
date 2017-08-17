@@ -40,7 +40,6 @@ import {DonateThyroidTwoPage} from '../donate-thyroid-two/donate-thyroid-two';
 import {NgModule} from '@angular/core';
 import {InAppBrowser} from 'ionic-native';
 
-
 /*
   Generated class for the Donation page.
 
@@ -67,14 +66,28 @@ import {InAppBrowser} from 'ionic-native';
 export class DonationPage {
 
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public platform: Platform) {}
+  constructor(public navCtrl: NavController, public navParams: NavParams, public platform: Platform, public plt: Platform) {}
 
-openUrl() {
+openUrl(providedUrl, deviceType) {
+
+        if (this.plt.is('ios')) {
+          deviceType = "ios";
+        }
+        else if(this.plt.is('android')) {
+          deviceType = "android";
+        }
 
         this.platform.ready().then(() => {
-          let browser = new InAppBrowser("https://www.techiediaries.com",'_blank');
-
+          if(deviceType == "android")
+          {
+            let browser = new InAppBrowser(providedUrl,'_blank');
+          }
+          else if(deviceType == "ios")
+          {
+            let browser = new InAppBrowser(providedUrl,'_system');
+          }
         });
+        
 }  
 
   ionViewDidLoad() {

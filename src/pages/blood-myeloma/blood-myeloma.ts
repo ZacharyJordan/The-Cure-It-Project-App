@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import {DonateBloodOnePage} from '../donate-blood-one/donate-blood-one';
 
 /*
   Generated class for the BloodMyeloma page.
@@ -17,6 +18,11 @@ export class BloodMyelomaPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad BloodMyelomaPage');
+  }
+
+  donateBlood()
+  {
+    this.navCtrl.push(DonateBloodOnePage);
   }
 
 }

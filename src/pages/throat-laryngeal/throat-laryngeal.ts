@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-
+import {DonateThroatTwoPage} from '../donate-throat-two/donate-throat-two';
 /*
   Generated class for the ThroatLaryngeal page.
 
@@ -17,6 +17,11 @@ export class ThroatLaryngealPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad ThroatLaryngealPage');
+  }
+
+  donateThroat()
+  {
+    this.navCtrl.push(DonateThroatTwoPage);
   }
 
 }
