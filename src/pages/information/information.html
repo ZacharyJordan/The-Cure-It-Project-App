@@ -15,12 +15,15 @@
 
 <ion-content padding>
 
+  <div style = "width:100%; text-align:center;">
+    <img src="img/logo.png" style = "height:100px;width:auto;display:inline-block;" />
+  </div>
   <ion-card>
   <ion-card-header>
     Who are you?
   </ion-card-header>
   <ion-card-content>
-    Topbox Software is a small team currently composed of Zachary Jordan and Ishan Taparia. We have regularly produced apps, websites, games, and
+    Topbox Software is a small team composed of Zachary Jordan and Ishan Taparia. We have regularly produced apps, websites, games, and
     everything in between since our formation in the summer of 2014.
   </ion-card-content>
 </ion-card>
@@ -43,10 +46,12 @@
     If you have a story regarding cancer, be it you who was diagnosed or somebody that you know, we would love to hear from you. We can be reached at TopboxSoftware@gmail.com. You can click on the button below to send us a message. <br /><br />The same email 
     can be used for feature requests, feedback, bug reports, or anything else that you would like to contact us for. We would love to hear from you!
   </ion-card-content>
+  <a href="mailto:topboxsoftware@gmail.com?Subject=Contact%20Us" target="_top">
   <button ion-button primary clear small class = "push-left">
         <ion-icon class = "push-icon-right"name="mail"></ion-icon>
         <div>Send an Email</div>
   </button>
+  </a>
   <ion-col center text-center>
     </ion-col>
 </ion-card>
@@ -56,18 +61,18 @@
     <h2>More of our work</h2>
   </ion-item>
   <ion-card-content class = "move-left-special">
-    <p>We are constantly working on new projects to make people's lives more enjoyable and simple. Tap on the buttons below to check our portfolio's' out!</p>
+    <p>We are constantly working on new projects to make people's lives more enjoyable and simple. Tap on the buttons below to check our portfolio's out!</p>
   </ion-card-content>
 
   <ion-row>
     <ion-col>
-      <button ion-button primary clear small>
+      <button (click)="openUrl('http://zacharyjordan.github.io/')" ion-button primary clear small>
         <ion-icon class = "push-icon-right"name="paper"></ion-icon>
         <div>Zach</div>
       </button>
     </ion-col>
     <ion-col>
-      <button ion-button primary clear small class = "push-left">
+      <button (click)="openUrl('http://itaparia.github.io/')" ion-button primary clear small class = "push-left">
         <ion-icon class = "push-icon-right"name="paper"></ion-icon>
         <div>Ishan</div>
       </button>
@@ -77,9 +82,6 @@
   </ion-row>
 </ion-card>
 
-<span class = "center-button-wrapper">
-  <button on-tap = "openAppIntro()" class = "center-button" ion-button outline>App Overview Page</button>
-</span>
 </ion-content>
 
 

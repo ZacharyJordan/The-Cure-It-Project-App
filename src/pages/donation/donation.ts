@@ -52,14 +52,9 @@ import {InAppBrowser} from 'ionic-native';
 })
 
 @NgModule({
-
-
   providers: [
- 
     InAppBrowser
-  
   ]
- 
 })
 
 
@@ -76,7 +71,6 @@ openUrl(providedUrl, deviceType) {
         else if(this.plt.is('android')) {
           deviceType = "android";
         }
-
         this.platform.ready().then(() => {
           if(deviceType == "android")
           {
@@ -86,8 +80,7 @@ openUrl(providedUrl, deviceType) {
           {
             let browser = new InAppBrowser(providedUrl,'_system');
           }
-        });
-        
+        });      
 }  
 
   ionViewDidLoad() {

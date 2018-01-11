@@ -17,14 +17,7 @@
     <div class = "heading-wrapper">
       <div class = "heading whiten">Throat Cancer Foundation</div> 
       <br />
-      <span class = "style-logos">
-        <ion-icon name = "logo-facebook" class = "push-right"></ion-icon>
-         <ion-icon name="logo-twitter"></ion-icon>
-       </span>
     </div>
-    <div class = "push-content-down whiten">
-      <br />
-
       <p class = "whiten">
    The Throat Cancer Foundation was founded in 2012 by Jamie Rae, a survivor of throat cancer. His group aims to reduce the effect throat cancer has not only on the people who have it but everyone else around them too.
       </p>
@@ -50,11 +43,10 @@ Take a simple step forward today, and contribute to the battle against Throat Ca
       </p>
 
     <br />
-    </div>
     <br />
   <span class = "center-button-wrapper">
-    <button class = "center-button alter-margin" ion-button>Explore Throat Cancer</button>
-    <button class = "center-button alter-margin" ion-button>Donate to Research</button>
+    <button class = "center-button alter-margin" ion-button on-tap = "openThroat()">Explore Throat Cancer</button>
+    <button class = "center-button alter-margin" ion-button (click)="openUrl('http://www.throatcancerfoundation.org/get_involved/donate')">Donate to Research</button>
   </span>
     
 </ion-content>

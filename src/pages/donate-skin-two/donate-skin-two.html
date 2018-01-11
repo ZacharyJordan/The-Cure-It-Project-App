@@ -17,14 +17,7 @@
     <div class = "heading-wrapper">
       <div class = "heading whiten">American Skin Association</div> 
       <br />
-      <span class = "style-logos">
-        <ion-icon name = "logo-facebook" class = "push-right"></ion-icon>
-         <ion-icon name="logo-twitter"></ion-icon>
-       </span>
     </div>
-    <div class = "push-content-down whiten">
-      <br />
-
       <p class = "whiten">
     The American Skin Association has spent the past two decades fighting against Skin Cancers through the application of research grants and public outreach programs. They seek to make sure that everyone, regardless of race, age, or social status, has the opportunity to recieve education regarding the dangers of skin diseases and what can be done to prevent them. 
       </p>
@@ -50,11 +43,10 @@ You can help them further their mission to defeat Skin Cancers by clicking the b
 
 
     <br />
-    </div>
     <br />
   <span class = "center-button-wrapper">
-    <button class = "center-button alter-margin" ion-button>Explore Skin Cancer</button>
-    <button class = "center-button alter-margin" ion-button>Donate to Research</button>
+    <button class = "center-button alter-margin" ion-button on-tap="openSkin()">Explore Skin Cancer</button>
+    <button class = "center-button alter-margin" ion-button (click)="openUrl('http://www.americanskin.org/donate/')">Donate to Research</button>
   </span>
     
 </ion-content>

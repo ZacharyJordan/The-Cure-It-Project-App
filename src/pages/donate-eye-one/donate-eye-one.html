@@ -17,14 +17,7 @@
     <div class = "heading-wrapper">
       <div class = "heading whiten">Eye Tumor Research Foundation</div> 
       <br />
-      <span class = "style-logos">
-        <ion-icon name = "logo-facebook" class = "push-right"></ion-icon>
-         <ion-icon name="logo-twitter"></ion-icon>
-       </span>
     </div>
-    <div class = "push-content-down whiten">
-      <br />
-      
    <p class = "whiten">
   The Eye Tumor Research Foundation is an organization that has selflessly dedicated itself to the research of Eye Cancers in order to win the fight for life and sight.
     </p>
@@ -51,11 +44,10 @@ They are a legally-operating nonprofit organization, something which ensures tha
 
 
     <br />
-    </div>
     <br />
   <span class = "center-button-wrapper">
-    <button class = "center-button alter-margin" ion-button>Explore Eye Cancer</button>
-    <button class = "center-button alter-margin" ion-button>Donate to Research</button>
+    <button class = "center-button alter-margin" ion-button on-tap = "openEye()">Explore Eye Cancer</button>
+    <button class = "center-button alter-margin" ion-button (click)="openUrl('https://secure.squarespace.com/commerce/donate?donatePageId=58d170dca5790a6c244e3913')">Donate to Research</button>
   </span>
     
 </ion-content>

@@ -17,13 +17,8 @@
     <div class = "heading-wrapper">
       <div class = "heading whiten">Lymphoma Research Foundation</div> 
       <br />
-      <span class = "style-logos">
-        <ion-icon name = "logo-facebook" class = "push-right"></ion-icon>
-         <ion-icon name="logo-twitter"></ion-icon>
-       </span>
+  
     </div>
-    <div class = "push-content-down whiten">
-      <br />
 
       <p class = "whiten">
         The Lymphoma Research Foundation is an organization that has long since established itself as one of the most reputable authorities in regards to the research and development of new Lymphatic Cancer treatments.
@@ -53,11 +48,11 @@ The Lymphoma Research Foundation has awarded over $50 million to such efforts si
 
 
     <br />
-    </div>
+ 
     <br />
   <span class = "center-button-wrapper">
-    <button class = "center-button alter-margin" ion-button>Explore Lymphatic Cancer</button>
-    <button class = "center-button alter-margin" ion-button>Donate to Research</button>
+    <button class = "center-button alter-margin" ion-button on-tap = "openLymphatic()">Explore Lymphatic Cancer</button>
+    <button class = "center-button alter-margin" ion-button (click)="openUrl('https://community.lymphoma.org/')">Donate to Research</button>
   </span>
     
 </ion-content>

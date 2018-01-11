@@ -17,14 +17,7 @@
     <div class = "heading-wrapper">
       <div class = "heading whiten">TCAF</div> 
       <br />
-      <span class = "style-logos">
-        <ion-icon name = "logo-facebook" class = "push-right"></ion-icon>
-         <ion-icon name="logo-twitter"></ion-icon>
-       </span>
     </div>
-    <div class = "push-content-down whiten">
-      <br />
-
       <p class = "whiten">
   The Testicular Cancer Awareness Foundation is a nonprofit that strives to heighten the general public's awareness of the threat of Testicular Cancers.
       </p>
@@ -46,11 +39,10 @@ One of the most impactful ways in which they compel people to take action is thr
 
 
     <br />
-    </div>
     <br />
   <span class = "center-button-wrapper">
-    <button class = "center-button alter-margin" ion-button>Explore Testicular Cancer</button>
-    <button class = "center-button alter-margin" ion-button>Donate to Research</button>
+    <button class = "center-button alter-margin" ion-button on-tap = "openTesticular()">Explore Testicular Cancer</button>
+    <button class = "center-button alter-margin" ion-button (click)="openUrl('https://www.testicularcancerawarenessfoundation.org/donation-opportunities/')">Donate to Research</button>
   </span>
     
 </ion-content>

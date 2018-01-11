@@ -17,14 +17,7 @@
     <div class = "heading-wrapper">
       <div class = "heading whiten">The NCCRA</div> 
       <br />
-      <span class = "style-logos">
-        <ion-icon name = "logo-facebook" class = "push-right"></ion-icon>
-         <ion-icon name="logo-twitter"></ion-icon>
-       </span>
     </div>
-    <div class = "push-content-down whiten">
-      <br />
-      
    <p class = "whiten">
   The NCCRA (National Colorectal Cancer Alliance) has made it their mission to eradicate the threat of Colorectal Cancers for everyone.
     </p>
@@ -56,11 +49,10 @@ You can help them achieve this goal by clicking on the button below to donate.
 
 
     <br />
-    </div>
     <br />
   <span class = "center-button-wrapper">
-    <button class = "center-button alter-margin" ion-button>Explore Colorectal Cancer</button>
-    <button class = "center-button alter-margin" ion-button>Donate to Research</button>
+    <button class = "center-button alter-margin" ion-button on-tap = "openColorectal()">Explore Colorectal Cancer</button>
+    <button class = "center-button alter-margin" ion-button (click)="openUrl('https://secure.eifoundation.org/site/Donation2?df_id=1523&1523.donation=form1')">Donate to Research</button>
   </span>
     
 </ion-content>

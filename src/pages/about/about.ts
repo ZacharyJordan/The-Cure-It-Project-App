@@ -8,6 +8,10 @@ import {StoryJayPage} from '../story-jay/story-jay';
 import {StoryKomiPage} from '../story-komi/story-komi';
 import {StoryShobiPage} from '../story-shobi/story-shobi';
 import {StoryJakePage} from '../story-jake/story-jake';
+import {LymphaticPage} from '../lymphatic/lymphatic';
+import {LungPage} from '../lung/lung';
+import {BonePage} from '../bone/bone';
+import {TesticularPage} from '../testicular/testicular';
 
 @Component({
   selector: 'page-about',
@@ -53,6 +57,26 @@ export class AboutPage {
   informationOpen()
   {
     this.navCtrl.push(InformationPage);
+  }
+
+  expandLymphatic()
+  {
+    this.navCtrl.push(LymphaticPage);
+  }
+
+  expandLung()
+  {
+    this.navCtrl.push(LungPage);
+  }
+
+  expandBone()
+  {
+    this.navCtrl.push(BonePage);
+  }
+
+  expandTesticular()
+  {
+    this.navCtrl.push(TesticularPage);
   }
 
   constructor(public navCtrl: NavController) {

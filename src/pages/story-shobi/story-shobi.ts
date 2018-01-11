@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-
+import {BonePage} from '../bone/bone';
+import {DonateBoneOnePage} from '../donate-bone-one/donate-bone-one';
 /*
   Generated class for the StoryShobi page.
 
@@ -17,6 +18,16 @@ export class StoryShobiPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad StoryShobiPage');
+  }
+
+  expandBone()
+  {
+    this.navCtrl.push(BonePage);
+  }
+
+  donateBone()
+  {
+    this.navCtrl.push(DonateBoneOnePage);
   }
 
 }

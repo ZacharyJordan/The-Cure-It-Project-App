@@ -17,14 +17,7 @@
     <div class = "heading-wrapper">
       <div class = "heading whiten">Mouth Cancer Foundation</div> 
       <br />
-      <span class = "style-logos">
-        <ion-icon name = "logo-facebook" class = "push-right"></ion-icon>
-         <ion-icon name="logo-twitter"></ion-icon>
-       </span>
     </div>
-    <div class = "push-content-down whiten">
-      <br />
-
       <p class = "whiten">
        Established over a decade ago, The Mouth Cancer Foundation has dedicated itself to supporting people who suffer from mouth, throat, and other related cancers. They provide valuable information for patients and professionals alike, helping both parties deal with their situation in a healthy, efficient way free from ignorance. 
       </p>
@@ -48,11 +41,11 @@ They seek to combat this diseases on every front, providing both emotional and f
 
 
     <br />
-    </div>
+
     <br />
   <span class = "center-button-wrapper">
-    <button class = "center-button alter-margin" ion-button>Explore Oral Cancer</button>
-    <button class = "center-button alter-margin" ion-button>Donate to Research</button>
+    <button class = "center-button alter-margin" ion-button on-tap = "openOral()">Explore Oral Cancer</button>
+    <button class = "center-button alter-margin" ion-button (click)="openUrl('http://uk.virginmoneygiving.com/charity-web/charity/finalCharityHomepage.action?charityId=1000316')">Donate to Research</button>
   </span>
     
 </ion-content>

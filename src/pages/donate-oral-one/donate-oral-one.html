@@ -17,14 +17,7 @@
     <div class = "heading-wrapper">
       <div class = "heading whiten">Oral Cancer Foundation</div> 
       <br />
-      <span class = "style-logos">
-        <ion-icon name = "logo-facebook" class = "push-right"></ion-icon>
-         <ion-icon name="logo-twitter"></ion-icon>
-       </span>
     </div>
-    <div class = "push-content-down whiten">
-      <br />
-
       <p class = "whiten">
        The Oral Cancer Foundation has long since been a valuable participant in the battle against Oral Cancers. They have made it their mission to save lives through the promotion of innovative new research and an increased awareness as to the causes of Oral Cancers. 
       </p>
@@ -48,17 +41,11 @@ The value of this foundation simply cannot be overstated. Every dollar directed 
       <p class = "whiten">
 You can join them in their fight by tapping the button below to cast a donation. 
       </p>
-      
-     
-
-
-
     <br />
-    </div>
     <br />
   <span class = "center-button-wrapper">
-    <button class = "center-button alter-margin" ion-button>Explore Oral Cancer</button>
-    <button class = "center-button alter-margin" ion-button>Donate to Research</button>
+    <button class = "center-button alter-margin" ion-button on-tap = "openOral()">Explore Oral Cancer</button>
+    <button class = "center-button alter-margin" ion-button (click)="openUrl('https://donate.oralcancer.org/index.cfm?fuseaction=donate.general')">Donate to Research</button>
   </span>
     
 </ion-content>

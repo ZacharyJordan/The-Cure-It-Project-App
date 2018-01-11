@@ -17,13 +17,7 @@
     <div class = "heading-wrapper">
       <div class = "heading whiten">National Breast Cancer Foundation</div> 
       <br />
-      <span class = "style-logos">
-        <ion-icon name = "logo-facebook" class = "push-right"></ion-icon>
-         <ion-icon name="logo-twitter"></ion-icon>
-       </span>
     </div>
-    <div class = "push-content-down whiten">
-      <br />
       
    <p class = "whiten">
  Founded over 23 years ago by Breast Cancer survivor Janell Hail, The National Breast Cancer Foundation has cemented itself firmly among the top authorities in Breast Cancer Research.
@@ -48,11 +42,10 @@ You can join them in their fight by clicking on the donate button below.
    
     <br />
 
-    </div>
     <br />
   <span class = "center-button-wrapper">
-    <button class = "center-button alter-margin" ion-button>Explore Breast Cancer</button>
-    <button class = "center-button alter-margin" ion-button>Donate to Research</button>
+    <button class = "center-button alter-margin" ion-button on-tap = "openBreast()">Explore Breast Cancer</button>
+    <button class = "center-button alter-margin" ion-button (click)="openUrl('https://donate.nationalbreastcancer.org/')">Donate to Research</button>
   </span>
     
 </ion-content>

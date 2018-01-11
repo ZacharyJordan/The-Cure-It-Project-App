@@ -7,37 +7,132 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content class="card-background-page">
-  <div class = "my-block"></div>
-  <ion-card style = "margin-top:10px !important;" id = "alter-style" class = "card-change" on-tap = "expandLisa()">
-    <img src="img/lisaMiller.png"/>
+<ion-content padding>
+  <ion-card>
+    <ion-item>
+      <h2>Lisa Miller</h2>
+      <p class = "move-left">Hodgkin's Lymphoma</p>
+    </ion-item>
+    <ion-card-content class = "ion-card-content">
+      <p> Hodgkin's Disease attacks the same area that Non-Hodgkin's Lymphoma does: the lymphocytes. Hodgkin's Disease takes over these cells, and in doing so weakens the immune system.</p>
+    </ion-card-content>
+
+    <button ion-button primary clear small on-tap = "expandLisa()">
+          <ion-icon class = "push-icon-right"name="paper"></ion-icon>
+          <div>Read Story</div>
+        </button>
+
+        <button ion-button primary clear small on-tap = "expandLymphatic()">
+          <ion-icon class = "push-icon-right"name="medkit"></ion-icon>
+          <div>Lymphatic Cancer</div>
+        </button>
   </ion-card>
-  <div class = "push-block"></div>
-  <ion-card style = "margin-top:10px !important;" id = "alter-style" class = "card-change" on-tap = "expandChristina()">
-    <img src="img/christinaShaw.png"/>
+
+ <ion-card>
+    <ion-item>
+      <h2>Christina Shaw</h2>
+      <p class = "move-left">Lung Cancer</p>
+    </ion-item>
+    <ion-card-content class = "ion-card-content">
+      <p> More people die from Lung Cancer than Colon, Breast, and Prostate Cancers combined.</p>
+    </ion-card-content>
+
+   <button ion-button primary clear small on-tap = "expandChristina()">
+          <ion-icon class = "push-icon-right"name="paper"></ion-icon>
+          <div>Read Story</div>
+        </button>
+
+        <button ion-button primary clear small on-tap = "expandLung()">
+          <ion-icon class = "push-icon-right"name="medkit"></ion-icon>
+          <div>Lung Cancer</div>
+        </button>
   </ion-card>
-<div class = "push-block"></div>
-  <ion-card style = "margin-top:10px !important;" id = "alter-style" class = "card-change" on-tap = "expandAllie()">
-    <img src="img/allieWeaver.png"/>
+
+  <ion-card>
+    <ion-item>
+      <h2>Allie Weaver</h2>
+      <p class = "move-left">Hodgkin's Lymphoma</p>
+    </ion-item>
+    <ion-card-content class = "ion-card-content">
+      <p>Non-Hodgkin's Lymphoma (sometimes referred to as NHL) is far more common than Hodgkin's Disease, with around 8 cases documented for every one case of Hodgkin's Disease.</p>
+    </ion-card-content>
+
+   <button ion-button primary clear small on-tap = "expandAllie()">
+          <ion-icon class = "push-icon-right"name="paper"></ion-icon>
+          <div>Read Story</div>
+        </button>
+
+        <button ion-button primary clear small on-tap = "expandLymphatic()">
+          <ion-icon class = "push-icon-right"name="medkit"></ion-icon>
+          <div>Lymphatic Cancer</div>
+        </button>
   </ion-card>
-<div class = "push-block"></div>
-  <ion-card style = "margin-top:10px !important;" id = "alter-style" class = "card-change" on-tap = "expandJay()">
-    <img src="img/jayAnderson.png"/>
+
+  <ion-card>
+    <ion-item>
+      <h2>Komi Amegblenke</h2>
+      <p class = "move-left">High-Grade Lymphoma</p>
+    </ion-item>
+    <ion-card-content class = "ion-card-content">
+      <p> Once white blood cells are mutated through Lymphatic Cancers, the body begins to have difficulty fighting off even small viruses like mild colds. This has the effect of turning mild conditions into severe medical crises.</p>
+    </ion-card-content>
+
+   <button ion-button primary clear small on-tap = "expandKomi()">
+          <ion-icon class = "push-icon-right"name="paper"></ion-icon>
+          <div>Read Story</div>
+        </button>
+
+        <button ion-button primary clear small on-tap = "expandLymphatic()">
+          <ion-icon class = "push-icon-right"name="medkit"></ion-icon>
+          <div>Lymphatic Cancer</div>
+        </button>
   </ion-card>
-<div class = "push-block"></div>
-  <ion-card style = "margin-top:10px !important;" id = "alter-style" class = "card-change" on-tap = "expandKomi()">
-    <img src="img/komiAmegblenke.png"/>
+
+  <ion-card>
+    <ion-item>
+      <h2>Shobi Lussier</h2>
+      
+      <p class = "move-left">Bone Cancer</p>
+    </ion-item>
+    <ion-card-content class = "ion-card-content">
+      <p>A danger that comes with this cancer is that it can easily metastasize, or spread, around the body. Since bones exist in practically every system and area of the body, this disease has the potential to be spread almost anywhere. </p>
+    </ion-card-content>
+
+   <button ion-button primary clear small on-tap = "expandShobi()">
+          <ion-icon class = "push-icon-right"name="paper"></ion-icon>
+          <div>Read Story</div>
+        </button>
+
+        <button ion-button primary clear small on-tap = "expandBone()">
+          <ion-icon class = "push-icon-right"name="medkit"></ion-icon>
+          <div>Bone Cancer</div>
+        </button>
   </ion-card>
-<div class = "push-block"></div>
-  <ion-card style = "margin-top:10px !important;" id = "alter-style" class = "card-change" on-tap = "expandShobi()">
-    <img src="img/shobiLussier.png"/>
+
+   <ion-card>
+    <ion-item>
+      <h2>Jake Samson</h2>
+      
+      <p class = "move-left">Testicular Cancer</p>
+    </ion-item>
+    <ion-card-content class = "ion-card-content">
+      <p>This is an extremely rare form of cancer, occuring in less than half a percent of males in a given year. Despite this, Testicular Cancer is currently the most common form of cancer found in men between the ages of 15 and 35. </p>
+    </ion-card-content>
+
+   <button ion-button primary clear small on-tap = "expandJake()">
+          <ion-icon class = "push-icon-right"name="paper"></ion-icon>
+          <div>Read Story</div>
+        </button>
+
+        <button ion-button primary clear small on-tap = "expandTesticular()">
+          <ion-icon class = "push-icon-right"name="medkit"></ion-icon>
+          <div>Testicular Cancer</div>
+        </button>
   </ion-card>
-<div class = "push-block"></div>
-  <ion-card style = "margin-top:10px !important;" id = "alter-style" class = "card-change" on-tap = "expandJake()">
-    <img src="img/jakeSamson.png"/>
-  </ion-card>
-<div class = "my-bottom-block"></div>
-<span class = "center-button-wrapper">
-  <button on-tap = "openAppIntro()" class = "center-button" ion-button large >Share Your Story</button>
+
+  <span class = "center-button-wrapper">
+    <a class = "allie-link" href="mailto:topboxsoftware@gmail.com?Subject=Sharing%20A%20Story" target="_top">
+      <button class = "center-button" ion-button large >Share Your Story</button>
+    </a>
 </span>
 </ion-content>

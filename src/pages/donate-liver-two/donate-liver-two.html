@@ -17,13 +17,7 @@
     <div class = "heading-wrapper">
       <div class = "heading whiten">Liver Cancer Research Fund</div> 
       <br />
-      <span class = "style-logos">
-        <ion-icon name = "logo-facebook" class = "push-right"></ion-icon>
-         <ion-icon name="logo-twitter"></ion-icon>
-       </span>
     </div>
-    <div class = "push-content-down whiten">
-      <br />
       
    <p class = "whiten">
   The Liver Cancer Research Fund has spent the past few years maintaining the fight against Liver Cancer. They work with a best in class team of experts to push the currently established limits of medical knowledge through innovative clinical research. 
@@ -45,11 +39,10 @@ You can help them with this honorable mission by clicking the button below to do
 
 
     <br />
-    </div>
     <br />
   <span class = "center-button-wrapper">
-    <button class = "center-button alter-margin" ion-button>Explore Liver Cancer</button>
-    <button class = "center-button alter-margin" ion-button>Donate to Research</button>
+    <button class = "center-button alter-margin" ion-button on-tap = "openLiver()">Explore Liver Cancer</button>
+    <button class = "center-button alter-margin" ion-button (click)="openUrl('https://app.etapestry.com/hosted/LungCancerFoundationofAmer/OnlineDonation.html')">Donate to Research</button>
   </span>
     
 </ion-content>

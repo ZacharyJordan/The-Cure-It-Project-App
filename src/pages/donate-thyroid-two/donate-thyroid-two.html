@@ -17,13 +17,7 @@
     <div class = "heading-wrapper">
       <div class = "heading whiten">Light of Life Foundation</div> 
       <br />
-      <span class = "style-logos">
-        <ion-icon name = "logo-facebook" class = "push-right"></ion-icon>
-         <ion-icon name="logo-twitter"></ion-icon>
-       </span>
     </div>
-    <div class = "push-content-down whiten">
-      <br />
 
       <p class = "whiten">
   The Light of Life Foundation is an organization that works tirelessly to improve the quality of life for Thyroid Cancer patients through the promotion of education of the general public as well as the establishment of improved research efforts within the medical community.
@@ -50,11 +44,10 @@ You can fulfill this honorable role by tapping the button below to donate.
       </p>
     
     <br />
-    </div>
     <br />
   <span class = "center-button-wrapper">
-    <button class = "center-button alter-margin" ion-button>Explore Thyroid Cancer</button>
-    <button class = "center-button alter-margin" ion-button>Donate to Research</button>
+    <button class = "center-button alter-margin" ion-button on-tap = "openThyroid()">Explore Thyroid Cancer</button>
+    <button class = "center-button alter-margin" ion-button (click)="openUrl('http://lightoflifefoundation.org/support-us/donate/')">Donate to Research</button>
   </span>
     
 </ion-content>

@@ -17,13 +17,7 @@
     <div class = "heading-wrapper">
       <div class = "heading whiten">Lymphoma Foundation of America</div> 
       <br />
-      <span class = "style-logos">
-        <ion-icon name = "logo-facebook" class = "push-right"></ion-icon>
-         <ion-icon name="logo-twitter"></ion-icon>
-       </span>
     </div>
-    <div class = "push-content-down whiten">
-      <br />
 
       <p class = "whiten">
         The Lymphoma Foundation of America is an organization that has remained selflessly dedicated to the eradication of Lymphatic Cancers since its inception in 1986. They approach this goal on a variety of fronts to ensure that all avenues of progress can be considered. 
@@ -47,11 +41,11 @@ They were responsible for organizing the first support group specific to Lymphat
 
 
     <br />
-    </div>
+  
     <br />
   <span class = "center-button-wrapper">
-    <button class = "center-button alter-margin" ion-button>Explore Lymphatic Cancer</button>
-    <button class = "center-button alter-margin" ion-button>Donate to Research</button>
+    <button class = "center-button alter-margin" ion-button on-tap = "openLymphatic()">Explore Lymphatic Cancer</button>
+    <button class = "center-button alter-margin" ion-button (click)="openUrl('https://www.givedirect.org/donate/?cid=10146')">Donate to Research</button>
   </span>
     
 </ion-content>

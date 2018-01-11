@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import {TesticularPage} from '../testicular/testicular';
+import {DonateTesticularOnePage} from '../donate-testicular-one/donate-testicular-one';
+
 
 /*
   Generated class for the StoryJake page.
@@ -17,6 +20,16 @@ export class StoryJakePage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad StoryJakePage');
+  }
+
+  expandTesticular()
+  {
+    this.navCtrl.push(TesticularPage);
+  }
+
+  donateTesticular()
+  {
+    this.navCtrl.push(DonateTesticularOnePage);
   }
 
 }

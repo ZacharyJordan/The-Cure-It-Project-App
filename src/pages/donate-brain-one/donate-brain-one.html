@@ -17,13 +17,7 @@
     <div class = "heading-wrapper">
       <div class = "heading whiten">American Brain Tumor Association</div> 
       <br />
-      <span class = "style-logos">
-        <ion-icon name = "logo-facebook" class = "push-right"></ion-icon>
-         <ion-icon name="logo-twitter"></ion-icon>
-       </span>
     </div>
-    <div class = "push-content-down whiten">
-      <br />
       
    <p class = "whiten">
   Founded over 40 years ago, The American Brain Tumor Association was the first nonprofit organization in the world to set its sights solely on eliminating the risk of Brain Tumors.
@@ -49,11 +43,10 @@ You can assist them in their fight by clicking on the button below to donate.
 
 
     <br />
-    </div>
     <br />
   <span class = "center-button-wrapper">
-    <button class = "center-button alter-margin" ion-button>Explore Brain Cancer</button>
-    <button class = "center-button alter-margin" ion-button>Donate to Research</button>
+    <button class = "center-button alter-margin" ion-button on-tap = "openBrain()">Explore Brain Cancer</button>
+    <button class = "center-button alter-margin" ion-button (click)="openUrl('https://secure2.convio.net/abta/site/Donation2;jsessionid=9DC62F7205DEAD22C1E17DE9966EEBA7.app272b?df_id=1500&1500.donation=form1')">Donate to Research</button>
   </span>
     
 </ion-content>

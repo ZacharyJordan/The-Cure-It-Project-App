@@ -17,13 +17,8 @@
     <div class = "heading-wrapper">
       <div class = "heading whiten">Lung Cancer Foundation of America</div> 
       <br />
-      <span class = "style-logos">
-        <ion-icon name = "logo-facebook" class = "push-right"></ion-icon>
-         <ion-icon name="logo-twitter"></ion-icon>
-       </span>
     </div>
-    <div class = "push-content-down whiten">
-      <br />
+
       
    <p class = "whiten">
   The Lung Cancer Foundation of America is an organization based in the United States that has set their sights on one tremendous goal: establishing groundbreaking results in the field of Lung Cancer treatment. They hope that their work will one day improve the lives of the hundreds of thousands of Lung Cancer patients on both national and global levels. 
@@ -49,11 +44,10 @@ None of the services that they provide are possible without the continued suppor
 
 
     <br />
-    </div>
     <br />
   <span class = "center-button-wrapper">
-    <button class = "center-button alter-margin" ion-button>Explore Lung Cancer</button>
-    <button class = "center-button alter-margin" ion-button>Donate to Research</button>
+    <button class = "center-button alter-margin" ion-button on-tap = "openLung()">Explore Lung Cancer</button>
+    <button class = "center-button alter-margin" ion-button (click)="openUrl('https://app.etapestry.com/hosted/LungCancerFoundationofAmer/OnlineDonation.html')">Donate to Research</button>
   </span>
     
 </ion-content>

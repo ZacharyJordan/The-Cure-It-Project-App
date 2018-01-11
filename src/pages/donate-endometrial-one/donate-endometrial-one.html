@@ -17,14 +17,7 @@
     <div class = "heading-wrapper">
       <div class = "heading whiten">Foundation for Women's Cancer</div> 
       <br />
-      <span class = "style-logos">
-        <ion-icon name = "logo-facebook" class = "push-right"></ion-icon>
-         <ion-icon name="logo-twitter"></ion-icon>
-       </span>
-    </div>
-    <div class = "push-content-down whiten">
-      <br />
-      
+    </div>      
    <p class = "whiten">
  The Foundation for Women's Cancer is an organization that has been tirelessly working to combat cancer in females since its inception in 1991. 
     </p>
@@ -48,11 +41,10 @@ Tap the link below to donate, and to help bring this planet one step closer to e
 
 
     <br />
-    </div>
     <br />
   <span class = "center-button-wrapper">
-    <button class = "center-button alter-margin" ion-button>Explore Endometrial Cancer</button>
-    <button class = "center-button alter-margin" ion-button>Donate to Research</button>
+    <button class = "center-button alter-margin" ion-button on-tap="openEndometrial()">Explore Endometrial Cancer</button>
+    <button class = "center-button alter-margin" ion-button (click)="openUrl('http://www.foundationforwomenscancer.org/ways-to-give/')">Donate to Research</button>
   </span>
     
 </ion-content>

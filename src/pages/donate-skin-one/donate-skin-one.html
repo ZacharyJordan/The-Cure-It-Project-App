@@ -17,14 +17,7 @@
     <div class = "heading-wrapper">
       <div class = "heading whiten">Skin Cancer Foundation</div> 
       <br />
-      <span class = "style-logos">
-        <ion-icon name = "logo-facebook" class = "push-right"></ion-icon>
-         <ion-icon name="logo-twitter"></ion-icon>
-       </span>
     </div>
-    <div class = "push-content-down whiten">
-      <br />
-
       <p class = "whiten">
      Founded over 35 years ago, The Skin Cancer Foundation is currently the only international organization whose sole focus is improving the prevention and treatment of Skin Cancer.
       </p>
@@ -44,16 +37,11 @@ The importance of this life-saving foundation cannot be overstated. Every dollar
       <p class = "whiten">
 You can join them in their fight by tapping on the button below to donate. 
       </p>
-    
-
-
-
     <br />
-    </div>
     <br />
   <span class = "center-button-wrapper">
-    <button class = "center-button alter-margin" ion-button>Explore Skin Cancer</button>
-    <button class = "center-button alter-margin" ion-button>Donate to Research</button>
+    <button class = "center-button alter-margin" ion-button on-tap="openSkin()">Explore Skin Cancer</button>
+    <button class = "center-button alter-margin" ion-button (click)="openUrl('https://interland3.donorperfect.net/weblink/weblink.aspx?name=skincancer&id=16')">Donate to Research</button>
   </span>
     
 </ion-content>

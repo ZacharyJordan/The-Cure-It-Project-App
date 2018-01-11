@@ -17,14 +17,7 @@
     <div class = "heading-wrapper">
       <div class = "heading whiten">Pancreatic Cancer Action Network</div> 
       <br />
-      <span class = "style-logos">
-        <ion-icon name = "logo-facebook" class = "push-right"></ion-icon>
-         <ion-icon name="logo-twitter"></ion-icon>
-       </span>
     </div>
-    <div class = "push-content-down whiten">
-      <br />
-
       <p class = "whiten">
      The Pancreatic Cancer Action Network is a foundation based in California that has comitted itself to not only increasing public awareness of Pancreatic Cancer, but also helping to connect and assist families who have been intimately affected by the disease. 
       </p>
@@ -48,15 +41,11 @@ In fact, they have been awarded the top score of 100 on Charity Navigator, somet
       <p class = "whiten">
 You can tap the button below to join them in their fight to better conditions for Pancreatic Cancer patients and their families.
       </p>
-
-
-
     <br />
-    </div>
     <br />
   <span class = "center-button-wrapper">
-    <button class = "center-button alter-margin" ion-button>Explore Pancreatic Cancer</button>
-    <button class = "center-button alter-margin" ion-button>Donate to Research</button>
+    <button class = "center-button alter-margin" ion-button on-tap = "openPancreatic()">Explore Pancreatic Cancer</button>
+    <button class = "center-button alter-margin" ion-button (click)="openUrl('https://secure.pancan.org/site/Donation2?df_id=1480&1480.donation=form1')">Donate to Research</button>
   </span>
     
 </ion-content>

@@ -17,13 +17,7 @@
     <div class = "heading-wrapper">
       <div class = "heading whiten">Lustgarten Foundation</div> 
       <br />
-      <span class = "style-logos">
-        <ion-icon name = "logo-facebook" class = "push-right"></ion-icon>
-         <ion-icon name="logo-twitter"></ion-icon>
-       </span>
     </div>
-    <div class = "push-content-down whiten">
-      <br />
 
       <p class = "whiten">
       The Lustgarten Foundation is an organization that has tirelessly dedicated itself to the eradication of Pancreatic Cancers. They pursue this goal on 2 equally important fronts: increasing public awareness of the issue of Pancreatic Cancer and what the average person can do to help, and working to ensure that proper funding is allocated to the research and development of effective new treatments that are specific to the disease. 
@@ -55,11 +49,10 @@ You can tap the button below to join them in this fight and to make sure the iss
 
 
     <br />
-    </div>
     <br />
   <span class = "center-button-wrapper">
-    <button class = "center-button alter-margin" ion-button>Explore Pancreatic Cancer</button>
-    <button class = "center-button alter-margin" ion-button>Donate to Research</button>
+    <button class = "center-button alter-margin" ion-button on-tap = "openPancreatic()">Explore Pancreatic Cancer</button>
+    <button class = "center-button alter-margin" ion-button (click)="openUrl('https://www.lustgarten.org/donate')">Donate to Research</button>
   </span>
     
 </ion-content>

@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import {LymphaticPage} from '../lymphatic/lymphatic';
+import {DonateLymphaticOnePage} from '../donate-lymphatic-one/donate-lymphatic-one';
+
 
 /*
   Generated class for the StoryKomi page.
@@ -17,6 +20,16 @@ export class StoryKomiPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad StoryKomiPage');
+  }
+
+  expandLymphatic()
+  {
+    this.navCtrl.push(LymphaticPage);
+  }
+
+  donateLymphatic()
+  {
+    this.navCtrl.push(DonateLymphaticOnePage);
   }
 
 }

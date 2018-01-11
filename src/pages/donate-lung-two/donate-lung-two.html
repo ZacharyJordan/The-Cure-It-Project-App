@@ -17,13 +17,7 @@
     <div class = "heading-wrapper">
       <div class = "heading whiten">SmokeFree.gov</div> 
       <br />
-      <span class = "style-logos">
-        <ion-icon name = "logo-facebook" class = "push-right"></ion-icon>
-         <ion-icon name="logo-twitter"></ion-icon>
-       </span>
     </div>
-    <div class = "push-content-down whiten">
-      <br />
       
    <p class = "whiten">
   SmokeFree.gov is a little bit different from the other organizations that we've promoted in that it doesn't actually cater to the treatment of Lung Cancer specifically. Rather, it attempts to undermine the #1 cause of Lung Cancer: smoking.
@@ -49,11 +43,10 @@ A short description of the website is insufficient in demonstrating the excellen
 
 
     <br />
-    </div>
     <br />
   <span class = "center-button-wrapper">
-    <button class = "center-button alter-margin" ion-button>Explore Lung Cancer</button>
-    <button class = "center-button alter-margin" ion-button>Donate to Research</button>
+    <button class = "center-button alter-margin" ion-button on-tap = "openLung()">Explore Lung Cancer</button>
+    <button class = "center-button alter-margin" ion-button (click)="openUrl('https://smokefree.gov/')">Donate to Research</button>
   </span>
     
 </ion-content>

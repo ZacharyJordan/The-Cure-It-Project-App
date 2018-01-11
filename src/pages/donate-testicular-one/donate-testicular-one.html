@@ -17,14 +17,7 @@
     <div class = "heading-wrapper">
       <div class = "heading whiten">Testicular Cancer Society</div> 
       <br />
-      <span class = "style-logos">
-        <ion-icon name = "logo-facebook" class = "push-right"></ion-icon>
-         <ion-icon name="logo-twitter"></ion-icon>
-       </span>
     </div>
-    <div class = "push-content-down whiten">
-      <br />
-
       <p class = "whiten">
     The Testicular Cancer Society has taken a varied and aggressive approach in their fight against Testicular Cancers. They attempt to raise awareness about the harms of the disease while also offering support to those who are already suffering from it. 
       </p>
@@ -49,11 +42,10 @@ Testicular Cancer is a disease that thrives when given time to develop, so ensur
 
 
     <br />
-    </div>
     <br />
   <span class = "center-button-wrapper">
-    <button class = "center-button alter-margin" ion-button>Explore Testicular Cancer</button>
-    <button class = "center-button alter-margin" ion-button>Donate to Research</button>
+    <button class = "center-button alter-margin" ion-button on-tap = "openTesticular()">Explore Testicular Cancer</button>
+    <button class = "center-button alter-margin" ion-button (click)="openUrl('http://www.testicularcancersociety.org/donate.html')">Donate to Research</button>
   </span>
     
 </ion-content>

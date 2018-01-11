@@ -17,13 +17,7 @@
     <div class = "heading-wrapper">
       <div class = "heading whiten">Eye Cancer Foundation</div> 
       <br />
-      <span class = "style-logos">
-        <ion-icon name = "logo-facebook" class = "push-right"></ion-icon>
-         <ion-icon name="logo-twitter"></ion-icon>
-       </span>
     </div>
-    <div class = "push-content-down whiten">
-      <br />
       
    <p class = "whiten">
   Established in 1989 as The Eyecare Foundation, The Eye Cancer Foundation has long since been a valuable resource for Eye Cancer patients and their families. 
@@ -46,11 +40,10 @@ You can click the button below to be directed to their website to make a simple 
 
 
     <br />
-    </div>
     <br />
   <span class = "center-button-wrapper">
-    <button class = "center-button alter-margin" ion-button>Explore Eye Cancer</button>
-    <button class = "center-button alter-margin" ion-button>Donate to Research</button>
+    <button class = "center-button alter-margin" ion-button on-tap = "openEye()">Explore Eye Cancer</button>
+    <button class = "center-button alter-margin" ion-button (click)="openUrl('https://www.eyecancercure.com/donate')">Donate to Research</button>
   </span>
     
 </ion-content>

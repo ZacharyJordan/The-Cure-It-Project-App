@@ -17,14 +17,7 @@
     <div class = "heading-wrapper">
       <div class = "heading whiten">Oracle Cancer Trust</div> 
       <br />
-      <span class = "style-logos">
-        <ion-icon name = "logo-facebook" class = "push-right"></ion-icon>
-         <ion-icon name="logo-twitter"></ion-icon>
-       </span>
     </div>
-    <div class = "push-content-down whiten">
-      <br />
-
        <p class = "whiten">
     The Oracle Cancer Trust is a UK based charity organization that conducts research to ensure breakthroughs in head and neck cancer treatment.
       </p>
@@ -42,11 +35,10 @@ The development of research into very specific projects like these can only cont
       </p>
 
     <br />
-    </div>
     <br />
   <span class = "center-button-wrapper">
-    <button class = "center-button alter-margin" ion-button>Explore Throat Cancer</button>
-    <button class = "center-button alter-margin" ion-button>Donate to Research</button>
+    <button class = "center-button alter-margin" ion-button on-tap = "openThroat()">Explore Throat Cancer</button>
+    <button class = "center-button alter-margin" ion-button (click)="openUrl('http://oraclecancertrust.org/ways-to-donate/')">Donate to Research</button>
   </span>
     
 </ion-content>
