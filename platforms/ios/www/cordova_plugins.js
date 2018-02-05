@@ -57,6 +57,14 @@ module.exports = [
             "cordova.InAppBrowser.open",
             "window.open"
         ]
+    },
+    {
+        "file": "plugins/cordova-plugin-ionic-webview/src/www/ios/ios-wkwebview-exec.js",
+        "id": "cordova-plugin-ionic-webview.ios-wkwebview-exec",
+        "pluginId": "cordova-plugin-ionic-webview",
+        "clobbers": [
+            "cordova.exec"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -68,7 +76,8 @@ module.exports.metadata =
     "cordova-plugin-statusbar": "2.2.1",
     "cordova-plugin-whitelist": "1.3.1",
     "ionic-plugin-keyboard": "2.2.1",
-    "cordova-plugin-inappbrowser": "1.6.2-dev"
+    "cordova-plugin-inappbrowser": "1.6.2-dev",
+    "cordova-plugin-ionic-webview": "1.1.16"
 }
 // BOTTOM OF METADATA
 });

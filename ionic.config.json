@@ -1,6 +1,8 @@
 {
   "name": "cureItProject",
   "app_id": "1d4a8724",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "ionic-angular"
 }
